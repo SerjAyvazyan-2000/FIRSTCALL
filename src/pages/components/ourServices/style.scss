@@ -1,0 +1,115 @@
+@import "src/assets/variables";
+
+.section_our_services {
+  margin-top: 233px;
+}
+
+.our_services_title {
+
+  h3 {
+    color: $black;
+    font-size: calc($fontSize20 + 31 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc($fontSize20 + 31 * (100vw / 1920));
+    text-transform: uppercase;
+    max-width: 1197px;
+  }
+
+  p {
+    margin: 26px 0 0;
+    color: $red;
+    font-size: calc($fontSize14 + 16 * (100vw / 1920));
+    font-style: italic;
+    font-weight: 300;
+    line-height: calc($fontSize14 + 16 * (100vw / 1920));
+  }
+}
+
+.our_services_content_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 150px;
+  gap: 89px;
+
+
+}
+
+.content_item_text {
+  flex: 1 1 auto;
+
+  h3 {
+    color: $black;
+    //font-size: $fontSize74;
+    font-size: calc(25px + 55 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.3%; /* 114.182px */
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 2px;
+      background-color: black;
+      bottom: 20px;
+
+    }
+  }
+
+  p {
+    margin: 52px 0 0;
+    color: $black;
+    text-align: justify;
+    //    font-size: 22px;
+    font-size: calc(15px + 15 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(15px + 17 * (100vw / 1920));
+    max-width: 623px;
+  }
+  span{
+    margin: 52px 0 0;
+    color: $black;
+    text-align: justify;
+    //    font-size: 22px;
+    font-size: calc(15px + 15 * (100vw / 1920));
+    font-style: italic;
+    font-weight: bold;
+    line-height: calc(15px + 17 * (100vw / 1920));
+    display: block;
+    max-width: 623px;
+  }
+}
+
+.content_item_img_block {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .content_item_img_bg {
+      opacity: 0;
+    }
+  }
+}
+
+.content_item_img_block img {
+  //min-width: 100%;
+  //min-height: 100%;
+}
+
+.content_item_img_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  background-color: black;
+  transition: .3s;
+
+}

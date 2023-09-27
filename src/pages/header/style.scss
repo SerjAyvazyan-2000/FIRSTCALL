@@ -1,0 +1,131 @@
+@import "src/assets/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $black;
+
+}
+
+.header_content {
+  display: flex;
+
+  align-items: center;
+
+}
+
+.header_logo {
+  flex: 1 1  144px;
+  padding:  37px 0;
+
+}
+
+.header_logo_img {
+  width: 100px;
+  height: 74px;
+}
+
+.header_language {
+  display: flex;
+  align-items: center;
+}
+
+.header_language a {
+  margin: 0 25px;
+  font-size: $fontSize13;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 102.8%; /* 12.959px */
+  text-transform: uppercase;
+  font-family: Commissioner;
+
+  &:hover{
+     text-decoration: underline;
+  }
+}
+
+.header_language_en {
+  color: $red;
+
+}
+.header_language_de{
+  color: black;
+}
+
+
+
+.header_menu {
+  flex: 1 1 auto;
+}
+
+.header_download_btn {
+  display: flex;
+  gap: 25px;
+
+  button {
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+
+  }
+}
+
+.header_download {
+  display: flex;
+  gap: 43px;
+}
+
+.header_download_btn_white {
+  position: relative;
+  padding: 11px 17px;
+  min-width: 162px;
+  text-align: left;
+  border: 1px solid $black;
+  color: black;
+  font-size: $fontSize14;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.3%; /* 21.602px */
+
+  span {
+    position: absolute;
+    right: 11px;
+    font-size: 20px;
+
+    top: 11px;
+  }
+}
+
+.white_button {
+  transition: .3s;
+  background: none;
+
+  &:hover {
+    background-color: antiquewhite;
+  }
+}
+
+.header_download_btn_red {
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  color: white;
+  padding: 11px 39px;
+
+  min-width: 162px;
+  font-size: $fontSize14;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.3%; /* 21.602px */
+  text-transform: uppercase;
+
+
+}
+
+.red_button {
+  transition: .3s;
+
+  &:hover {
+    background: var(--hover, linear-gradient(180deg, #700e2d 0%, #1e1e28 100%));
+  }
+}
+

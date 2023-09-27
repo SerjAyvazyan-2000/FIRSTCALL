@@ -1,0 +1,93 @@
+import React from 'react';
+import "./style.scss"
+import logo from "../../../assets/images/Vector.png"
+import image from "../../../assets/images/image.png"
+import image1 from "../../../assets/images/image1.png"
+import image2 from "../../../assets/images/image2.png"
+import image3 from "../../../assets/images/image3.png"
+import image4 from "../../../assets/images/image4.png"
+
+const DistinguishesUs = () => {
+    return <section className="distinguishes_us_section">
+        <div className="container">
+            <div className="distinguishes_body">
+
+                <div className="distinguishes_img_block">
+                    <div className="distinguishes_img_block_border">
+                        <div className="distinguishes_red_block">
+                            <div className="distinguishes_white_block">
+                                <img src={logo} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row1">
+                            <div className="img_block">
+                                <img src={image} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row2">
+                            <div className="img_block">
+                                <img src={image1} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row3">
+                            <div className="img_block">
+                                <img src={image2} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row4">
+                            <div className="img_block">
+                                <img src={image3} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row5">
+                            <div className="img_block">
+                                <img src={image4} alt=""/>
+                            </div>
+                        </div>
+                        <div className="distinguishes_img row6">
+                            <div className="img_block">
+                                <img src={image4} alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div className="distinguishes_text_block">
+                    <div className="distinguishes_text_title">
+                        <h3>What distinguishes us</h3>
+                    </div>
+
+                    <div className="distinguishes_text_description">
+                        <p>We redefine the call centre standard. As a sales agency, we emphasise thorough training and
+                            intensive education of our staff to ensure comprehensive and competent service. Our
+                            specialisation lies in consultancy-intensive and IT-based solutions,
+                            and our commitment to exclusivity ensures a competitive advantage for our clients</p>
+                        <p>
+                            Our claim? Simple: Lean. Efficient. Transparent. We strive to deliver the essential aspects
+                            of sales in a lean number of hours per week. Quality is not a by-product of our work, but
+                            the cornerstone.
+                            We build intensive customer relationships and work hard to be able to take the first place
+                            in the offer at the right time. Our way of working is intensive in order to successfully
+                            manage the long sales cycle in the IT industry of 6-12 months.
+                        </p>
+                        <p>
+                            We integrate seamlessly with your existing systems, providing complete transparency and
+                            ensuring a smooth handover to your sales force. We also provide weekly
+                            reporting with detailed call notes and relevant market feedback to strengthen your future
+                            sales strategy.</p>
+                    </div>
+
+                    <div className="distinguishes_see_more">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+};
+
+export default DistinguishesUs;

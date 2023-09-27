@@ -1,0 +1,31 @@
+
+.App{
+    overflow: hidden;
+    font-family: Barlow Condensed;
+
+}
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-Black.woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-Regular.woff");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Commissioner ;
+    src: url("assets/fonts/Commissioner-Regular.woff");
+    font-style: normal;
+    font-weight: 500;
+}
+.red_button{
+
+}
+.white_button{
+
+}

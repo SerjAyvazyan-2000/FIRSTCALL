@@ -1,0 +1,150 @@
+@import "src/assets/variables";
+@import "src/assets/@mixin";
+
+.distinguishes_us_section {
+  margin-top: 153px;
+}
+
+.distinguishes_body {
+  display: flex;
+
+}
+
+.distinguishes_img_block {
+  min-width: 489px;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.distinguishes_img_block_border {
+  border: 2px dashed #191923;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+//Images start
+.distinguishes_img{
+   position: absolute;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 4px;
+  border: 2px solid #8D1038;
+  background: #FFF;
+  box-shadow: 0px 0px 13px 0px rgba(163, 163, 163, 0.40) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.row1{
+  left: -30px;
+
+}
+.row2{
+  right: -30px;
+
+}
+.row3{
+  top: -5px;
+  left: 30px;
+
+}
+.row4{
+  bottom: -5px;
+  left: 10px;
+
+}
+.row5{
+  bottom: -5px;
+  right: 30px;
+
+}
+.row6{
+  top: -5px;
+  right: 30px;
+
+}
+//Images end
+
+.distinguishes_red_block {
+
+  padding: 80px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+}
+
+.distinguishes_white_block {
+
+  padding: 73px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+}
+
+.distinguishes_text_block {
+  margin-left: 100px;
+}
+
+.distinguishes_text_title {
+
+  h3 {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    color: $black;
+    text-transform: uppercase;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20%;
+      height: 1px;
+      bottom: -10px;
+      left: 0;
+      background-color: $red;
+    }
+    @include adaptive_fontSize(20px,32)
+  }
+
+}
+
+.distinguishes_text_description {
+  margin: 40px 0 0;
+
+  p {
+    color: $black;
+    font-size: $fontSize26;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 26px */
+    margin: 30px 0 0;
+  }
+}
+.distinguishes_see_more{
+   margin-top: 39px;
+  button{
+     padding: 14px 111px;
+    background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+    color: #FFF;
+    text-align: center;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.3%; /* 33.946px */
+    text-transform: uppercase;
+    border-radius: 4px;
+
+
+  }
+}

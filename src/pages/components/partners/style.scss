@@ -1,0 +1,90 @@
+@import "src/assets/variables";
+@import "src/assets/@mixin";
+
+.partners_section{
+  margin-top: 101px;
+}
+
+.partners_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.partners_title h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include adaptive_fontSize(50px , 50);
+  @include adaptive_lineHeight(50px, 50);
+  @include h3_title();
+}
+
+.partners_title h3::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: red;
+  bottom: -10px;
+
+}
+
+.partners_title p {
+  color: $black;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 40px 0 0 ;
+  max-width: 1044px;
+
+
+}
+
+.partners_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin: 35px 0 0 ;
+  flex-wrap: wrap;
+  gap: 12px;
+
+
+}
+
+.partners_item {
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 2.198px;
+  border: 1.099px solid #191923;
+  //min-width: 130px;
+  //min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+}
+
+
+.partners_item:hover .partners_item_bg {
+  opacity: 0;
+
+}
+
+.partners_item span::before {
+  font-size: $fontSize28;
+  color: black;
+  opacity: .7;
+  transition: .3s;
+}
+
+.partners_item:hover span::before {
+  color: blue;
+
+}

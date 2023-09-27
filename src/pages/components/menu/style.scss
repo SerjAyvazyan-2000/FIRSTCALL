@@ -1,0 +1,27 @@
+@import "src/assets/variables";
+.menu_block {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    li{
+
+      a{
+        font-family: Commissioner;
+        color: #191923;
+        font-size: calc($fontSize14 + 4 * (100vw / 1920));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 154.3%; /* 27.774px */
+        text-transform: uppercase;
+
+        &:hover{
+          text-decoration: underline;
+          font-weight: bold;
+
+        }
+      }
+    }
+  }
+}
