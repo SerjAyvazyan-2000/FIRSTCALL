@@ -1,29 +1,33 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.b50b2f2f.css",
+    "main.css": "/FIRSTCALL/static/css/main.a98cc6e0.css",
     "main.js": "/FIRSTCALL/static/js/main.ffcc0bab.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/Property 1=Default (2).png": "/FIRSTCALL/static/media/Property 1=Default (2).4e54691ab03a44e281e0.png",
     "static/media/Property 1=Default (1).png": "/FIRSTCALL/static/media/Property 1=Default (1).452101ad25a3b50bec4c.png",
     "static/media/Property 1=Default.png": "/FIRSTCALL/static/media/Property 1=Default.ac5a0993a8602f40d758.png",
     "static/media/icomoon.svg?xz5yuz": "/FIRSTCALL/static/media/icomoon.f3d29b800e914a0d4127.svg",
-    "static/media/Commissioner-Regular.woff": "/FIRSTCALL/static/media/Commissioner-Regular.1f3c77ca754c376e79f0.woff",
+    "static/media/Commissioner-Bold (1).woff": "/FIRSTCALL/static/media/Commissioner-Bold (1).ccd6283f0d2e0d792f3e.woff",
+    "static/media/Commissioner-Medium.woff": "/FIRSTCALL/static/media/Commissioner-Medium.65dace8c21cd8f308aa7.woff",
     "static/media/Rectangle.png": "/FIRSTCALL/static/media/Rectangle.e16f3a8675d9053651a9.png",
     "static/media/users1.png": "/FIRSTCALL/static/media/users1.6d74d5bca5e2906fecab.png",
-    "static/media/BarlowCondensed-Black.woff": "/FIRSTCALL/static/media/BarlowCondensed-Black.b6f8a75615bc97549134.woff",
+    "static/media/BarlowCondensed-Bold.woff": "/FIRSTCALL/static/media/BarlowCondensed-Bold.3b8002fd12080bb7d785.woff",
+    "static/media/BarlowCondensed-SemiBold.woff": "/FIRSTCALL/static/media/BarlowCondensed-SemiBold.4a105b93c49c45698e54.woff",
+    "static/media/BarlowCondensed-Medium.woff": "/FIRSTCALL/static/media/BarlowCondensed-Medium.69e507ce4e471b3eb77f.woff",
     "static/media/BarlowCondensed-Regular.woff": "/FIRSTCALL/static/media/BarlowCondensed-Regular.85981b86a0d9329e11bd.woff",
+    "static/media/BarlowCondensed-Light.woff": "/FIRSTCALL/static/media/BarlowCondensed-Light.f86426aa4ef00f0bed8e.woff",
     "static/media/user.png": "/FIRSTCALL/static/media/user.86924e36e3b46e7f0b89.png",
     "static/media/icomoon.eot?xz5yuz": "/FIRSTCALL/static/media/icomoon.3a72c000197d910bbced.eot",
     "static/media/icomoon.woff?xz5yuz": "/FIRSTCALL/static/media/icomoon.1f1628d9bf5edaa53df9.woff",
     "static/media/icomoon.ttf?xz5yuz": "/FIRSTCALL/static/media/icomoon.cff03e652107af8103ad.ttf",
     "static/media/rotateLogo.png": "/FIRSTCALL/static/media/rotateLogo.f8c884999fc06094dfc1.png",
     "index.html": "/FIRSTCALL/index.html",
-    "main.b50b2f2f.css.map": "/FIRSTCALL/static/css/main.b50b2f2f.css.map",
+    "main.a98cc6e0.css.map": "/FIRSTCALL/static/css/main.a98cc6e0.css.map",
     "main.ffcc0bab.js.map": "/FIRSTCALL/static/js/main.ffcc0bab.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b50b2f2f.css",
+    "static/css/main.a98cc6e0.css",
     "static/js/main.ffcc0bab.js"
   ]
 }
