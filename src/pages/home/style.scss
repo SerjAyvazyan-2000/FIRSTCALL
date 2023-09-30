@@ -64,7 +64,6 @@
     font-weight: 400;
     line-height: calc($fontSize24 + 76 * (100vw / 1920));
     @include adaptive_fontSize($fontSize28, 70);
-
     text-transform: uppercase;
   }
 
@@ -104,6 +103,7 @@
   }
 }
 .telephone_sales_img{
+  margin-right: 55px;
 transition: .3s;
   &.hover{
     transform: rotate(20deg) scale(.9);
@@ -171,6 +171,5 @@ transition: .3s;
     line-height: 47px;
     text-transform: uppercase;
     display: block;
-    text-align: center;
   }
 }

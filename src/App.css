@@ -1,31 +1,56 @@
 
-.App{
+.App {
     overflow: hidden;
     font-family: Barlow Condensed;
-
-}
-@font-face {
-    font-family: Barlow Condensed ;
-    src: url("assets/fonts/BarlowCondensed-Black.woff");
-    font-style: normal;
-    font-weight: 500;
 }
 
 @font-face {
     font-family: Barlow Condensed ;
-    src: url("assets/fonts/BarlowCondensed-Regular.woff");
+    src: url("assets/fonts/BarlowCondensed-Light.woff");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-Regular.woff")format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-Medium.woff")format("woff");
     font-style: normal;
     font-weight: 500;
+}
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Barlow Condensed ;
+    src: url("assets/fonts/BarlowCondensed-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
 }
 @font-face {
     font-family: Commissioner ;
-    src: url("assets/fonts/Commissioner-Regular.woff");
-    font-style: normal;
+    src: url("assets/fonts/Commissioner-Medium.woff") format("woff");
     font-weight: 500;
+    font-style: normal;
 }
-.red_button{
+@font-face {
+    font-family: Commissioner ;
+    src: url("assets/fonts/Commissioner-Bold (1).woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.red_button {
 
 }
-.white_button{
+
+.white_button {
 
 }
