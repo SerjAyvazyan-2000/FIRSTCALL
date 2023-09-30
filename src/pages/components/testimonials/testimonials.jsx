@@ -2,10 +2,11 @@ import React from 'react';
 import "./style.scss"
 import user from "../../../assets/images/user.png"
 import user1 from "../../../assets/images/users1.png"
+import rotateLogo from "../../../assets/images/rotateLogo.png";
 
 const Testimonials = () => {
     return <section className="testimonials_section">
-        <div className="container">
+        <div className="G-container">
             <div className="testimonials_body">
                 <div className="testimonials_body_title">
                     <h3>Testimonials</h3>

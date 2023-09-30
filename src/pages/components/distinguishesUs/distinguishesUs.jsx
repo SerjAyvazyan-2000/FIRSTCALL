@@ -4,12 +4,13 @@ import logo from "../../../assets/images/Vector.png"
 import image from "../../../assets/images/image.png"
 import image1 from "../../../assets/images/image1.png"
 import image2 from "../../../assets/images/image2.png"
-import image3 from "../../../assets/images/image3.png"
+import image3 from "../../../assets/images/image 230 (1).png"
 import image4 from "../../../assets/images/image4.png"
+import image5 from "../../../assets/images/image 228 (2).png"
 
 const DistinguishesUs = () => {
     return <section className="distinguishes_us_section">
-        <div className="container">
+        <div className="G-container">
             <div className="distinguishes_body">
 
                 <div className="distinguishes_img_block">
@@ -46,7 +47,7 @@ const DistinguishesUs = () => {
                         </div>
                         <div className="distinguishes_img row6">
                             <div className="img_block">
-                                <img src={image4} alt=""/>
+                                <img src={image5} alt=""/>
                             </div>
                         </div>
 
@@ -84,6 +85,7 @@ const DistinguishesUs = () => {
                         <button>SEE MORE</button>
                     </div>
                 </div>
+
 
             </div>
         </div>

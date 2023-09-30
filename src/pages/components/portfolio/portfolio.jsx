@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.scss"
 const Portfolio = () => {
     return <section className="services_portfolio">
-        <div className='container'>
+        <div className='G-container'>
             <div className="services_portfolio_body">
 
                 <div className="services_portfolio_title">

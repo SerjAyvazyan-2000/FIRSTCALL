@@ -1,7 +1,10 @@
 @import "src/assets/variables";
 
 .section_our_services {
-  margin-top: 233px;
+  margin-top: 285px;
+}
+.our_services_content{
+   margin-top: 90px;
 }
 
 .our_services_title {
@@ -30,11 +33,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   margin: 0 0 150px;
   gap: 89px;
 
 
+}
+.our_services_content_item .content_item_text:nth-child(2){
+  flex: inherit;
 }
 
 .content_item_text {
@@ -56,7 +62,7 @@
       width: 20%;
       height: 2px;
       background-color: black;
-      bottom: 20px;
+      bottom: 0;
 
     }
   }

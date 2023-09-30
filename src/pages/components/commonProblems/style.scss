@@ -4,7 +4,7 @@
 .common_problems_section {
   margin-top: 145px;
 
-  .container {
+  .G-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,11 +15,12 @@
 
 .common_problems_absolute {
   position: absolute;
-  border: 2px dashed;
   width: 100%;
   height: 50%;
   border-radius: 4px;
   left: 0;
+  border: 3px dashed;
+  bottom: 200px;
 
 }
 
@@ -47,6 +48,7 @@
       bottom: -5px;
       display: block;
     }
+
     @include adaptive_fontSize(20px, 32);
     @include h3_title();
 
@@ -77,6 +79,18 @@
   flex-wrap: wrap;
   gap: .7%;
 }
+.problems_item_sub_text{
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 0;
+  transition: .3s;
+  padding: 10px;
+  p{
+    color: white;
+  }
+}
 
 .common_problems_red_item {
   width: 16%;
@@ -89,6 +103,7 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 
   span {
     position: absolute;
@@ -97,10 +112,31 @@
     font-size: 40px;
   }
 
+  i {
+    font-size: 50px;
+    color: white;
+  }
+  &:hover .problems_item_sub_text{
+    opacity: 1;
+    visibility: visible;
+    bottom: 60px;
+
+  }
+  &:hover .common_problems_red_item_text,{
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover .common_problems_red_item_img{
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+  }
 }
 
 .common_problems_red_item_text {
   margin: 15px 0 0;
+  transition: .3s;
 
   p {
     color: #FFF;
@@ -144,7 +180,6 @@
 }
 
 
-
 .common_problems_black_items {
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +206,10 @@
     left: 50%;
     font-size: 40px;
     transform: rotate(180deg);
+  }
+  i{
+    font-size: 50px;
+    color: white;
   }
 }
 

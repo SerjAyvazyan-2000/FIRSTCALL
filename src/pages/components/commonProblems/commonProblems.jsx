@@ -9,7 +9,7 @@ import image5 from "../../../assets/images/image5.png"
 
 const CommonProblems = () => {
     return <section className="common_problems_section">
-        <div className="container">
+        <div className="G-container">
             <div className="common_problems_absolute"></div>
             <div className="common_problems_body">
                 <div className="common_problems_title">
@@ -21,64 +21,138 @@ const CommonProblems = () => {
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image} alt=""/>
+                                <i className="icon-bankrupt"></i>
+                                {/*<img src={image} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>High advertising costs</p>
+
+                            </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
                             </div>
                             <span className="icon-Arrow-21"></span>
                         </div>
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image1} alt=""/>
+                                <i className='icon-decision'></i>
+                                {/*<img src={image1} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Unsteady source of customers</p>
                             </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
+                            </div>
+
                             <span className="icon-Arrow-21"></span>
 
                         </div>
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image2} alt=""/>
+                                <i className='icon-workflow'></i>
+                                {/*<img src={image2} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Time-intensive cold calling</p>
                             </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
+                            </div>
+
                             <span className="icon-Arrow-21"></span>
 
                         </div>
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image3} alt=""/>
+                                <i className='icon-sharing'></i>
+                                {/*<img src={image3} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Lack of market presence</p>
                             </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
+                            </div>
+
                             <span className="icon-Arrow-21"></span>
 
                         </div>
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image4} alt=""/>
+                                <i className='icon-qualified'></i>
+
+                                {/*<img src={image4} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Unqualified leads</p>
                             </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
+                            </div>
+
                             <span className="icon-Arrow-21"></span>
 
                         </div>
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <img src={image5} alt=""/>
+                                <i className='icon-decision-making-1'></i>
+
+                                {/*<img src={image5} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Difficult to reach decision-makers</p>
                             </div>
+                            <div className="problems_item_sub_text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                    itaque magni
+                                    quibusdam quidem. Beatae consequuntur
+                                    culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                    quidem
+                                    quis repellendus!
+                                </p>
+                            </div>
+
                             <span className="icon-Arrow-21"></span>
 
                         </div>
@@ -101,10 +175,13 @@ const CommonProblems = () => {
                     <div className="common_problems_black_items">
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image} alt=""/>
+                                <i className="icon-customer-service"></i>
+                                {/*<img src={image} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>High advertising costs</p>
+
+
                             </div>
                             <span className="icon-Arrow-21"></span>
 
@@ -112,7 +189,8 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image1} alt=""/>
+                                <i className="icon-bankrupt"></i>
+                                {/*<img src={image1} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Unsteady source of customers</p>
@@ -123,7 +201,8 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image2} alt=""/>
+                                <i className='icon-customer-service'></i>
+                                {/*<img src={image2} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Time-intensive cold calling</p>
@@ -134,10 +213,13 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image3} alt=""/>
+                                <i className="icon-high-visibility"></i>
+                                {/*<img src={image3} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Lack of market presence</p>
+
+
                             </div>
                             <span className="icon-Arrow-21"></span>
 
@@ -145,7 +227,8 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image4} alt=""/>
+                                <i className="icon-filter"></i>
+                                {/*<img src={image4} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Unqualified leads</p>
@@ -156,7 +239,8 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <img src={image5} alt=""/>
+                                <i className="icon-decision"></i>
+                                {/*<img src={image5} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Difficult to reach decision-makers</p>

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fzvg49');
-  src:  url('fonts/icomoon.eot?fzvg49#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fzvg49') format('truetype'),
-    url('fonts/icomoon.woff?fzvg49') format('woff'),
-    url('fonts/icomoon.svg?fzvg49#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?xz5yuz');
+  src:  url('fonts/icomoon.eot?xz5yuz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xz5yuz') format('truetype'),
+    url('fonts/icomoon.woff?xz5yuz') format('woff'),
+    url('fonts/icomoon.svg?xz5yuz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,108 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-svgxmlbase64:before {
+  content: "\e935";
+}
+.icon-PHN2ZyBjbGFzcz0iZS1mb250LWljb24tc3ZnIGUtZmFiLWxpbmtlZGluIiB2aWV3Qm94PSIwIDAgNDQ4IDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNDE2IDMySDMxLjlDMTQuMyAzMiAwIDQ2LjUgMCA2NC4zdj-1:before {
+  content: "\e935";
+}
+.icon-svgxmlbase642:before {
+  content: "\e936";
+}
+.icon-PHN2ZyBjbGFzcz0iZS1mb250LWljb24tc3ZnIGUtZmFiLXhpbmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNjIuNyAyMTBjLTEuOCAzLjMtMjUuMiA0NC40LTcwLjEgMTIzLj-3:before {
+  content: "\e936";
+}
+.icon-svgxmlbase643:before {
+  content: "\e937";
+}
+.icon-PHN2ZyBjbGFzcz0iZS1mb250LWljb24tc3ZnIGUtZmFiLWluc3RhZ3JhbSIgdmlld0JveD0iMCAwIDQ0OCA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIPHBhdGggZD0iTTIyNC4xIDE0MWMtNjMuNiAwLTExNC45IDUxLjMtMTE0Lj-1:before {
+  content: "\e937";
+}
+.icon-svgxmlbase644:before {
+  content: "\e938";
+}
+.icon-PHN2ZyBjbGFzcz0iZS1mb250LWljb24tc3ZnIGUtZmFyLXN0YXIiIHZpZXdCb3g9IjAgMCA1NzYgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01MjguMSAxNzEuNUwzODIgMTUwLjIgMzE2LjcgMTcuOGMtMTEuNy-1:before {
+  content: "\e938";
+}
+.icon-Envelope:before {
+  content: "\e939";
+}
+.icon-Phone:before {
+  content: "\e93a";
+}
+.icon-customer-service:before {
+  content: "\e904";
+}
+.icon-sale:before {
+  content: "\e906";
+}
+.icon-call-center-agent:before {
+  content: "\e90d";
+}
+.icon-contract:before {
+  content: "\e91f";
+}
+.icon-computer:before {
+  content: "\e921";
+}
+.icon-crm:before {
+  content: "\e922";
+}
+.icon-wallet:before {
+  content: "\e923";
+}
+.icon-sharing:before {
+  content: "\e924";
+}
+.icon-satisfaction:before {
+  content: "\e925";
+}
+.icon-pie-chart:before {
+  content: "\e926";
+}
+.icon-qualified:before {
+  content: "\e927";
+}
+.icon-high-visibility:before {
+  content: "\e928";
+}
+.icon-filter:before {
+  content: "\e929";
+}
+.icon-decision-making:before {
+  content: "\e92a";
+}
+.icon-decision-making-1:before {
+  content: "\e92b";
+}
+.icon-decision:before {
+  content: "\e92c";
+}
+.icon-call:before {
+  content: "\e92d";
+}
+.icon-bankrupt:before {
+  content: "\e92e";
+}
+.icon-introduction:before {
+  content: "\e92f";
+}
+.icon-cloud-computing:before {
+  content: "\e930";
+}
+.icon-calendar:before {
+  content: "\e931";
+}
+.icon-workflow:before {
+  content: "\e932";
+}
+.icon-relationship:before {
+  content: "\e933";
+}
+.icon-mentoring:before {
+  content: "\e934";
+}
 .icon-Frame-5464:before {
   content: "\e902";
 }

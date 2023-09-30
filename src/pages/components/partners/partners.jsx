@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.scss"
 const Partners = () => {
     return <section className="partners_section">
-        <div className="container">
+        <div className="G-container">
             <div className="partners_title">
                 <h3>PARTNERS</h3>
                 <p>We offer more than the usual call centre routine. Our rbroad portfolio ranges from B2B cold calling

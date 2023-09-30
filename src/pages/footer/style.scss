@@ -1,0 +1,146 @@
+@import "src/assets/variables";
+
+.footer {
+  margin-top: 291px;
+}
+
+.footer_container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-column-start: auto;
+
+
+}
+
+.footer_logo {
+}
+
+.footer_menu_row1, .footer_menu_row2, .footer_menu_row3 {
+
+  ul {
+    li {
+      a {
+        margin: 0 0 5px;
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer_contact_icons {
+  display: flex;
+  gap: 31px;
+
+  a {
+    color: #191923;
+    font-size: 20px;
+
+
+  }
+}
+
+.footer_contact_info {
+  margin-top: 27px;
+
+
+  a {
+    color: #191923;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+
+
+
+.footer_contact_location, .footer_contact_phone, .footer_contact_email {
+  display: flex;
+  margin: 0 0 5px;
+}
+
+.footer_contact_info > :not(:last-child) {
+  margin: 0 0 5px;
+
+}
+
+.footer_end {
+  border-radius: 4px;
+  background: #8D1038;
+  padding: 20px 172px;
+  margin-top: 64px;
+
+  p {
+    text-align: center;
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.3%; /* 24.688px */
+    text-transform: uppercase;
+  }
+}
+.footer_end_icon{
+   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_contact_location_phone{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+
+  p{
+  text-align: right;
+  }
+  span{
+     margin-right: 20px;
+    font-size: 20px;
+
+  }
+}
+.footer_contact_phone{
+  span{
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  a{
+
+  }
+
+}
+.footer_contact_email{
+ display: flex;
+  gap: 10px;
+ span{
+   font-size: 20px;
+
+ }
+}

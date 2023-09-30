@@ -4,10 +4,15 @@
 .testimonials_section {
   margin-top: 141px;
   border-top: 1px solid;
-}
-.testimonials_body{
+
 
 }
+
+
+
+
+
+
 .testimonials_body_title {
   display: flex;
   align-items: center;
@@ -32,6 +37,7 @@
       bottom: -10px;
       display: block;
     }
+
     @include adaptive_fontSize(20px, 32);
     @include h3_title();
 
@@ -53,26 +59,29 @@
   position: relative;
 
 
-  .arrow_right{
-     right: 0;
+  .arrow_right {
+    right: 0;
     position: absolute;
     font-size: $fontSize33;
 
   }
-  .arrow_left{
-     left: 0;
+
+  .arrow_left {
+    left: 0;
     position: absolute;
     font-size: $fontSize33;
 
   }
 }
-.testimonials_clients{
-   display: flex;
-   justify-content: center;
+
+.testimonials_clients {
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-top: 62px;
 }
+
 .testimonials_clients_red_block {
   min-width: 582px;
   min-height: 153.261px;
@@ -87,15 +96,17 @@
   border-radius: 4px;
 
 }
-.testimonials_clients_red_block{
-    display: flex;
+
+.testimonials_clients_red_block {
+  display: flex;
   align-items: center;
-   padding: 30px;
+  padding: 30px;
   gap: 30px;
 
 
 }
-.testimonials_clients_white_block{
+
+.testimonials_clients_white_block {
   display: flex;
   padding: 30px;
   align-items: center;
@@ -104,17 +115,20 @@
 
 
 }
-.testimonials_clients_red_block_text{
+
+.testimonials_clients_red_block_text {
   max-width: 334px;
-  p{
-     margin: 30px 0 0 ;
+
+  p {
+    margin: 30px 0 0;
     color: #FFF;
     font-size: 26px;
     font-style: italic;
     font-weight: 400;
     line-height: 100%; /* 26px */
   }
-  h3{
+
+  h3 {
     color: white;
     font-size: $fontSize24;
     font-style: normal;
@@ -125,11 +139,12 @@
   }
 
 }
-.testimonials_clients_white_block_text{
+
+.testimonials_clients_white_block_text {
   max-width: 334px;
 
-  p{
-    margin: 30px 0 0 ;
+  p {
+    margin: 30px 0 0;
     color: $black;
 
     font-size: 26px;
@@ -138,7 +153,8 @@
     line-height: 100%; /* 26px */
 
   }
-  h3{
+
+  h3 {
     color: $red;
     font-size: $fontSize24;
     font-style: normal;
@@ -148,16 +164,17 @@
   }
 
 }
-.testimonials_more_btn{
-   margin-top: 60px;
+
+.testimonials_more_btn {
+  margin-top: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 
-  button{
-     padding: 15px 100px;
+  button {
+    padding: 15px 100px;
     border-radius: 4px;
     color: white;
     text-transform: uppercase;

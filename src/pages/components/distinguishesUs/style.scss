@@ -3,6 +3,10 @@
 
 .distinguishes_us_section {
   margin-top: 153px;
+
+  .G-container{
+     padding: 0 40px;
+  }
 }
 
 .distinguishes_body {
@@ -13,7 +17,6 @@
 .distinguishes_img_block {
   min-width: 489px;
   min-height: 480px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +29,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
 
 }
 //Images start
@@ -51,22 +56,22 @@
 
 }
 .row3{
-  top: -5px;
+  top: -30px;
   left: 30px;
 
 }
 .row4{
-  bottom: -5px;
+  bottom: -30px;
   left: 10px;
 
 }
 .row5{
-  bottom: -5px;
+  bottom: -30px;
   right: 30px;
 
 }
 .row6{
-  top: -5px;
+  top: -30px;
   right: 30px;
 
 }
@@ -147,4 +152,11 @@
 
 
   }
+}
+.distinguishes_btn{
+   padding: 60px 14px;
+  border-radius: 4px;
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+
+
 }
