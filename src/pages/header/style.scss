@@ -28,10 +28,10 @@
 .header_language {
   display: flex;
   align-items: center;
+  gap: 17px;
 }
 
 .header_language a {
-  margin: 0 25px;
   font-size: $fontSize13;
   font-style: normal;
   font-weight: 700;
