@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.999ef763.css",
-    "main.js": "/FIRSTCALL/static/js/main.f531cd21.js",
+    "main.css": "/FIRSTCALL/static/css/main.3bad3892.css",
+    "main.js": "/FIRSTCALL/static/js/main.2da4966a.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/Property 1=Default (2).png": "/FIRSTCALL/static/media/Property 1=Default (2).4e54691ab03a44e281e0.png",
     "static/media/Property 1=Default (1).png": "/FIRSTCALL/static/media/Property 1=Default (1).452101ad25a3b50bec4c.png",
@@ -22,12 +22,12 @@
     "static/media/icomoon.ttf?xz5yuz": "/FIRSTCALL/static/media/icomoon.cff03e652107af8103ad.ttf",
     "static/media/rotateLogo.png": "/FIRSTCALL/static/media/rotateLogo.f8c884999fc06094dfc1.png",
     "index.html": "/FIRSTCALL/index.html",
-    "main.999ef763.css.map": "/FIRSTCALL/static/css/main.999ef763.css.map",
-    "main.f531cd21.js.map": "/FIRSTCALL/static/js/main.f531cd21.js.map",
+    "main.3bad3892.css.map": "/FIRSTCALL/static/css/main.3bad3892.css.map",
+    "main.2da4966a.js.map": "/FIRSTCALL/static/js/main.2da4966a.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.999ef763.css",
-    "static/js/main.f531cd21.js"
+    "static/css/main.3bad3892.css",
+    "static/js/main.2da4966a.js"
   ]
 }
