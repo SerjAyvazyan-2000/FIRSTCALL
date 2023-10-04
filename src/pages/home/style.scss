@@ -1,19 +1,37 @@
 @import "src/assets/variables";
 @import "src/assets/@mixin";
 
-.left_border_block {
+
+.left_border_block_long {
   position: absolute;
-  height: 100%;
-  width: 1px;
-  left: 40px;
+  height: 0;
+  width: 2px;
+  left: 20px;
   top: 0;
   background-color: black;
+  transition: 3s;
+
+  &.active {
+    height: 100%;
+
+  }
 }
 
-.section_telephone_sales {
-  margin-top: 101px;
+.left_border_block {
+  position: absolute;
+  height: 0;
+  width: 2px;
+  left: 20px;
+  top: 0;
+  background-color: black;
+  transition: 3s;
 
+  &.active {
+    height: 100%;
+
+  }
 }
+
 
 .rotate_logo_block {
   min-height: 100px;
@@ -32,10 +50,16 @@
 .border_top_block {
   position: absolute;
   height: 1px;
-  width: 80%;
-  left: 40px;
+  width: 0;
+  left: 20px;
   bottom: 0;
-  background-color: black;
+  background-color: $black;
+  transition: 3s;
+
+  &.active {
+    width: 80%;
+
+  }
 }
 
 @keyframes logo {
@@ -49,17 +73,54 @@
 
 }
 
+
+.our_telephone_sales_section {
+  background: $backgroundGradient;
+  padding: 10px 0 20px 0;
+
+}
+
+.telephone_middle_border {
+  position: relative;
+  min-height: 110px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0;
+    background-color: black;
+    transition: 3s;
+    left: 50.4%;
+
+
+  }
+
+  &.active {
+    &::before {
+      height: 100%;
+    }
+  }
+}
+
 .section_telephone_sales_content {
   position: relative;
+  margin: 70px 0 0;
 
   &::before {
     content: '';
     position: absolute;
     right: 0;
-    top: -20px;
-    width: 20%;
-    height: 1px;
+    top: 0;
+    width: 0;
+    height: 2px;
     background-color: $black;
+    transition: 3s;
+  }
+
+  &.active::before {
+    width: 20%;
+
   }
 }
 
@@ -75,6 +136,7 @@
     position: absolute;
 
   }
+
 }
 
 .telephone_sales_body {
@@ -83,20 +145,25 @@
   &::before {
     position: absolute;
     content: '';
-    width: 1px;
-    height: 30%;
+    width: 2px;
+    height: 0;
     background-color: black;
     right: 0;
-    top: 0;
+    top: 30px;
+    transition: 3s;
+  }
+
+  &.active::before {
+    height: 30%;
+
   }
 }
 
 .telephone_sales_text {
-  padding: 42px 0 0 0;
+  padding: 30px 0 0 0;
   position: relative;
 
   h3 {
-    //font-size 100px
     font-size: calc($fontSize28 + 72 * (100vw / 1920));
     max-width: 624px;
     color: $black;
@@ -182,24 +249,36 @@
   &::before {
     position: absolute;
     content: '';
-    width: 1px;
-    height: 120px;
+    width: 2px;
+    height: 0;
     background-color: $black;
     top: 0;
     right: 560px;
+    transition: 3s;
 
   }
 
   &::after {
     position: absolute;
     content: '';
-    width:200px;
-    height: 1px;
+    width: 0;
+    height: 2px;
     right: 400px;
     background-color: $black;
     bottom: 0;
+    transition: 3s;
   }
 
+  &.active {
+    &::after{
+       width: 200px;
+    }
+    &::before{
+      height: 120px;
+
+
+    }
+  }
 }
 
 .home_ellipse_large {
@@ -233,36 +312,6 @@
   justify-content: center;
 }
 
-.our_telephone_sales_section {
-  margin-top: 110px;
-  background: $backgroundGradient;
-  padding: 10px 0 20px 0;
 
-}
 
-.our_telephone_sales_content {
 
-  h3 {
-    color: $white;
-    text-align: center;
-    //font-size: $fontSize54;
-    font-size: calc($fontSize20 + 34 * (100vw / 1920));
-    font-style: normal;
-    font-weight: 400;
-    line-height: calc(20px + 65 * (100vw / 1920));
-
-    text-transform: uppercase;
-
-  }
-
-  span {
-    color: $white;
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 47px;
-    text-transform: uppercase;
-    display: block;
-  }
-}

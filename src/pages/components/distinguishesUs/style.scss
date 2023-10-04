@@ -160,3 +160,54 @@
 
 
 }
+
+.animation_line{
+  min-height: 300px;
+  position: relative;
+
+
+  span{
+    position: absolute;
+    height: 0;
+    width: 2px;
+    top: 140px;
+    left: 850px;
+    background-color: black;
+    transition: 3s;
+
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top: 140px;
+    left: 300px;
+    background-color: black;
+    transition: 3s;
+
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: black;
+    left: 300px;
+    transition: 3s;
+  }
+  &.active{
+
+    &::after{
+      height: 140px;
+    }
+    &::before{
+      width: 550px;
+
+    }
+    span{
+      height: 140px;
+    }
+  }
+}
+

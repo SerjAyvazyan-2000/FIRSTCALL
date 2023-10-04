@@ -43,10 +43,18 @@
       content: '';
       background-color: $red;
       position: absolute;
-      width: 20%;
-      height: 1px;
+      width: 0;
+      height: 2px;
       bottom: -5px;
       display: block;
+      transition: 3s;
+    }
+
+    &.active {
+      &::before {
+        width: 30%;
+
+      }
     }
 
     @include adaptive_fontSize(20px, 32);
@@ -79,7 +87,8 @@
   flex-wrap: wrap;
   gap: .7%;
 }
-.problems_item_sub_text{
+
+.problems_item_sub_text {
   position: absolute;
   left: 0;
   opacity: 0;
@@ -87,8 +96,10 @@
   bottom: 0;
   transition: .3s;
   padding: 10px;
-  p{
+
+  p {
     color: white;
+    text-align: center;
   }
 }
 
@@ -110,23 +121,27 @@
     bottom: -40px;
     left: 50%;
     font-size: 40px;
+
   }
 
   i {
     font-size: 50px;
     color: white;
   }
-  &:hover .problems_item_sub_text{
+
+  &:hover .problems_item_sub_text {
     opacity: 1;
     visibility: visible;
     bottom: 60px;
 
   }
-  &:hover .common_problems_red_item_text,{
+
+  &:hover .common_problems_red_item_text, {
     opacity: 0;
     visibility: hidden;
   }
-  &:hover .common_problems_red_item_img{
+
+  &:hover .common_problems_red_item_img {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -207,7 +222,8 @@
     font-size: 40px;
     transform: rotate(180deg);
   }
-  i{
+
+  i {
     font-size: 50px;
     color: white;
   }

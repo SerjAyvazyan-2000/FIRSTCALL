@@ -1,0 +1,15 @@
+
+
+.right_border_element {
+  background: black;
+  z-index: -1;
+  top: 0;
+  width: 2px;
+  height: 0;
+
+  &.active {
+    height: 57px;
+    transition: 3s;
+
+  }
+}

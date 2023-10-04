@@ -4,11 +4,13 @@ import Header from "./pages/header/header";
 import "./assets/icons/style.css"
 import Home from "./pages/home/home";
 import Footer from "./pages/footer/footer";
+import React from "react";
 
 function App() {
     return (
         <div className="App">
             <Header/>
+
             <Home/>
             <Footer/>
         </div>

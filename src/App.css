@@ -3,7 +3,21 @@
     overflow: hidden;
     font-family: Barlow Condensed;
 }
+.animation_svg_bock{
+    position: relative;
+}
+.line_container{
 
+
+}
+.animation_svg_line{
+
+
+
+}
+.line1{
+     stroke: black;
+}
 @font-face {
     font-family: Barlow Condensed ;
     src: url("assets/fonts/BarlowCondensed-Light.woff");

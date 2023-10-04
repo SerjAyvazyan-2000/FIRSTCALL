@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./style.scss"
 import image from "../../../assets/images/image.png"
 import image1 from "../../../assets/images/image1.png"
@@ -6,14 +6,19 @@ import image2 from "../../../assets/images/image2.png"
 import image3 from "../../../assets/images/image3.png"
 import image4 from "../../../assets/images/image4.png"
 import image5 from "../../../assets/images/image5.png"
+import useIntersection from "../../hooks/useIntersection ";
 
 const CommonProblems = () => {
-    return <section className="common_problems_section">
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+
+    return <section ref={lastElement} className="common_problems_section">
         <div className="G-container">
             <div className="common_problems_absolute"></div>
             <div className="common_problems_body">
                 <div className="common_problems_title">
-                    <h3>Common problems in B2B new customer acquisition</h3>
+                    <h3 className={isVisible ? "active" : null} >Common problems in B2B new customer acquisition</h3>
                     <p>Maximise your efficiency, visibility and profitability</p>
                 </div>
                 <div className="common_problems_list">

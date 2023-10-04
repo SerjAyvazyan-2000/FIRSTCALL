@@ -10,14 +10,20 @@ import Testimonials from "../components/testimonials/testimonials";
 import DistinguishesUs from "../components/distinguishesUs/distinguishesUs";
 import CooperationWork from "../components/cooperationWork/cooperationWork";
 import ConsultationForm from "../components/consultation/ consultation";
-import Consultation from "../components/consultation/ consultation";
 import rotateLogo from "../../assets/images/rotateLogo.png"
 import {motion} from "framer-motion"
+import TelephoneSales from "../components/telefonSales/telephoneSales";
+import useIntersection from "../hooks/useIntersection ";
 
 
 const Home = () => {
+
+    const lastElement = useRef(null);
+    const observer = useRef(null);
     const ref = useRef()
     const [scale, setScale] = useState(false)
+    const {isVisible} = useIntersection(observer, lastElement)
+
     const mouseOver = (e) => {
         if (!scale) {
             setScale(true)
@@ -40,13 +46,15 @@ const Home = () => {
             opacity: 1
         }
     }
+
     return <>
-        <motion.section initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
+
+        <motion.section ref={lastElement}  initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
             <div className="G-container">
-                <div className="left_border_block"></div>
-                <div className="section_telephone_sales_content ">
+                <div className={ isVisible ? "left_border_block_long active" : "left_border_block_long"}></div>
+                <div className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
                     <div className="container ">
-                        <div className="telephone_sales_body">
+                        <div className={isVisible ? "telephone_sales_body active" : "telephone_sales_body"}>
 
                             <div className="telephone_sales_content">
                                 <motion.div variants={textAnimation} className="telephone_sales_text">
@@ -63,7 +71,7 @@ const Home = () => {
                                 </div>
 
                             </div>
-                            <div className="home_ellipse_block">
+                            <div className={isVisible ? "home_ellipse_block active" :"home_ellipse_block"}>
                                 <div className="home_ellipse_large">
                                     <div className="home_ellipse_medium">
                                         <div className="home_ellipse_small">
@@ -75,12 +83,6 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/*<div className="home_ellipse">*/}
-                            {/*    <div className="home_ellipse_img">*/}
-                            {/*        <img src={ellipse} alt=""/>*/}
-                            {/*    </div>*/}
-                            {/*    /!*<div className="home_ellipse_border_top"></div>*!/*/}
-                            {/*</div>*/}
 
                         </div>
 
@@ -93,8 +95,8 @@ const Home = () => {
 
         <section className="section_rotate_logo">
             <div className="G-container">
-                <div className="left_border_block"></div>
-                <div className="border_top_block"></div>
+                <div className={ isVisible ? "left_border_block active" : 'left_border_block'}></div>
+                <div className={isVisible ? "border_top_block active" : "border_top_block"}></div>
                 <div className="rotate_logo_block">
                     <div className={`rotate_logo`}>
                         <img src={rotateLogo} alt=""/>
@@ -102,17 +104,9 @@ const Home = () => {
                 </div>
             </div>
         </section>
-
-
         <OurServices/>
-        <section className="our_telephone_sales_section">
-            <div className="container">
-                <div className="our_telephone_sales_content">
-                    <h3>"We set the standards in B2B telephone sales - Let's take off together".</h3>
-                    <span>Irma Kern</span>
-                </div>
-            </div>
-        </section>
+        <TelephoneSales/>
+
         <Partners/>
         <Portfolio/>
         <CommonProblems/>

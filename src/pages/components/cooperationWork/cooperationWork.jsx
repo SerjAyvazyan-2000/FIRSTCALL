@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./style.scss"
-import image from "../../../assets/images/image.png"
+import image from "../../../assets/images/contract 1.png"
 import image1 from "../../../assets/images/image1.png"
 import image2 from "../../../assets/images/image2.png"
 import image3 from "../../../assets/images/image3.png"
 import image4 from "../../../assets/images/image4.png"
 import image5 from "../../../assets/images/image5.png"
+import useIntersection from "../../hooks/useIntersection ";
 
 const CooperationWork = () => {
-    return <section className='cooperation_work_section'>
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+    return <>
+    <section ref={lastElement} className='cooperation_work_section'>
         <div className="G-container">
             <div className="cooperation_title">
                 <h3>How does the cooperation work</h3>
@@ -110,6 +115,9 @@ const CooperationWork = () => {
             </div>
         </div>
     </section>
+            <div className={isVisible ? "telephone_middle_border active" : "telephone_middle_border"}></div>
+
+    </>
 };
 
 export default CooperationWork;

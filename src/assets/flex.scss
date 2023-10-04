@@ -4,8 +4,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  //border-left: 4px solid red;
-  //border-right: 4px solid red;
+  //border-left: 2px solid red;
+  //border-right: 2px solid red;
   position: relative;
 }
 .container{
@@ -13,8 +13,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  //border-left: 4px solid green;
-  //border-right: 4px solid green;
+  //border-left: 2px solid green;
+  //border-right: 2px solid green;
 
 
 
@@ -24,7 +24,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.G-justify-flex-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.G-justify-flex-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .G-flex {
   display: flex;
 }

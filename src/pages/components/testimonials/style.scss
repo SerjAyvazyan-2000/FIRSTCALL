@@ -3,16 +3,13 @@
 
 .testimonials_section {
   margin-top: 141px;
-  border-top: 1px solid;
-
 
 
 }
 
 
-
-.testimonials_body{
-   position: relative;
+.testimonials_body {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,6 +30,25 @@
     margin-top: 62px;
 
   }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: $black;
+    transition: 3s;
+    top: 0;
+
+  }
+  &.active{
+    &::before{
+      width: 100%;
+
+    }
+
+  }
+
 
 }
 
@@ -88,7 +104,6 @@
   margin-top: 62px;
 
 }
-
 
 
 .testimonials_clients_red_block {
@@ -180,6 +195,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
 
   button {
@@ -193,5 +209,20 @@
     font-weight: 400;
     line-height: 154.3%; /* 33.946px */
     background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0;
+    background-color: $black;
+    transition: 3s;
+    top: -60px;
+    left: 20%;
+  }
+
+  &.active::after{
+    height: 225px;
+
   }
 }

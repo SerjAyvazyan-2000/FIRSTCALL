@@ -1,0 +1,29 @@
+@import "src/assets/variables";
+
+.our_telephone_sales_content {
+
+
+  h3 {
+    color: $white;
+    text-align: center;
+    //font-size: $fontSize54;
+    font-size: calc($fontSize20 + 34 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(20px + 65 * (100vw / 1920));
+
+    text-transform: uppercase;
+
+  }
+
+  span {
+    color: $white;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+    text-transform: uppercase;
+    display: block;
+  }
+}

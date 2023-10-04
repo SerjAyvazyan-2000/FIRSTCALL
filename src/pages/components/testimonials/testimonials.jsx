@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./style.scss"
 import user from "../../../assets/images/user.png"
 import user1 from "../../../assets/images/users1.png"
 import rotateLogo from "../../../assets/images/rotateLogo.png";
+import useIntersection from "../../hooks/useIntersection ";
 
 const Testimonials = () => {
-    return <section className="testimonials_section">
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+
+    return <section ref={lastElement} className="testimonials_section">
         <div className="G-container">
-            <div className="testimonials_body">
+
+            <div className={isVisible ? "testimonials_body active" : 'testimonials_body'}>
                 <div className="testimonials_body_title">
                     <h3>Testimonials</h3>
                     <p>See what our clients say about our services and how we helped them achieve their goals.</p>
@@ -40,12 +46,13 @@ const Testimonials = () => {
 
                 <span className="icon-arrow-left2 arrow_left"></span>
 
-                <div className="testimonials_more_btn">
+                <div className={isVisible ? "testimonials_more_btn active" : "testimonials_more_btn"}>
                     <button>Load MORE</button>
                 </div>
 
             </div>
         </div>
+
     </section>
 };
 

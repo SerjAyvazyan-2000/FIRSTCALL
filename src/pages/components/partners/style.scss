@@ -2,7 +2,6 @@
 @import "src/assets/@mixin";
 
 .partners_section{
-  margin-top: 101px;
 }
 
 .partners_title {
@@ -22,13 +21,23 @@
   @include h3_title();
 }
 
-.partners_title h3::before {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  background-color: red;
-  bottom: -10px;
+.partners_title{
+  h3{
+     position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: red;
+      bottom: -10px;
+      transition: 3s;
+    }
+    &.active::before{
+      width: 50%;
+
+    }
+  }
 
 }
 

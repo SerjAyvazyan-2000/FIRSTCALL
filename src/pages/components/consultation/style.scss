@@ -2,7 +2,7 @@
 @import "src/assets/@mixin";
 
 .consultation_section {
-  margin-top: 104px;
+  //margin-top: 104px;
   background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
 
 }
@@ -24,8 +24,9 @@
     font-weight: 400;
     line-height: 62px; /* 62px */
     text-transform: uppercase;
-    max-width: 557px;
+    max-width: 607px;
     flex: 1 1 auto;
+
 
     @include adaptive_fontSize(20px, 42)
   }
@@ -52,7 +53,7 @@
 }
 
 .input_block {
-  margin-top: 14px;
+  margin-top: 16px;
   span {
     color: #FFF;
     font-size: $fontSize22;
@@ -115,4 +116,46 @@
    padding: 14px 160px;
   border-radius: 4px;
 
+}
+
+.consultation_middle_border {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0;
+    background-color: black;
+    transition: 3s;
+    left: 50.4%;
+
+
+  }
+
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    transition: 3s;
+
+
+  }
+  &.active {
+    &::before {
+      height: 100%;
+    }
+    &::after{
+      width: 100%;
+
+    }
+  }
 }

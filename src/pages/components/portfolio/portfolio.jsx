@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./style.scss"
+import useIntersection from "../../hooks/useIntersection ";
 const Portfolio = () => {
-    return <section className="services_portfolio">
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+
+    return <section ref={lastElement} className="services_portfolio">
         <div className='G-container'>
             <div className="services_portfolio_body">
 
                 <div className="services_portfolio_title">
-                    <h3>SERVICES PORTFOLIO</h3>
+                    <h3 className={isVisible ? "active" : null}>SERVICES PORTFOLIO</h3>
                     <p>We offer more than the usual call centre routine. Our rbroad portfolio ranges from B2B cold
                         calling
                         and
@@ -17,7 +22,7 @@ const Portfolio = () => {
 
                 <div className="services_portfolio_items">
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null} >B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
@@ -25,7 +30,7 @@ const Portfolio = () => {
                             customers.</i>
                     </div>
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
@@ -33,7 +38,7 @@ const Portfolio = () => {
                             customers.</i>
                     </div>
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
@@ -41,7 +46,7 @@ const Portfolio = () => {
                             customers.</i>
                     </div>
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
@@ -49,7 +54,7 @@ const Portfolio = () => {
                             customers.</i>
                     </div>
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
@@ -57,7 +62,7 @@ const Portfolio = () => {
                             customers.</i>
                     </div>
                     <div className="services_portfolio_item">
-                        <h3>B2B cold calling Sales assistance</h3>
+                        <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i >With us as your partner, you have more time to focus on your core tasks while
