@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.3bad3892.css",
-    "main.js": "/FIRSTCALL/static/js/main.2da4966a.js",
+    "main.css": "/FIRSTCALL/static/css/main.ae869885.css",
+    "main.js": "/FIRSTCALL/static/js/main.bcbad099.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/Property 1=Default (2).png": "/FIRSTCALL/static/media/Property 1=Default (2).4e54691ab03a44e281e0.png",
     "static/media/Property 1=Default (1).png": "/FIRSTCALL/static/media/Property 1=Default (1).452101ad25a3b50bec4c.png",
     "static/media/Property 1=Default.png": "/FIRSTCALL/static/media/Property 1=Default.ac5a0993a8602f40d758.png",
-    "static/media/icomoon.svg?xz5yuz": "/FIRSTCALL/static/media/icomoon.f3d29b800e914a0d4127.svg",
+    "static/media/icomoon.svg?2gyxsj": "/FIRSTCALL/static/media/icomoon.a722b8f89107633fb056.svg",
     "static/media/Commissioner-Bold (1).woff": "/FIRSTCALL/static/media/Commissioner-Bold (1).ccd6283f0d2e0d792f3e.woff",
     "static/media/Commissioner-Medium.woff": "/FIRSTCALL/static/media/Commissioner-Medium.65dace8c21cd8f308aa7.woff",
     "static/media/Rectangle.png": "/FIRSTCALL/static/media/Rectangle.e16f3a8675d9053651a9.png",
@@ -17,17 +17,17 @@
     "static/media/BarlowCondensed-Regular.woff": "/FIRSTCALL/static/media/BarlowCondensed-Regular.85981b86a0d9329e11bd.woff",
     "static/media/BarlowCondensed-Light.woff": "/FIRSTCALL/static/media/BarlowCondensed-Light.f86426aa4ef00f0bed8e.woff",
     "static/media/user.png": "/FIRSTCALL/static/media/user.86924e36e3b46e7f0b89.png",
-    "static/media/icomoon.eot?xz5yuz": "/FIRSTCALL/static/media/icomoon.3a72c000197d910bbced.eot",
-    "static/media/icomoon.woff?xz5yuz": "/FIRSTCALL/static/media/icomoon.1f1628d9bf5edaa53df9.woff",
-    "static/media/icomoon.ttf?xz5yuz": "/FIRSTCALL/static/media/icomoon.cff03e652107af8103ad.ttf",
+    "static/media/icomoon.eot?2gyxsj": "/FIRSTCALL/static/media/icomoon.222c0ddeb6ee9b1832fb.eot",
+    "static/media/icomoon.woff?2gyxsj": "/FIRSTCALL/static/media/icomoon.4abc34a99880fd65ffb9.woff",
+    "static/media/icomoon.ttf?2gyxsj": "/FIRSTCALL/static/media/icomoon.48db3ee675e559768f33.ttf",
     "static/media/rotateLogo.png": "/FIRSTCALL/static/media/rotateLogo.f8c884999fc06094dfc1.png",
     "index.html": "/FIRSTCALL/index.html",
-    "main.3bad3892.css.map": "/FIRSTCALL/static/css/main.3bad3892.css.map",
-    "main.2da4966a.js.map": "/FIRSTCALL/static/js/main.2da4966a.js.map",
+    "main.ae869885.css.map": "/FIRSTCALL/static/css/main.ae869885.css.map",
+    "main.bcbad099.js.map": "/FIRSTCALL/static/js/main.bcbad099.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bad3892.css",
-    "static/js/main.2da4966a.js"
+    "static/css/main.ae869885.css",
+    "static/js/main.bcbad099.js"
   ]
 }
