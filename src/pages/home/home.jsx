@@ -56,44 +56,46 @@ const Home = () => {
             opacity: 1
         }
     }
-    // const  getSectionInfo = () => {
-    //     window.addEventListener("scroll", () => {
-    //         const sectionHeight = homeSection.current.getBoundingClientRect().height;
-    //         setSectionInfo((prevState) => (
-    //             {...prevState, scrollY: window.scrollY, sectionY: sectionHeight}
-    //
-    //
-    //         ))
-    //     })
-    //
-    // }
-    //
-    // useEffect(() => {
-    //     getSectionInfo()
-    //
-    // }, [])
-    //
-    // useEffect(() => {
-    //     let lineLength = svgLeftLine.current.getTotalLength()
-    //     // svgLeftLine.current.style.strokeDashoffset = lineLength + '' + lineLength
-    //     window.addEventListener("scroll",()=>{
-    //         let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
-    //         let drawLength = lineLength * scrollPercentage
-    //         // svgLeftLine.current.style.lineDashoffset = lineLength - drawLength
-    //
-    //     })
-    // }, [])
-    //
-    // useEffect(() => {
-    //     let lineLength = svgTopLine.current.getTotalLength()
-    //     svgTopLine.current.style.strokeDashoffset = lineLength + ' ' + lineLength
-    //     window.addEventListener("scroll",()=>{
-    //         let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
-    //         let drawLength = lineLength * scrollPercentage
-    //         svgTopLine.current.style.lineDashoffset = lineLength - drawLength
-    //
-    //     })
-    // }, [])
+    const  getSectionInfo = () => {
+        window.addEventListener("scroll", () => {
+            const sectionHeight = homeSection.current.getBoundingClientRect().height;
+            setSectionInfo((prevState) => (
+                {...prevState, scrollY: window.scrollY, sectionY: sectionHeight}
+
+
+            ))
+        })
+
+    }
+
+    useEffect(() => {
+        getSectionInfo()
+
+    }, [])
+
+    useEffect(() => {
+        let lineLength = svgLeftLine.current.getTotalLength()
+        // svgLeftLine.current.style.strokeDashoffset = lineLength + '' + lineLength
+        window.addEventListener("scroll",()=>{
+            let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
+            let drawLength = lineLength * scrollPercentage
+            // svgLeftLine.current.style.lineDashoffset = lineLength - drawLength
+
+        })
+    }, [])
+
+    useEffect(() => {
+        let lineLength = svgTopLine.current.getTotalLength()
+        svgTopLine.current.style.strokeDashoffset = lineLength + ' ' + lineLength
+        window.addEventListener("scroll",()=>{
+            let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
+            let drawLength = lineLength * scrollPercentage
+            svgTopLine.current.style.lineDashoffset = lineLength - drawLength
+
+        })
+    }, [])
+
+
 
 
     return <>
@@ -101,11 +103,21 @@ const Home = () => {
                         className="section_telephone_sales">
             <div className="G-container">
 
-                <div className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
-                    <div className={isVisible ? "left_border_block active" : 'left_border_block'}></div>
+                <div  style={{position:'relative'}} className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
+                    <div className="line_left_border_block">
+                        <svg width="750" height={sectionInfo.scrollY}>
+                            <line ref={svgLeftLine} x1="1" y1="1" x2="550" y2="550" stroke="black" stroke-width="2"/>
+                        </svg>
 
+                    </div>
+                    <div  className="line_top_border_block">
+                        <svg height='0' width={sectionInfo.scrollY}>
+                            <line ref={svgTopLine}  x1="1" y1="1" x2="750" y2="5" stroke="black" stroke-width="2" />
+                        </svg>
+                    </div>
                     <div className="container ">
                         <div className={isVisible ? "telephone_sales_body active" : "telephone_sales_body"}>
+
                             <div className="telephone_sales_content">
                                 <motion.div variants={textAnimation} className="telephone_sales_text">
                                     <h3>Excellence in telephone sales</h3>
@@ -145,8 +157,8 @@ const Home = () => {
 
         <section className="section_rotate_logo">
             <div className="G-container">
-                <div className={isVisible ? "left_border_block active" : 'left_border_block'}></div>
-                <div className={isVisible ? "border_top_block active" : "border_top_block"}></div>
+                {/*<div className={isVisible ? "left_border_block active" : 'left_border_block'}></div>*/}
+                {/*<div className={isVisible ? "border_top_block active" : "border_top_block"}></div>*/}
                 <div className="rotate_logo_block">
                     <div className={`rotate_logo`}>
                         <img src={rotateLogo} alt=""/>
