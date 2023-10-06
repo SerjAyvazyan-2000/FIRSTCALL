@@ -6,7 +6,6 @@ const useIntersection = (observer,lastElement) => {
     useEffect(() => {
         let callback = (entries, observer) => {
             if (entries[0].isIntersecting) {
-                console.log("show div")
                 setIsVisible(true)
             }else {
                 setIsVisible(false)

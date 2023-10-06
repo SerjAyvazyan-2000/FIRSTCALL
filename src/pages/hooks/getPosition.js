@@ -1,28 +1,41 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
-const useGetPosition = (itemParent, elementChild1, elementChild2, elementChild3,elementImg) => {
-    const [marginParent, setMarginParent] = useState(0);
-    const [imgCenter, setImgCenter] = useState(0);
 
-    const getPositionParent = () => {
-        const heightParent = itemParent.current.clientHeight
-        const heightItem1 = elementChild1.current.clientHeight
-        const heightItem2 = elementChild2.current.clientHeight
-        const heightItem3 = elementChild3.current.clientHeight
-        const itemsHeight = heightItem2 + heightItem1 + heightItem3
-        const result = heightParent - itemsHeight
-        setMarginParent(result / 3)
-        return marginParent
-    };
+const useGetPosition = (svgBorder, sectionElement) => {
+    const [sectionInfo, setSectionInfo] = useState({
+        sectionY: 0,
+        scrollY: 0
+    })
 
-    const getPositionImage = () => {
-        let X = elementImg.current.offsetWidth
-        let Y = elementImg.current.offsetHeight
-        let result = X / 2
-        setImgCenter(result)
+    const getSectionInfo = () => {
+        window.addEventListener("scroll", () => {
+            const sectionHeight = sectionElement.current.getBoundingClientRect().height;
+            setSectionInfo((prevState) => (
+                {...prevState, scrollY: window.scrollY, sectionY: sectionHeight}
+
+            ))
+            return sectionInfo
+        })
+        return sectionInfo
+
     }
 
-    return {getPositionParent}
+    const getSvgLeftBorder = () => {
+        let lineLength = svgBorder.current.getTotalLength()
+        svgBorder.current.style.strokeDashoffset = lineLength + '' + lineLength
+        window.addEventListener("scroll", () => {
+            let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
+            let drawLength = lineLength * scrollPercentage
+            svgBorder.current.style.lineDashoffset = lineLength - drawLength
+
+
+        })
+
+    }
+
+
+
+    return {getSectionInfo,getSvgLeftBorder}
 
 }
 export default useGetPosition

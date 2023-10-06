@@ -2,6 +2,128 @@
 @import "src/assets/@mixin";
 
 
+.section_telephone_sales_content {
+  margin: 150px 0 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 0;
+    height: 2px;
+    background-color: $black;
+    transition: 3s;
+  }
+
+  &.active::before {
+    width: 20%;
+
+  }
+
+}
+
+
+.telephone_sales_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 120px 0 0;
+
+
+  &::before {
+    content: '';
+    background-color: black;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+
+  }
+
+}
+
+.telephone_sales_body {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0;
+    background-color: black;
+    right: 0;
+    top: 60px;
+    transition: 3s;
+  }
+
+  &.active::before {
+    height: 30%;
+
+  }
+}
+
+.telephone_sales_text {
+  padding: 30px 0 0 0;
+  position: relative;
+
+  h3 {
+    font-size: calc($fontSize28 + 72 * (100vw / 1920));
+    max-width: 624px;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc($fontSize24 + 76 * (100vw / 1920));
+    @include adaptive_fontSize($fontSize28, 70);
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $black;
+    font-size: calc($fontSize17 + 33 * (100vw / 1920));
+    font-style: italic;
+    font-weight: 300;
+    line-height: calc(15px + 33 * (100vw / 1920));
+    text-transform: capitalize;
+    margin: 18px 0 0;
+    max-width: 513px;
+
+  }
+
+  button {
+    padding: 16px 70px 16px;
+    color: $white;
+    text-align: center;
+    font-size: calc($fontSize14 + 14 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.3%; /* 43.204px */
+    text-transform: uppercase;
+    background: $backgroundGradient;
+    border-radius: 4px;
+    margin: 60px 0 0;
+    @media screen and (max-width: 1494px) {
+      margin: calc(20px + (60 - 20) * ((100vw - 320px) / (1494 - 320))) 0 0;
+    }
+
+  }
+
+  @media screen and (max-width: 1494px) {
+    padding-top: calc(20px + (42 - 20) * ((100vw - 320px) / (1494 - 320)));
+
+  }
+}
+
+.telephone_sales_img {
+  margin-right: 55px;
+  transition: .3s;
+
+  &.hover {
+    transform: rotate(20deg) scale(.9);
+  }
+}
+
 .left_border_block_long {
   position: absolute;
   height: 0;
@@ -103,121 +225,7 @@
   }
 }
 
-.section_telephone_sales_content {
-  position: relative;
-  margin: 70px 0 0;
 
-  &::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 2px;
-    background-color: $black;
-    transition: 3s;
-  }
-
-  &.active::before {
-    width: 20%;
-
-  }
-}
-
-.telephone_sales_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-
-
-  &::before {
-    position: absolute;
-
-  }
-
-}
-
-.telephone_sales_body {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 2px;
-    height: 0;
-    background-color: black;
-    right: 0;
-    top: 30px;
-    transition: 3s;
-  }
-
-  &.active::before {
-    height: 30%;
-
-  }
-}
-
-.telephone_sales_text {
-  padding: 30px 0 0 0;
-  position: relative;
-
-  h3 {
-    font-size: calc($fontSize28 + 72 * (100vw / 1920));
-    max-width: 624px;
-    color: $black;
-    font-style: normal;
-    font-weight: 400;
-    line-height: calc($fontSize24 + 76 * (100vw / 1920));
-    @include adaptive_fontSize($fontSize28, 70);
-    text-transform: uppercase;
-  }
-
-  p {
-    color: $black;
-    font-size: calc($fontSize17 + 33 * (100vw / 1920));
-    font-style: italic;
-    font-weight: 300;
-    line-height: calc(15px + 33 * (100vw / 1920));
-    text-transform: capitalize;
-    margin: 18px 0 0;
-    max-width: 513px;
-
-  }
-
-  button {
-    padding: 16px 70px 16px;
-    color: $white;
-    text-align: center;
-    font-size: calc($fontSize14 + 14 * (100vw / 1920));
-    font-style: normal;
-    font-weight: 400;
-    line-height: 154.3%; /* 43.204px */
-    text-transform: uppercase;
-    background: $backgroundGradient;
-    border-radius: 4px;
-    margin: 60px 0 0;
-    @media screen and (max-width: 1494px) {
-      margin: calc(20px + (60 - 20) * ((100vw - 320px) / (1494 - 320))) 0 0;
-    }
-
-  }
-
-  @media screen and (max-width: 1494px) {
-    padding-top: calc(20px + (42 - 20) * ((100vw - 320px) / (1494 - 320)));
-
-  }
-}
-
-.telephone_sales_img {
-  margin-right: 55px;
-  transition: .3s;
-
-  &.hover {
-    transform: rotate(20deg) scale(.9);
-  }
-}
 
 ․home_ellipse_large {
   max-width: 140px;
@@ -310,6 +318,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.line_left_border_block{
+   position: absolute;
+
+  svg{
+    position: absolute;
+    left: 0;
+    top: 150px;
+
+   line{
+     transform: rotate(45deg);
+   }
+  }
+}
+.line_top_border_block{
+   position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: -2;
+
+  svg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    line{
+    }
+  }
 }
 
 

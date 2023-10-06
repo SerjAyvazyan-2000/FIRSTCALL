@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xz5yuz');
-  src:  url('fonts/icomoon.eot?xz5yuz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xz5yuz') format('truetype'),
-    url('fonts/icomoon.woff?xz5yuz') format('woff'),
-    url('fonts/icomoon.svg?xz5yuz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2gyxsj');
+  src:  url('fonts/icomoon.eot?2gyxsj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2gyxsj') format('truetype'),
+    url('fonts/icomoon.woff?2gyxsj') format('woff'),
+    url('fonts/icomoon.svg?2gyxsj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Frame-5464-1:before {
+  content: "\e93c";
+}
 .icon-svgxmlbase64:before {
   content: "\e935";
 }
@@ -57,6 +60,9 @@
 }
 .icon-customer-service:before {
   content: "\e904";
+}
+.icon-icon-park-outline_circular-connection-2:before {
+  content: "\e93b";
 }
 .icon-sale:before {
   content: "\e906";

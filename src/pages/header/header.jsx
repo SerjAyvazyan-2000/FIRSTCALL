@@ -8,11 +8,9 @@ const Header = () => {
     return <header className="header">
         <div className="G-container">
             <div className="header_content">
-                <div className="header_logo">
-                    <NavLink>
-                        <div className="header_logo_img G-image" style={{backgroundImage: `url(${logo})`}}></div>
+                    <NavLink className="header_logo">
+                        <span className="icon-Frame-5464-1"></span>
                     </NavLink>
-                </div>
                 <div className="header_menu">
                     <Menu/>
                 </div>

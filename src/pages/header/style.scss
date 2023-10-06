@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid $black;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+
 
 }
 
@@ -17,13 +22,14 @@
 .header_logo {
   flex: 1 1  144px;
   padding:  37px 0;
+  span{
+    font-size: 70px;
+    color: black;
+
+  }
 
 }
 
-.header_logo_img {
-  width: 100px;
-  height: 74px;
-}
 
 .header_language {
   display: flex;

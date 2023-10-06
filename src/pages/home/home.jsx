@@ -11,18 +11,28 @@ import DistinguishesUs from "../components/distinguishesUs/distinguishesUs";
 import CooperationWork from "../components/cooperationWork/cooperationWork";
 import ConsultationForm from "../components/consultation/ consultation";
 import rotateLogo from "../../assets/images/rotateLogo.png"
-import {motion} from "framer-motion"
+import {motion, px} from "framer-motion"
 import TelephoneSales from "../components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
+import useGetPosition from "../hooks/getPosition";
 
 
 const Home = () => {
 
-    const lastElement = useRef(null);
+    const homeSection = useRef(null);
+    const buttonRef = useRef()
     const observer = useRef(null);
-    const ref = useRef()
+    const svgLeftLine = useRef()
+    const svgTopLine = useRef()
+    const path = useRef()
     const [scale, setScale] = useState(false)
-    const {isVisible} = useIntersection(observer, lastElement)
+    const {isVisible} = useIntersection(observer, homeSection)
+    const [topBorderStart, setTopBorderEnd] = useState(false)
+    const [sectionInfo, setSectionInfo] = useState({
+        sectionY: 0,
+        scrollY: 0
+    })
+
 
     const mouseOver = (e) => {
         if (!scale) {
@@ -46,21 +56,61 @@ const Home = () => {
             opacity: 1
         }
     }
+    // const  getSectionInfo = () => {
+    //     window.addEventListener("scroll", () => {
+    //         const sectionHeight = homeSection.current.getBoundingClientRect().height;
+    //         setSectionInfo((prevState) => (
+    //             {...prevState, scrollY: window.scrollY, sectionY: sectionHeight}
+    //
+    //
+    //         ))
+    //     })
+    //
+    // }
+    //
+    // useEffect(() => {
+    //     getSectionInfo()
+    //
+    // }, [])
+    //
+    // useEffect(() => {
+    //     let lineLength = svgLeftLine.current.getTotalLength()
+    //     // svgLeftLine.current.style.strokeDashoffset = lineLength + '' + lineLength
+    //     window.addEventListener("scroll",()=>{
+    //         let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
+    //         let drawLength = lineLength * scrollPercentage
+    //         // svgLeftLine.current.style.lineDashoffset = lineLength - drawLength
+    //
+    //     })
+    // }, [])
+    //
+    // useEffect(() => {
+    //     let lineLength = svgTopLine.current.getTotalLength()
+    //     svgTopLine.current.style.strokeDashoffset = lineLength + ' ' + lineLength
+    //     window.addEventListener("scroll",()=>{
+    //         let scrollPercentage = (sectionInfo.sectionY) / (sectionInfo.scrollY)
+    //         let drawLength = lineLength * scrollPercentage
+    //         svgTopLine.current.style.lineDashoffset = lineLength - drawLength
+    //
+    //     })
+    // }, [])
+
 
     return <>
-
-        <motion.section ref={lastElement}  initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
+        <motion.section ref={homeSection} initial={'hidden'} whileInView={'visible'}
+                        className="section_telephone_sales">
             <div className="G-container">
-                <div className={ isVisible ? "left_border_block_long active" : "left_border_block_long"}></div>
+
                 <div className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
+                    <div className={isVisible ? "left_border_block active" : 'left_border_block'}></div>
+
                     <div className="container ">
                         <div className={isVisible ? "telephone_sales_body active" : "telephone_sales_body"}>
-
                             <div className="telephone_sales_content">
                                 <motion.div variants={textAnimation} className="telephone_sales_text">
                                     <h3>Excellence in telephone sales</h3>
                                     <p>We turn your goals into successes!</p>
-                                    <button onMouseOut={onMouseOut} onMouseOver={mouseOver} ref={ref}
+                                    <button onMouseOut={onMouseOut} onMouseOver={mouseOver} ref={buttonRef}
                                             className="excellence-btn">L’ets start
                                     </button>
                                 </motion.div>
@@ -71,7 +121,7 @@ const Home = () => {
                                 </div>
 
                             </div>
-                            <div className={isVisible ? "home_ellipse_block active" :"home_ellipse_block"}>
+                            <div className={isVisible ? "home_ellipse_block active" : "home_ellipse_block"}>
                                 <div className="home_ellipse_large">
                                     <div className="home_ellipse_medium">
                                         <div className="home_ellipse_small">
@@ -95,7 +145,7 @@ const Home = () => {
 
         <section className="section_rotate_logo">
             <div className="G-container">
-                <div className={ isVisible ? "left_border_block active" : 'left_border_block'}></div>
+                <div className={isVisible ? "left_border_block active" : 'left_border_block'}></div>
                 <div className={isVisible ? "border_top_block active" : "border_top_block"}></div>
                 <div className="rotate_logo_block">
                     <div className={`rotate_logo`}>

@@ -7,7 +7,7 @@ import AnimatedLeftBorder from "../../UI/animatedLeftBorder/animatedLeftBorder";
 import AnimatedCenterBorder from "../../UI/animatedCenterBorder/animatedCenterBorder";
 import AnimatedRightBorder from "../../UI/animatedRightBorder/animatedRightBorder";
 import useIntersection from "../../hooks/useIntersection ";
-import useGetPosition from "../../hooks/getPosition";
+import useGetPositionParent from "../../hooks/getPositionParent";
 
 
 const OurServices = () => {
@@ -25,7 +25,7 @@ const OurServices = () => {
     const [example,setExample] = useState(false)
 
     const {isVisible} = useIntersection(observer, lastElement)
-    const {getPositionParent} = useGetPosition(elementChild1, elementChild1, elementChild2, elementChild3)
+    const {getPositionParent} = useGetPositionParent(elementChild1, elementChild1, elementChild2, elementChild3)
 
     const getPositionImage = () => {
         let X = itemImg.current.offsetWidth
@@ -54,7 +54,7 @@ const OurServices = () => {
             setTimeout(()=>{
                 setExample(true)
 
-            },[2800])
+            },[1000])
         }else {
             setExample(false)
 
