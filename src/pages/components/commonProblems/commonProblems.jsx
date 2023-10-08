@@ -1,11 +1,8 @@
 import React, {useRef} from 'react';
 import "./style.scss"
-import image from "../../../assets/images/image.png"
-import image1 from "../../../assets/images/image1.png"
-import image2 from "../../../assets/images/image2.png"
-import image3 from "../../../assets/images/image3.png"
-import image4 from "../../../assets/images/image4.png"
-import image5 from "../../../assets/images/image5.png"
+import icon from "../../../assets/svgIcons/icon-park-outline_circular-connection (3).svg"
+import icon1 from "../../../assets/svgIcons/carbon_security (1).svg"
+
 import useIntersection from "../../hooks/useIntersection ";
 
 const CommonProblems = () => {
@@ -13,26 +10,36 @@ const CommonProblems = () => {
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
 
+
+
     return <section ref={lastElement} className="common_problems_section">
         <div className="G-container">
-            <div className="common_problems_absolute"></div>
+            <div className="common_problems_absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600">
+                    <rect width="1500" height="600" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
+                </svg>
+            </div>
+
+
             <div className="common_problems_body">
                 <div className="common_problems_title">
-                    <h3 className={isVisible ? "active" : null} >Common problems in B2B new customer acquisition</h3>
+                    <h3 className={isVisible ? "active" : null}>Common problems in B2B new customer acquisition</h3>
                     <p>Maximise your efficiency, visibility and profitability</p>
                 </div>
                 <div className="common_problems_list">
+
                     <div className="common_problems_red_items">
+
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <i className="icon-bankrupt"></i>
-                                {/*<img src={image} alt=""/>*/}
+                                <i className="icon-wallet"></i>
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>High advertising costs</p>
 
                             </div>
+
                             <div className="problems_item_sub_text">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
@@ -46,10 +53,10 @@ const CommonProblems = () => {
                             <span className="icon-Arrow-21"></span>
                         </div>
 
+
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <i className='icon-decision'></i>
-                                {/*<img src={image1} alt=""/>*/}
+                                <i>ICON</i>
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Unsteady source of customers</p>
@@ -69,10 +76,11 @@ const CommonProblems = () => {
 
                         </div>
 
+
+
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
                                 <i className='icon-workflow'></i>
-                                {/*<img src={image2} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Time-intensive cold calling</p>
@@ -94,8 +102,7 @@ const CommonProblems = () => {
 
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
-                                <i className='icon-sharing'></i>
-                                {/*<img src={image3} alt=""/>*/}
+                                <i>ICON</i>
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Lack of market presence</p>
@@ -118,8 +125,6 @@ const CommonProblems = () => {
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
                                 <i className='icon-qualified'></i>
-
-                                {/*<img src={image4} alt=""/>*/}
                             </div>
                             <div className="common_problems_red_item_text">
                                 <p>Unqualified leads</p>
@@ -138,6 +143,8 @@ const CommonProblems = () => {
                             <span className="icon-Arrow-21"></span>
 
                         </div>
+
+
                         <div className="common_problems_red_item">
                             <div className="common_problems_red_item_img">
                                 <i className='icon-decision-making-1'></i>
@@ -166,13 +173,13 @@ const CommonProblems = () => {
 
                     <div className="common_problems_list_text_block">
                         <div className="problems_list_text_icon">
-                            <span className="icon-carbon_security"></span>
+                            <img src={icon} alt=""/>
                         </div>
                         <div className="common_problems_list_text">
                             <p>“WE ARE THE BRIDGE TO YOUR BUSINESS SUCCESS”</p>
                         </div>
                         <div className="problems_list_text_icon">
-                            <span className="icon-carbon_security"></span>
+                            <img src={icon1} alt=""/>
                         </div>
 
                     </div>
@@ -181,7 +188,6 @@ const CommonProblems = () => {
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
                                 <i className="icon-customer-service"></i>
-                                {/*<img src={image} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>High advertising costs</p>
@@ -195,7 +201,6 @@ const CommonProblems = () => {
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
                                 <i className="icon-bankrupt"></i>
-                                {/*<img src={image1} alt=""/>*/}
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Unsteady source of customers</p>
@@ -206,8 +211,7 @@ const CommonProblems = () => {
 
                         <div className="common_problems_black_item">
                             <div className="common_problems_black_item_img">
-                                <i className='icon-customer-service'></i>
-                                {/*<img src={image2} alt=""/>*/}
+                                <i>ICONS</i>
                             </div>
                             <div className="common_problems_black_item_text">
                                 <p>Time-intensive cold calling</p>

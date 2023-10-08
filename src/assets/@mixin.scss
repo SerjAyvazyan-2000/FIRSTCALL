@@ -13,6 +13,10 @@
 @mixin  adaptive_fontSize($minFontSize:0,$maxFontSize:0){
    font-size:calc($minFontSize + $maxFontSize * (100vw / 1520)) ;
 }
+@mixin  buttonHover () {
+  background: var(--hover, linear-gradient(180deg, #91183d 0%, #24242a 700%));
+
+}
 @mixin adaptive_lineHeight($minLineHeight:0,$maxLineHeight:0){
    line-height: calc($minLineHeight + $maxLineHeight * (100vw / 1520));
 }

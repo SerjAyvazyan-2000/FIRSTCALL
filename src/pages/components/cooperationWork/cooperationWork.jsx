@@ -1,11 +1,9 @@
 import React, {useRef} from 'react';
 import "./style.scss"
 import image from "../../../assets/images/contract 1.png"
-import image1 from "../../../assets/images/image1.png"
-import image2 from "../../../assets/images/image2.png"
-import image3 from "../../../assets/images/image3.png"
-import image4 from "../../../assets/images/image4.png"
-import image5 from "../../../assets/images/image5.png"
+import image1 from "../../../assets/images/computer 1.png"
+import image2 from "../../../assets/images/calendar 1.png"
+
 import useIntersection from "../../hooks/useIntersection ";
 
 const CooperationWork = () => {
@@ -41,7 +39,7 @@ const CooperationWork = () => {
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
-                        <span className="icon-sharing"></span>
+                        <img src={image} alt=""/>
                     </div>
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">2</div>
@@ -55,6 +53,7 @@ const CooperationWork = () => {
                     </div>
 
                 </div>
+
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
@@ -75,7 +74,7 @@ const CooperationWork = () => {
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
-                        <span className="icon-relationship"></span>
+                        <img src={image1} alt=""/>
                     </div>
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">4</div>
@@ -91,7 +90,7 @@ const CooperationWork = () => {
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
-                        <span className="icon-relationship"></span>
+                        <img src={image2} alt=""/>
                     </div>
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">5</div>

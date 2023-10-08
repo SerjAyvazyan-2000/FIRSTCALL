@@ -2,15 +2,16 @@ import React from 'react';
 import "./style.scss"
 import Menu from "../components/menu/menu";
 import {NavLink} from "react-router-dom";
-import logo from "../../assets/images/compainLogo4.png"
+import logo from "../../assets/images/Frame 5464 (2).svg"
+import download from "../../assets/svgIcons/DownloadSimple (3).svg"
 
 const Header = () => {
     return <header className="header">
         <div className="G-container">
             <div className="header_content">
-                    <NavLink className="header_logo">
-                        <span className="icon-Frame-5464-1"></span>
-                    </NavLink>
+                <NavLink className="header_logo">
+                    <img src={logo} alt=""/>
+                </NavLink>
                 <div className="header_menu">
                     <Menu/>
                 </div>
@@ -22,15 +23,13 @@ const Header = () => {
 
                     </div>
                     <div className="header_download_btn">
-                        <button className='header_download_btn_white white_button'>White paper
-                           <span className='icon-download'></span>
+                        <button className='header_download_btn_white '>White paper
+                            <img src={download} alt=""/>
                         </button>
-                        <button className="header_download_btn_red red_button">L’ets start</button>
+                        <button className="header_download_btn_red ">L’ets start</button>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </header>
 };

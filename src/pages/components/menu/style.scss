@@ -14,12 +14,9 @@
         font-size: calc($fontSize14 + 4 * (100vw / 1920));
         font-style: normal;
         font-weight: 500;
-        line-height: 154.3%; /* 27.774px */
+        line-height: 28px;
         text-transform: uppercase;
 
-        &:hover{
-          text-decoration: underline;
-        }
       }
     }
   }

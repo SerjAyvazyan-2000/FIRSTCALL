@@ -8,6 +8,7 @@ import image3 from "../../../assets/images/image 230 (1).png"
 import image4 from "../../../assets/images/image4.png"
 import image5 from "../../../assets/images/image 228 (2).png"
 import useIntersection from "../../hooks/useIntersection ";
+import svgBorder from "../../../assets/svgIcons/Rectangle 1030.png"
 
 const DistinguishesUs = () => {
     const lastElement = useRef(null);
@@ -20,20 +21,26 @@ const DistinguishesUs = () => {
                 <div className="distinguishes_body">
 
                     <div className="distinguishes_img_block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="490" height="490" viewBox="0 0 500 500">
+                            <rect width="500" height="500" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
+                        </svg>
+
                         <div className="distinguishes_img_block_border">
                             <div className="distinguishes_red_block">
                                 <div className="distinguishes_white_block">
                                     <img src={logo} alt=""/>
                                 </div>
                             </div>
+
+
                             <div className="distinguishes_img row1">
                                 <div className="img_block">
-                                    <img src={image} alt=""/>
+                                    <img src={image3} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row2">
                                 <div className="img_block">
-                                    <img src={image1} alt=""/>
+                                    <img src={image5} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row3">
@@ -43,17 +50,17 @@ const DistinguishesUs = () => {
                             </div>
                             <div className="distinguishes_img row4">
                                 <div className="img_block">
-                                    <img src={image3} alt=""/>
+                                    <img src={image1} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row5">
                                 <div className="img_block">
-                                    <img src={image4} alt=""/>
+                                    <img src={image} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row6">
                                 <div className="img_block">
-                                    <img src={image5} alt=""/>
+                                    <img src={image4} alt=""/>
                                 </div>
                             </div>
 
@@ -104,7 +111,6 @@ const DistinguishesUs = () => {
         <section className="animation_section G-container">
             <div className={ isVisible ? "animation_line active" : "animation_line"}>
                 <span></span>
-
             </div>
         </section>
     </>

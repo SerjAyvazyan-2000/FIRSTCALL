@@ -2,7 +2,6 @@ import {useState} from "react";
 
 const useGetPositionParent = (itemParent, elementChild1, elementChild2, elementChild3,elementImg) => {
     const [marginParent, setMarginParent] = useState(0);
-    const [imgCenter, setImgCenter] = useState(0);
 
     const getPositionParent = () => {
         const heightParent = itemParent.current.clientHeight
@@ -15,12 +14,7 @@ const useGetPositionParent = (itemParent, elementChild1, elementChild2, elementC
         return marginParent
     };
 
-    const getPositionY = (element) => {
-        let X = elementImg.current.offsetWidth
-        let Y = elementImg.current.offsetHeight
-        let result = X / 2
-        setImgCenter(result)
-    }
+
 
     return {getPositionParent}
 

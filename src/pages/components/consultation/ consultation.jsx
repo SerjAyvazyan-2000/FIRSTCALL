@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import {Form} from "react-router-dom";
 import "./style.scss"
 import useIntersection from "../../hooks/useIntersection ";
-
+import arrow from "../../../assets/svgIcons/ArrowDownRight.svg"
 const ConsultationForm = () => {
     const lastElement = useRef(null);
     const observer = useRef(null);
@@ -42,63 +42,6 @@ const ConsultationForm = () => {
                                 <label>
                                     <select className="form-select" id="phone" name="+49">
                                         <option value="">+49</option>
-                                        <option value="93">Afghanistan +93</option>
-                                        <option value="358">Aland Islands +358</option>
-                                        <option value="355">Albania +355</option>
-                                        <option value="213">Algeria +213</option>
-                                        <option value="1684">American Samoa +1684</option>
-                                        <option value="376">Andorra +376</option>
-                                        <option value="244">Angola +244</option>
-                                        <option value="1264">Anguilla +1264</option>
-                                        <option value="672">Antarctica +672</option>
-                                        <option value="1268">Antigua and Barbuda +1268</option>
-                                        <option value="54">Argentina +54</option>
-                                        <option value="374">Armenia +374</option>
-                                        <option value="297">Aruba +297</option>
-                                        <option value="61">Australia +61</option>
-                                        <option value="43">Austria +43</option>
-                                        <option value="994">Azerbaijan +994</option>
-                                        <option value="1242">Bahamas +1242</option>
-                                        <option value="973">Bahrain +973</option>
-                                        <option value="880">Bangladesh +880</option>
-                                        <option value="1246">Barbados +1246</option>
-                                        <option value="375">Belarus +375</option>
-                                        <option value="32">Belgium +32</option>
-                                        <option value="501">Belize +501</option>
-                                        <option value="229">Benin +229</option>
-                                        <option value="1441">Bermuda +1441</option>
-                                        <option value="975">Bhutan +975</option>
-                                        <option value="591">Bolivia +591</option>
-                                        <option value="599">Bonaire, Sint Eustatius and Saba +599</option>
-                                        <option value="387">Bosnia and Herzegovina +387</option>
-                                        <option value="267">Botswana +267</option>
-                                        <option value="55">Bouvet Island +55</option>
-                                        <option value="55">Brazil +55</option>
-                                        <option value="246">British Indian Ocean Territory +246</option>
-                                        <option value="673">Brunei Darussalam +673</option>
-                                        <option value="359">Bulgaria +359</option>
-                                        <option value="226">Burkina Faso +226</option>
-                                        <option value="257">Burundi +257</option>
-                                        <option value="855">Cambodia +855</option>
-                                        <option value="237">Cameroon +237</option>
-                                        <option value="1">Canada +1</option>
-                                        <option value="238">Cape Verde +238</option>
-                                        <option value="1345">Cayman Islands +1345</option>
-                                        <option value="236">Central African Republic +236</option>
-                                        <option value="235">Chad +235</option>
-                                        <option value="56">Chile +56</option>
-                                        <option value="86">China +86</option>
-                                        <option value="61">Christmas Island +61</option>
-                                        <option value="672">Cocos (Keeling) Islands +672</option>
-                                        <option value="57">Colombia +57</option>
-                                        <option value="269">Comoros +269</option>
-                                        <option value="242">Congo +242</option>
-                                        <option value="242">Congo, Democratic Republic of the Congo +242</option>
-                                        <option value="682">Cook Islands +682</option>
-                                        <option value="506">Costa Rica +506</option>
-                                        <option value="225">Cote D'Ivoire +225</option>
-                                        <option value="385">Croatia +385</option>
-                                        <option value="53">Cuba +53</option>
                                         <option value="599">Curacao +599</option>
                                         <option value="357">Cyprus +357</option>
                                         <option value="420">Czech Republic +420</option>

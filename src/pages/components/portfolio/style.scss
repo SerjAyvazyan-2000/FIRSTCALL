@@ -5,6 +5,10 @@
   margin-top: 110px;
 }
 
+
+.services_portfolio_body{
+
+}
 .services_portfolio_title {
   display: flex;
   align-items: center;
@@ -16,19 +20,20 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    background: white;
 
     &::before {
       content: '';
       position: absolute;
       width: 0;
       height: 1px;
-      background-color: red;
+      background-color: $red;
       bottom: -10px;
       transition: 3s;
     }
 
     &.active::before {
-      width: 50%;
+      width: 30%;
 
     }
 
@@ -68,6 +73,10 @@
   flex-direction: column;
   width: 16.6%;
   min-height: 670px;
+  cursor: pointer;
+  transition: .3s;
+
+
 
   h3 {
     color: $white;
@@ -135,7 +144,14 @@
     line-height: 26px;
     color: white;
   }
+
 }
+.services_portfolio_item:hover{
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  transform: scale(1.1)
+
+}
+
 
 .services_portfolio_tools {
   margin-top: 53px;
@@ -157,6 +173,12 @@
   font-weight: 400;
   line-height: 154.3%; /* 33.946px */
   text-transform: uppercase;
+
+
+
+  &:hover {
+    @include buttonHover
+  }
 }
 
 .portfolio_tools_white_button {
@@ -167,5 +189,7 @@
   font-weight: 400;
   line-height: 28px; /* 28px */
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 

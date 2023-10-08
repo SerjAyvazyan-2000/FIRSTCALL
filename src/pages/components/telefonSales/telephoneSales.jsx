@@ -18,7 +18,7 @@ const TelephoneSales = () => {
         </section>
 
 
-        <div className={isVisible ? "telephone_middle_border active" : "telephone_middle_border"}></div>
+        {/*<div className={isVisible ? "telephone_middle_border active" : "telephone_middle_border"}></div>*/}
 
     </>
 };

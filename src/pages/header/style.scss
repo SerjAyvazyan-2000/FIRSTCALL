@@ -1,4 +1,5 @@
 @import "src/assets/variables";
+@import "src/assets/@mixin";
 
 .header {
   display: flex;
@@ -22,14 +23,18 @@
 .header_logo {
   flex: 1 1  144px;
   padding:  37px 0;
-  span{
-    font-size: 70px;
-    color: black;
 
-  }
 
 }
 
+.header_menu {
+  flex: 1 1 auto;
+}
+
+.header_download {
+  display: flex;
+  gap: 43px;
+}
 
 .header_language {
   display: flex;
@@ -45,9 +50,6 @@
   text-transform: uppercase;
   font-family: Commissioner;
 
-  &:hover{
-     text-decoration: underline;
-  }
 }
 
 .header_language_en {
@@ -59,10 +61,6 @@
 }
 
 
-
-.header_menu {
-  flex: 1 1 auto;
-}
 
 .header_download_btn {
   display: flex;
@@ -82,10 +80,7 @@
   }
 }
 
-.header_download {
-  display: flex;
-  gap: 43px;
-}
+
 
 .header_download_btn_white {
   position: relative;
@@ -98,27 +93,19 @@
   font-style: normal;
   font-weight: 600;
   line-height: 154.3%; /* 21.602px */
-
-  span {
-    position: absolute;
-    right: 11px;
-    font-size: 20px;
-
-    top: 11px;
-  }
-}
-
-.white_button {
-  transition: .3s;
+  display: flex;
+  align-items: center;
   background: none;
 
-  &:hover {
-    background-color: antiquewhite;
+  img {
+    position: absolute;
+    right: 11px;
   }
 }
 
+
 .header_download_btn_red {
-  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  background: $backgroundGradient;
   color: white;
   padding: 11px 39px;
   min-width: 162px;
@@ -128,15 +115,10 @@
   line-height: 154.3%; /* 21.602px */
   text-transform: uppercase;
   font-family: Barlow Condensed;
-
-
-}
-
-.red_button {
   transition: .3s;
 
   &:hover {
-    background: var(--hover, linear-gradient(180deg, #700e2d 0%, #1e1e28 100%));
+    @include buttonHover
   }
 }
 

@@ -1,6 +1,8 @@
 import React, {useRef} from 'react';
 import "./style.scss"
 import useIntersection from "../../hooks/useIntersection ";
+import {NavLink} from "react-router-dom";
+import arrowImg from "../../../assets/svgIcons/ArrowDownRight.svg"
 const Portfolio = () => {
     const lastElement = useRef(null);
     const observer = useRef(null);
@@ -21,63 +23,64 @@ const Portfolio = () => {
                 </div>
 
                 <div className="services_portfolio_items">
-                    <div className="services_portfolio_item">
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null} >B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
-                    <div className="services_portfolio_item">
+                    </NavLink>
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
-                    <div className="services_portfolio_item">
+                    </NavLink>
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
-                    <div className="services_portfolio_item">
+                    </NavLink>
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
-                    <div className="services_portfolio_item">
+                    </NavLink>
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
-                    <div className="services_portfolio_item">
+                    </NavLink>
+                    <NavLink className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i >With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </div>
+                    </NavLink>
 
                 </div>
 
                 <div className="services_portfolio_tools">
-                    <button className="portfolio_tools_red_button">More about portfolio
+                    <button className="portfolio_tools_red_button">
+                        More about portfolio
                     </button>
 
                     <button className="portfolio_tools_white_button">CONTACT US
-                        <span className="icon-arrow-down-right2"></span>
+                        <img src={arrowImg} alt=""/>
                     </button>
                 </div>
 
