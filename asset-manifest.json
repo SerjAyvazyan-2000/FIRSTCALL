@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.4f6adf8c.css",
-    "main.js": "/FIRSTCALL/static/js/main.e997ad2c.js",
+    "main.css": "/FIRSTCALL/static/css/main.3483db92.css",
+    "main.js": "/FIRSTCALL/static/js/main.9f6340cf.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/Property 1=Default (2).png": "/FIRSTCALL/static/media/Property 1=Default (2).4e54691ab03a44e281e0.png",
     "static/media/services2.png": "/FIRSTCALL/static/media/services2.452101ad25a3b50bec4c.png",
@@ -45,12 +45,12 @@
     "static/media/ArrowDownRight.svg": "/FIRSTCALL/static/media/ArrowDownRight.3ae960f3949f90eb30e8dde6499169d7.svg",
     "static/media/ArrowLeft (7).svg": "/FIRSTCALL/static/media/ArrowLeft (7).8c5fbec5049e72a864b7fda51a63e7aa.svg",
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
-    "main.4f6adf8c.css.map": "/FIRSTCALL/static/css/main.4f6adf8c.css.map",
-    "main.e997ad2c.js.map": "/FIRSTCALL/static/js/main.e997ad2c.js.map",
+    "main.3483db92.css.map": "/FIRSTCALL/static/css/main.3483db92.css.map",
+    "main.9f6340cf.js.map": "/FIRSTCALL/static/js/main.9f6340cf.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6adf8c.css",
-    "static/js/main.e997ad2c.js"
+    "static/css/main.3483db92.css",
+    "static/js/main.9f6340cf.js"
   ]
 }
