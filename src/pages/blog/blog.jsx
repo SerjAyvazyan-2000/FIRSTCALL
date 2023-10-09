@@ -4,7 +4,7 @@ import animationPng from "../../assets/images/2.png"
 import animationSvg from "../../assets/svgIcons/1 (5).svg"
 import useIntersection from "../hooks/useIntersection ";
 import useInformation from "../hooks/useInformation";
-import BlogItem from "./components/blogItem";
+import BlogItem from "./components/blogItem/blogItem";
 import "./style.scss"
 
 const Blog = () => {
@@ -30,10 +30,13 @@ const Blog = () => {
                     ))}
                 </div>
                 <div className="blog_list_sequence">
+
                     <div className='sequence_numbers'>
+                        <span className="icon-Vector-3 sequence_arrow_right"></span>
                         {blogSequence.map(item=>(
-                             <div className='sequence_number'>{item.number}</div>
+                             <div className='sequence_number'><span>{item.number}</span></div>
                         ))}
+                        <span className="icon-Vector-1 sequence_arrow_left"></span>
                     </div>
                 </div>
             </div>

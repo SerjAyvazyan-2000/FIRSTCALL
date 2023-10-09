@@ -57,7 +57,7 @@ const CommonProblems = () => {
 
 
                         <div className="common_problems_red_item">
-                            <div className="common_problems_red_item_img">
+                            <div className="common_problems_red_item_img change_icon_to_image">
                                 <img src={icon3} alt=""/>
                             </div>
                             <div className="common_problems_red_item_text">
@@ -174,7 +174,7 @@ const CommonProblems = () => {
                     </div>
 
                     <div className="common_problems_list_text_block">
-                        <div className="problems_list_text_icon">
+                        <div className="problems_list_text_icon ">
                             <img src={icon} alt=""/>
                         </div>
                         <div className="common_problems_list_text">
@@ -212,7 +212,7 @@ const CommonProblems = () => {
                         </div>
 
                         <div className="common_problems_black_item">
-                            <div className="common_problems_black_item_img">
+                            <div className="common_problems_black_item_img change_icon_to_image">
                                 <img src={icon4} alt=""/>
                             </div>
                             <div className="common_problems_black_item_text">

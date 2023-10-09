@@ -85,6 +85,17 @@
 
 //RED ITEMS START
 
+.change_icon_to_image{
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+     width: 100%;
+    height: 100%;
+  }
+}
 .common_problems_list {
   margin-top: 33px;
 }

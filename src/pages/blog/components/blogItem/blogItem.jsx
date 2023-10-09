@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.scss"
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
+import {BLOG_ITEM_DETAILS_ROUTES} from "../../../../routes/consts";
 
 const BlogItem = ({item}) => {
     return <div className="blog_item">
@@ -28,8 +29,7 @@ const BlogItem = ({item}) => {
             {item.description}
         </div>
         <div className="blog_item_route">
-            <NavLink>{item.readMore}</NavLink>
-
+            <Link to={`/${BLOG_ITEM_DETAILS_ROUTES}/${item.id}`} >{item.readMore}</Link>
         </div>
 
     </div>
