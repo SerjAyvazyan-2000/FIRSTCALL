@@ -1,0 +1,18 @@
+
+
+.blog_list_container{
+   margin-top: 146px;
+}
+.blog_list{
+   display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 32px;
+  column-gap: 30px;
+}
+.blog_list_sequence{
+   margin-top: 160px;
+}
+
+.sequence_numbers{
+
+}

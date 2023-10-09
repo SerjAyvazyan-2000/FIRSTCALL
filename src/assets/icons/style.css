@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2gyxsj');
-  src:  url('fonts/icomoon.eot?2gyxsj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2gyxsj') format('truetype'),
-    url('fonts/icomoon.woff?2gyxsj') format('woff'),
-    url('fonts/icomoon.svg?2gyxsj#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?y476ah');
+  src:  url('fonts/icomoon.eot?y476ah#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y476ah') format('truetype'),
+    url('fonts/icomoon.woff?y476ah') format('woff'),
+    url('fonts/icomoon.svg?y476ah#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Vector-3:before {
+  content: "\e94c";
+}
+.icon-Vector-1:before {
+  content: "\e94d";
+}
+.icon-TwitterLogo:before {
+  content: "\e94e";
+}
+.icon-FacebookLogo:before {
+  content: "\e94f";
+}
+.icon-TelegramLogo:before {
+  content: "\e950";
+}
+.icon-ArrowDownRight-6:before {
+  content: "\e951";
+}
+.icon-ArrowDownRight-3:before {
+  content: "\e949";
+}
+.icon-MM_Logo-3-4:before {
+  content: "\e941";
+  color: #47474f;
+}
+.icon-_:before {
+  content: "\e944";
+}
+.icon-_1:before {
+  content: "\e946";
+}
+.icon-ArrowLeft-2:before {
+  content: "\e940";
+}
+.icon-llline-1:before {
+  content: "\e93d";
+}
+.icon-llline:before {
+  content: "\e93e";
+}
+.icon-DownloadSimple-2:before {
+  content: "\e93f";
+}
 .icon-Frame-5464-1:before {
   content: "\e93c";
 }
@@ -60,6 +103,12 @@
 }
 .icon-customer-service:before {
   content: "\e904";
+}
+.icon-satisfaction-1:before {
+  content: "\e94a";
+}
+.icon-call-center-agent-1:before {
+  content: "\e94b";
 }
 .icon-icon-park-outline_circular-connection-2:before {
   content: "\e93b";

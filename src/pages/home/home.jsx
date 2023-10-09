@@ -2,17 +2,17 @@ import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import image from "../../assets/images/Rectangle.png"
 import ellipse from "../../assets/images/Group 8206.png"
-import OurServices from "../components/ourServices/OurServices";
-import Partners from "../components/partners/partners";
-import Portfolio from "../components/portfolio/portfolio";
-import CommonProblems from "../components/commonProblems/commonProblems";
-import Testimonials from "../components/testimonials/testimonials";
-import DistinguishesUs from "../components/distinguishesUs/distinguishesUs";
-import CooperationWork from "../components/cooperationWork/cooperationWork";
-import ConsultationForm from "../components/consultation/ consultation";
+import OurServices from "./components/ourServices/OurServices";
+import Partners from "./components/partners/partners";
+import Portfolio from "./components/portfolio/portfolio";
+import CommonProblems from "./components/commonProblems/commonProblems";
+import Testimonials from "./components/testimonials/testimonials";
+import DistinguishesUs from "./components/distinguishesUs/distinguishesUs";
+import CooperationWork from "./components/cooperationWork/cooperationWork";
+import ConsultationForm from "./components/consultation/ consultation";
 import rotateLogo from "../../assets/images/rotateLogo.png"
 import {motion, px} from "framer-motion"
-import TelephoneSales from "../components/telefonSales/telephoneSales";
+import TelephoneSales from "./components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
 
 
@@ -62,7 +62,6 @@ const Home = () => {
 
 
     return <>
-
         <div className="G-container">
             <div className='svg_line_block'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1356" height="3899" viewBox="0 0 1356 3899" fill="none">

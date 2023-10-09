@@ -3,6 +3,9 @@
     overflow: hidden;
     font-family: Barlow Condensed;
 }
+.main{
+     margin-top: 180px;
+}
 
 @font-face {
     font-family: Barlow Condensed ;
@@ -47,11 +50,4 @@
     font-style: normal;
 }
 
-.red_button {
-
-}
-
-.white_button {
-
-}
 

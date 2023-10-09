@@ -1,4 +1,7 @@
-@import "src/assets/variables";
+@import "../../../assets/variables";
+@import "../../../assets/@mixin";
+
+
 .menu_block {
   ul {
     display: flex;

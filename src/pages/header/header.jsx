@@ -4,12 +4,13 @@ import Menu from "../components/menu/menu";
 import {NavLink} from "react-router-dom";
 import logo from "../../assets/images/Frame 5464 (2).svg"
 import download from "../../assets/svgIcons/DownloadSimple (3).svg"
+import {HOME_ROUTE} from "../../routes/consts";
 
 const Header = () => {
     return <header className="header">
         <div className="G-container">
             <div className="header_content">
-                <NavLink className="header_logo">
+                <NavLink to={HOME_ROUTE} className="header_logo">
                     <img src={logo} alt=""/>
                 </NavLink>
                 <div className="header_menu">

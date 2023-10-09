@@ -1,23 +1,24 @@
 import React from 'react';
 import "./style.scss"
 import {NavLink} from "react-router-dom";
+import {ABOUT_ROUTE, BLOG_ROUTE, CAREER_ROUTE, REFERENCE_ROUTE, SERVICES_ROUTE} from "../../../routes/consts";
 const Menu = () => {
     return <nav className="menu_block">
         <ul>
             <li>
-                <NavLink >SERVICE</NavLink>
+                <NavLink to={SERVICES_ROUTE} >SERVICE</NavLink>
             </li>
             <li>
-                <NavLink>CAREER</NavLink>
+                <NavLink to={CAREER_ROUTE}>CAREER</NavLink>
             </li>
             <li>
-                <NavLink >References</NavLink>
+                <NavLink to={REFERENCE_ROUTE}>References</NavLink>
             </li>
             <li>
-                <NavLink >Blog</NavLink>
+                <NavLink to={BLOG_ROUTE} >Blog</NavLink>
             </li>
             <li>
-                <NavLink >ABOUT US</NavLink>
+                <NavLink to={ABOUT_ROUTE}>ABOUT US</NavLink>
             </li>
 
         </ul>
