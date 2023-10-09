@@ -105,8 +105,6 @@ const CooperationWork = () => {
 
                 </div>
 
-
-
             </div>
 
             <div className="cooperation_btn">

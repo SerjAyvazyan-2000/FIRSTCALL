@@ -199,7 +199,7 @@
   background-color: white;
   transition: .3s;
   position: relative;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 
 }
 
@@ -211,7 +211,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 
 }
 
@@ -222,26 +222,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 
 }
 
 @keyframes pulse {
   0% {
-    border: 1px solid rgba(185, 18, 84, 0.10);
     box-shadow: 0 0 50px rgba(185, 18, 84, 0.10); /* Start shadow properties */
     transition: .3s;
 
   }
-  50% {
-    border: 1px solid rgba(185, 18, 84, 0.10);
-    box-shadow: 0 0 15px rgba(185, 18, 84, 0.10);
+  20% {
+    box-shadow: 0 0 40px rgba(185, 18, 84, 0.10); /* Start shadow properties */
+    transition: .3s;
+
+  }
+  40% {
+    box-shadow: 0 0 30px rgba(185, 18, 84, 0.10); /* Start shadow properties */
+    transition: .3s;
+
+  }
+
+  60% {
+    box-shadow: 0 0 20px rgba(185, 18, 84, 0.10);
+
+
+  }
+  80% {
+    box-shadow: 0 0 10px rgba(185, 18, 84, 0.10);
 
 
   }
   100% {
-    border: 1px solid rgba(185, 18, 84, 0.10);
-    box-shadow: 0 0 5px rgba(185, 18, 84, 0.10)
+    box-shadow: 0 0 0px rgba(185, 18, 84, 0.10)
 
   }
 }
@@ -254,12 +267,13 @@
 
 .rotate_logo {
   position: absolute;
-  right: -200px;
+  right: -150px;
   top: 0;
   background-color: white;
+
   img{
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
     animation: logo 4s infinite linear;
 

@@ -2,6 +2,7 @@
 @import "src/assets/@mixin";
 
 .cooperation_work_section {
+  margin-top: 322px;
 }
 
 .cooperation_title {
@@ -105,7 +106,7 @@
   &::before{
     position: absolute;
     content: '';
-    bottom: 0;
+    bottom: -1px;
     border: 40px solid transparent;
     border-bottom: 30px solid $black;
 

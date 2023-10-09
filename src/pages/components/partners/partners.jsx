@@ -26,7 +26,7 @@ const Partners = () => {
                     training for your team. Learn more on our detailed service page.</p>
             </div>
 
-
+        <div className="scroll_bar">
             <div className="partners_items">
                 <div className="partners_item">
                     <img src={partner1} alt=""/>
@@ -81,6 +81,62 @@ const Partners = () => {
 
                 </div>
             </div>
+
+        </div>
+            {/*<div className="partners_items">*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner1} alt=""/>*/}
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner2} alt=""/>*/}
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner3} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner4} alt=""/>*/}
+            {/*    </div>*/}
+
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner5} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner6} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner7} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner8} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner9} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner10} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*    <div className="partners_item">*/}
+            {/*        <img src={partner11} alt=""/>*/}
+
+
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     </section>
 

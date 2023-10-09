@@ -242,7 +242,12 @@ const ConsultationForm = () => {
                             </div>
 
                             <div className="remember_me">
-                                <input type="checkbox"/>
+                                <label htmlFor="" className="custom-checkbox-label">
+                                    <input type="checkbox"/>
+
+
+                                </label>
+
                                 <p>I have read the privacy policy and agree to
                                     the processing of personal data.</p>
                             </div>

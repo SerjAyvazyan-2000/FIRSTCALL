@@ -40,15 +40,16 @@ const Home = () => {
         }
 
     }
-    const textAnimation = {
+    const textAnimation  = {
         hidden: {
             y: 200,
             opacity: 0,
         },
-        visible: {
+        visible: custom =>({
             y: 0,
-            opacity: 1
-        }
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
     }
 
 
@@ -91,7 +92,7 @@ const Home = () => {
                         <div className={isVisible ? "telephone_sales_body active" : "telephone_sales_body"}>
 
                             <div className="telephone_sales_content">
-                                <motion.div variants={textAnimation} className="telephone_sales_text">
+                                <motion.div custom={3} variants={textAnimation} className="telephone_sales_text">
                                     <h1>Excellence in telephone sales</h1>
                                     <p>We turn your goals into successes!</p>
                                     <button onMouseOut={onMouseOut} onMouseOver={mouseOver} ref={buttonRef}

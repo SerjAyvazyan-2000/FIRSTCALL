@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import logo from "../../../assets/images/Vector.png"
 import image from "../../../assets/images/image.png"
@@ -14,6 +14,15 @@ const DistinguishesUs = () => {
     const lastElement = useRef(null);
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
+    const [scrollLine, setScrollLine] = useState(0)
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScrollLine(window.scrollY)
+        })
+
+    }, [])
+
 
     return <>
         <section ref={lastElement} className="distinguishes_us_section">
@@ -109,9 +118,12 @@ const DistinguishesUs = () => {
             </div>
         </section>
         <section className="animation_section G-container">
-            <div className={ isVisible ? "animation_line active" : "animation_line"}>
-                <span></span>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 768 568 568" fill="none">
+                <path style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}} d="M1 0L0.99998 318L0.999957 974.5C0.999957 976.709 2.79082 978.5 4.99996 978.5L563 978.5C565.209 978.5 567 980.291 567 982.5L567 1119.5" stroke="#191923" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            {/*<div className={ isVisible ? "animation_line active" : "animation_line"}>*/}
+            {/*    <span></span>*/}
+            {/*</div>*/}
         </section>
     </>
 };

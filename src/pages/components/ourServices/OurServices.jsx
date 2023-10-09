@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
-
+import {motion} from "framer-motion";
 import servicesDarkImg1 from "../../../assets/images/Rectangle 921 (1).png"
 import servicesImg1 from "../../../assets/images/Property 1=Default.png"
 import servicesDarkImg2 from "../../../assets/images/servisecDark2.png"
@@ -28,18 +28,30 @@ const OurServices = () => {
         }
 
     }
+    const textAnimation  = {
+        hidden: {
+            y: 100,
+            opacity: 0,
+        },
+        visible: custom =>({
+            y: 0,
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
+    }
 
 
     return <>
-        <section className="section_our_services">
+        <motion.section initial={'hidden'} whileInView={'visible'} viewport={{amount:0.2}} className="section_our_services">
             <div className="G-container">
                 <div className="section_our_services_content">
                     <div className="container">
 
                         <div className="our_services_title">
-                            <h3>Our passion, your performance: tailor-made sales strategies that make the
-                                difference!</h3>
-                            <p>All three Ws shown in one graphic</p>
+                            <motion.h3 custom={1}  variants={textAnimation}>Our passion, your performance: tailor-made sales strategies that make the
+                                difference!
+                            </motion.h3>
+                            <motion.p custom={2} variants={textAnimation}>All three Ws shown in one graphic</motion.p>
 
                         </div>
 
@@ -143,7 +155,7 @@ const OurServices = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
 
     </>
 };

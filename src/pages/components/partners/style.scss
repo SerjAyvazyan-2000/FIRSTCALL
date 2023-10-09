@@ -58,15 +58,28 @@
 
 
 }
+.scroll_bar{
+  height: 150px;
+  overflow-x: scroll;
 
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize the thumb color */
+    border-radius: 4px;
+  }
+
+}
 
 .partners_items {
   display: flex;
   align-items: center;
   margin: 35px 0 0;
-  flex-wrap: wrap;
   gap: 12px;
   padding: 0  0 0 20px;
+  white-space: nowrap; /* Prevent content from wrapping to the next line */
+
 
 
 }
@@ -78,8 +91,9 @@
   border-radius: 2.198px;
   border: 1.099px solid #191923;
   background-color: white;
-  width: 10%;
-  height: 78px;
+
+  min-width: 148px;
+  min-height: 98px;
 
   img {
     position: absolute;
