@@ -1,0 +1,63 @@
+@import "src/assets/variables";
+@import "src/assets/@mixin";
+
+.career_roles_item{
+   display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+  border: 1px solid #000;
+  padding: 50px;
+  margin: 50px 0 0 ;
+}
+
+.roles_item_texts{
+
+  h3{
+    color:$red;
+    font-size: $fontSize45;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p{
+    color: $black;
+    font-size: $fontSize24;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+    max-width: 1100px;
+  }
+}
+.roles_item_tolls{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.roles_item_icon{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer;
+}
+.roles_item_route{
+  a{
+    padding: 17px 60px;
+    background: $backgroundGradient;
+    color: $white;
+    border-radius: 2px;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 33.946px */
+    text-transform: uppercase;
+
+    &:hover{
+      @include buttonHover
+
+    }
+  }
+}

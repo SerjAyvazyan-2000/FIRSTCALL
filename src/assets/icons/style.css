@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?y476ah');
-  src:  url('fonts/icomoon.eot?y476ah#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?y476ah') format('truetype'),
-    url('fonts/icomoon.woff?y476ah') format('woff'),
-    url('fonts/icomoon.svg?y476ah#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?5fc0g1');
+  src:  url('fonts/icomoon.eot?5fc0g1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5fc0g1') format('truetype'),
+    url('fonts/icomoon.woff?5fc0g1') format('woff'),
+    url('fonts/icomoon.svg?5fc0g1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-social-facebook-circular:before {
+  content: "\e953";
+}
+.icon-facebook:before {
+  content: "\e954";
+}
+.icon-coronavirus1:before {
+  content: "\e900";
+}
+.icon-coronavirus:before {
+  content: "\e90e";
+}
+.icon-facebook-with-circle:before {
+  content: "\e955";
+}
+.icon-facebook1:before {
+  content: "\e956";
+}
+.icon-facebook3:before {
+  content: "\e957";
+  color: #1877f2;
+}
 .icon-Vector-3:before {
   content: "\e94c";
 }
@@ -286,6 +308,10 @@
 .icon-ArrowLeft:before {
   content: "\e909";
 }
+.icon-uil_facebook:before {
+  content: "\e952";
+  color: #ffc700;
+}
 .icon-teenyicons_instagram-solid:before {
   content: "\e90b";
   color: #ffc700;
@@ -295,6 +321,18 @@
 }
 .icon-DownloadSimple-1:before {
   content: "\e90a";
+}
+.icon-facebook-official:before {
+  content: "\e958";
+}
+.icon-facebook-square:before {
+  content: "\e959";
+}
+.icon-facebook2:before {
+  content: "\e95a";
+}
+.icon-facebook-f:before {
+  content: "\e95a";
 }
 .icon-phone:before {
   content: "\e942";
@@ -350,12 +388,12 @@
 .icon-mail4:before {
   content: "\ea86";
 }
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
 .icon-linkedin2:before {
   content: "\eaca";
-}
-.icon-coronavirus1:before {
-  content: "\e900";
-}
-.icon-coronavirus:before {
-  content: "\e90e";
 }

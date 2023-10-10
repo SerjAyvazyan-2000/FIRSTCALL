@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./style.scss"
 import logo from "../../assets/images/Vector (1).png"
+import useIntersection from "../hooks/useIntersection ";
 const Footer = () => {
-    return <footer className="footer">
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+    return <footer ref={lastElement} className={ isVisible ? "footer active" : "footer"}>
           <div className="container">
               <div className="footer_content">
                   <div className="footer_logo">

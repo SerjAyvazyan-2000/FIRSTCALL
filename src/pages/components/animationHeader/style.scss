@@ -11,6 +11,7 @@
 
 .top_section_text_block {
   flex: 0 0 100%;
+  margin-top: 159px;
   //display: flex;
   //
   //.G-container{
@@ -20,7 +21,7 @@
 }
 
 .animation_text_content {
-  padding: 146px 0 243px ;
+  padding: 0 0 243px ;
   width: 50%;
   h3 {
     color: $white;
@@ -62,30 +63,26 @@
   }
 
   img{
-    animation: rotate 10s linear infinite;
+    width: 100%;
+    height: 100%;
+    animation: pulse 10s linear infinite;
   }
+  .animation_img{
+    width: 100%;
+    height: 100%;
+  }
+
 
 }
-//@keyframes pulse {
-//  0% {
-//    transform: scale(1);
-//  }
-//  50% {
-//    transform: scale(1.1);
-//  }
-//  100% {
-//    transform: scale(1);
-//  }
-//}
-
-
-@keyframes rotate {
+@keyframes pulse {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 
-
+  50% {
+    transform: scale(1.1);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }

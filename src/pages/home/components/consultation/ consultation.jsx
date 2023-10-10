@@ -257,7 +257,7 @@ const ConsultationForm = () => {
                 </div>
             </div>
         </section>
-        <div className={isVisible ? "consultation_middle_border active" : "consultation_middle_border"}></div>
+        {/*<div className={isVisible ? "consultation_middle_border active" : "consultation_middle_border"}></div>*/}
 
     </>
 };

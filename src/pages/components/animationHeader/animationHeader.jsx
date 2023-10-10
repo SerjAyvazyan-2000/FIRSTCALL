@@ -1,6 +1,5 @@
 import React, {useRef, useState} from 'react';
 import "./style.scss"
-import useIntersection from "../../hooks/useIntersection ";
 
 const AnimationHeader = ({title, subTitle, description, image}) => {
 
@@ -18,7 +17,9 @@ const AnimationHeader = ({title, subTitle, description, image}) => {
                 </div>
 
                 <div className="animation_header_image">
+                    {/*<div style={{backgroundImage:`url(${image})`}} className="animation_img"></div>*/}
                     <img src={image} alt=""/>
+
                 </div>
     </section>
 };

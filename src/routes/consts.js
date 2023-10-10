@@ -7,3 +7,4 @@
    export  const ABOUT_ROUTE = 'about_route'
    export  const SERVICES_ROUTE = "services_route"
    export  const BLOG_ITEM_DETAILS_ROUTES = "blogItem_route"
+   export  const ROLES_ITEM_DETAILS_ROUTES = "roles_route"

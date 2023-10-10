@@ -1,0 +1,206 @@
+@import "src/assets/variables";
+@import "src/assets/@mixin";
+
+.roles_details_body {
+  padding: 65px 0 0;
+}
+
+.roles_details_top_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roles_details_top_text {
+
+}
+
+.top_text_title {
+  color: $black;
+  max-width: 980px;
+
+  font-size: $fontSize54;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+
+  &::before {
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: $red;
+    bottom: -10px;
+
+  }
+
+}
+
+.sub_top_text {
+  margin-top: 53px;
+  max-width: 980px;
+
+  h3 {
+    color: $black;
+    font-size: $fontSize24;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 50px;
+  }
+
+  p {
+    color: $black;
+    font-size: $fontSize24;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 30px 0 0;
+
+  }
+}
+
+.sub2_top_text {
+  max-width: 980px;
+  margin-top: 32px;
+  padding: 0 0 0 15px;
+
+  .sub2_top_text_title {
+    margin: 0 0 20px;
+    color: #8D1038;
+
+    font-size: $fontSize33;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+
+  }
+
+  p {
+    margin: 10px 0 0;
+    position: relative;
+    display: flex;
+    color: $black;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: black;
+      content: '';
+      border-radius: 50%;
+      left: -20px;
+      top: 10px;
+
+    }
+
+  }
+}
+
+
+.roles_details_image_text{
+  padding: 20px 40px;
+  border-radius: 4px;
+  background: rgba(25, 25, 35, 0.06);
+  margin-top: 25px;
+
+  p{
+    max-width: 450px;
+    color: $black;
+    font-size: $fontSize17;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 0 ;
+  }
+
+}
+.roles_share_job{
+   display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.roles_share_job_icons{
+   display: flex;
+  gap: 15px;
+  align-items: center;
+
+  p{
+    color: $black;
+    font-size: $fontSize17;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 24.688px */
+  }
+}
+
+.roles_share_job_btn{
+   button{
+     padding: 17px 60px;
+     background: $backgroundGradient;
+     color: $white;
+     border-radius: 4px;
+     font-size: $fontSize22;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 33px; /* 33.946px */
+     text-transform: uppercase;
+     &:hover{
+       @include buttonHover()
+
+     }
+
+   }
+}
+.roles_bottom_text_content {
+  max-width: 980px;
+  margin-top: 75px;
+  padding: 0 0 0 40px;
+
+  p {
+    margin: 10px 0 0;
+    position: relative;
+    display: flex;
+    color: $black;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: black;
+      content: '';
+      border-radius: 50%;
+      left: -20px;
+      top: 10px;
+
+
+    }
+
+  }
+}
+
+.bottom_text_title {
+  margin: 0 0 20px;
+  color: #8D1038;
+  font-size: $fontSize33;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+
+
+}
+
+
+.consultation_block{
+   margin-top: 406px;
+}

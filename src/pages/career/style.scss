@@ -1,0 +1,28 @@
+@import "src/assets/variables";
+
+.careers_open_roles {
+  margin-top: 143px;
+}
+
+.open_roles_title {
+  color: $black;
+  font-size: $fontSize45;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px; /* 45px */
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    width: 7%;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: $red;
+    bottom: -10px;
+
+  }
+}
+.open_roles_list{
+   margin-top: 40px;
+}

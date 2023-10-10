@@ -13,7 +13,7 @@ import {
     BLOG_ROUTE,
     CAREER_ROUTE,
     HOME_ROUTE,
-    REFERENCE_ROUTE,
+    REFERENCE_ROUTE, ROLES_ITEM_DETAILS_ROUTES,
     SERVICES_ROUTE
 } from "./routes/consts";
 import Blog from "./pages/blog/blog";
@@ -22,6 +22,7 @@ import Reference from "./pages/reference/reference";
 import About from "./pages/about/about";
 import Services from "./pages/services/services";
 import BlogItemDetails from "./pages/blog/components/blogItemDetails/blogItemDetails";
+import RolesDetails from "./pages/career/components/rolesDetails/rolesDetails";
 
 function App() {
     return (
@@ -32,10 +33,11 @@ function App() {
                     <Route path={"/*"} element={<Home/>}/>
                     <Route path={HOME_ROUTE} element={<Home/>}/>
                     <Route path={`/${BLOG_ITEM_DETAILS_ROUTES}/:id`} element={<BlogItemDetails/>}/>
-                    <Route path={CAREER_ROUTE} element={<Services/>}/>
-                    <Route path={REFERENCE_ROUTE} element={<About/>}/>
-                    <Route path={ABOUT_ROUTE} element={<Reference/>}/>
-                    <Route path={SERVICES_ROUTE} element={<Career/>}/>
+                    <Route path={`/${ROLES_ITEM_DETAILS_ROUTES}/:id`} element={<RolesDetails/>}/>
+                    <Route path={SERVICES_ROUTE} element={<Services/>}/>
+                    <Route path={ABOUT_ROUTE} element={<About/>}/>
+                    <Route path={REFERENCE_ROUTE} element={<Reference/>}/>
+                    <Route path={CAREER_ROUTE} element={<Career/>}/>
                     <Route path={BLOG_ROUTE} element={<Blog/>}/>
 
                     {/*<Route path={"/*"} element={<Home/>}/>*/}

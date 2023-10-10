@@ -1,0 +1,255 @@
+@import "src/assets/variables";
+
+.about_us_list {
+  margin-top: 115px;
+}
+
+.about_values_title {
+
+  h3 {
+    color: $black;
+    text-align: center;
+    font-size: $fontSize100;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    text-transform: uppercase;
+    position: relative;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 2px;
+      background-color: $red;
+      bottom: -7px;
+
+    }
+  }
+
+  p {
+    margin: 40px 0 0;
+    color: $black;
+    text-align: center;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 400px;
+  }
+}
+
+.about_values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 190px;
+}
+
+.about_values_list {
+  margin-top: 100px;
+  display: flex;
+  gap: 150px;
+}
+
+.values_list_item {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 15.013px;
+  border: 1px solid #FFF0F0;
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  box-shadow: 3.75332px 5.25464px 22.5199px 0px rgba(25, 25, 35, 0.36), -5px -5px 4.50398px 0px rgba(255, 255, 255, 0.35) inset;
+  backdrop-filter: blur(13.136605262756348px);
+}
+
+.about_distinguishes_body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 170px;
+}
+
+.distinguishes_body_text {
+  max-width: 800px;
+
+  p {
+    margin: 20px 0 0;
+    color: $black;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.about_distinguishes_img_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.about_distinguishes_img_block_border {
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.about_distinguishes_red_block {
+  padding: 70px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+}
+
+.distinguishes_white_block {
+  padding: 63px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.about_distinguishes_img {
+  position: absolute;
+  min-width: 120px;
+  min-height: 120px;
+  background-color: white;
+
+  border-radius: 4px;
+  border: 2px solid #8D1038;
+  box-shadow: 0px 0px 13px 0px rgba(163, 163, 163, 0.40) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.distinguishes_row1 {
+  left: -80px;
+
+}
+
+.distinguishes_row2 {
+  top: -80px;
+}
+
+.distinguishes_row3 {
+  bottom: -80px;
+  right: 60px;
+}
+
+.about_our_team {
+  margin-top: 360px;
+
+
+}
+
+.our_team_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
+    color: $black;
+    text-align: center;
+    font-size: $fontSize100;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    text-transform: uppercase;
+    position: relative;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 2px;
+      background-color: $red;
+      bottom: -7px;
+
+    }
+  }
+
+  p {
+    margin: 40px 0 0;
+    color: $black;
+    text-align: center;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+
+.about_our_team_people {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 220px;
+
+}
+
+
+
+.people_item_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  img {
+    position: relative;
+    filter: grayscale(100%);
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        filter: grayscale(0);
+    }
+  }
+
+}
+
+.people_item_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background: $backgroundGradient;
+
+}
+
+.people_item_name {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
+    color: $black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+  }
+
+  p {
+    color: $black;
+    font-size: $fontSize22;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.3%;
+  }
+}
+.about_consultation_block{
+   margin-top: 200px;
+}

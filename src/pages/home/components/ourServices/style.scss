@@ -50,6 +50,7 @@
   justify-content: space-between;
   gap: 89px;
   margin: 150px 0 0 ;
+  align-items: center;
 
 
 }
@@ -121,8 +122,6 @@
   height: 100%;
 
   img{
-     width: 100%;
-    height: 100%;
     filter: grayscale(100%);
     transition: .3s;
 

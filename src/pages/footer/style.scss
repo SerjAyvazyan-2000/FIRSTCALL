@@ -1,7 +1,26 @@
 @import "src/assets/variables";
 
 .footer {
-  margin-top: 91px;
+ padding:  91px 0 0 ;
+  margin-top: 200px;
+  position: relative;
+
+
+  &::before{
+     position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 1px;
+    background-color: $black;
+    transition: 3s;
+
+  }
+  &.active::before{
+    width: 100%;
+
+  }
 }
 
 .footer_container {

@@ -1,0 +1,56 @@
+@import "src/assets/variables";
+
+.about_item{
+   display: flex;
+   justify-content: space-between;
+   gap: 80px;
+   margin: 144px 0 0 ;
+}
+
+
+.about_item_text_title{
+   color: $black;
+   font-size: $fontSize74;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 120px;
+   text-transform: uppercase;
+}
+
+.about_item_description {
+   color: $black;
+   text-align: justify;
+   font-size: $fontSize22;
+   font-style: normal;
+   font-weight: 400;
+   max-width: 620px;
+   line-height: 120%;
+   margin-top: 62px;
+}
+.about_item_subTitle{
+    margin: 30px 0 0 ;
+   color: $black;
+   text-align: justify;
+   font-size: $fontSize22;
+   font-style: normal;
+   font-weight: 400;
+   max-width: 620px;
+   line-height: 120%;
+
+
+}
+.about_item_image {
+   cursor: pointer;
+   img {
+      filter: grayscale(100%);
+      transition: .3s;
+
+   }
+
+   &:hover {
+      img {
+         filter: grayscale(0);
+
+      }
+   }
+}
