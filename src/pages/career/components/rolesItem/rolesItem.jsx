@@ -4,6 +4,14 @@ import {NavLink} from "react-router-dom";
 import {ROLES_ITEM_DETAILS_ROUTES} from "../../../../routes/consts";
 
 const RolesItem = ({item}) => {
+
+    const handleClick = () => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
     return <div className="career_roles_item">
         <div className="roles_item_texts">
             <h3>{item.title}</h3>
@@ -15,7 +23,7 @@ const RolesItem = ({item}) => {
 
             </div>
             <div className="roles_item_route">
-                <NavLink to={`/${ROLES_ITEM_DETAILS_ROUTES}/${item.id}`}>{item.route}</NavLink>
+                <NavLink onClick={handleClick} to={`/${ROLES_ITEM_DETAILS_ROUTES}/${item.id}`}>{item.route}</NavLink>
             </div>
         </div>
 

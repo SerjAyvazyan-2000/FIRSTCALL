@@ -1,7 +1,8 @@
 @import "../../../../assets/variables";
 @import "../../../../assets/@mixin";
 .cooperation_work_section {
-  margin-top: 322px;
+  margin-top: calc(50px + (300 - 50) * ((100vw - 320px) / (1680 - 320)));
+
 }
 
 .cooperation_title {
@@ -16,9 +17,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: calc($fontSize20 + 33 * (100vw / 1680));
+
     @include h3_title();
-    @include adaptive_fontSize(20px, 32);
-    @include adaptive_lineHeight(20px, 32);
 
 
     &:before {
@@ -38,6 +39,9 @@
   display: flex;
   gap: 28px;
   margin-top: 43px;
+  @media screen and (max-width: $md1 + px){
+    overflow-x: scroll;
+  }
 }
 
 .cooperation_list_item {
@@ -54,6 +58,9 @@
 
   &:hover{
     transform: scale(1.1);
+  }
+  @media screen and (max-width: $md1 + px){
+      min-width: 300px;
   }
 
 }
@@ -99,7 +106,7 @@
   height: 100%;
   position: relative;
   span{
-     @include adaptive_fontSize(20px , 40)
+    font-size: 50px;
   }
 
   &::before{
@@ -165,7 +172,38 @@
 
       @include buttonHover
     }
+    @media screen  and (max-width: $md3 + px){
+      padding: 15px 37px;
 
+    }
+
+  }
+
+}
+
+.telephone_middle_border {
+  position: relative;
+  min-height: 110px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0;
+    background-color: black;
+    transition: 3s;
+    left: 50.4%;
+
+
+  }
+
+  &.active {
+    &::before {
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: $md1 + px){
+    display: none;
   }
 
 }

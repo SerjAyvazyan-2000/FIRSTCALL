@@ -1,11 +1,28 @@
+@import "src/assets/@mixin.scss";
+@import "src/assets/variables.scss";
 
 .App {
     overflow: hidden;
     font-family: Barlow Condensed;
+
 }
+
 .main{
-     margin-top: 180px;
+    margin-top: 150px;
+    @media screen and (max-width: $md2 + px) {
+        margin-top: 140px;
+
+    }
+    @media screen and (max-width: $md3 + px) {
+        margin-top: 130px;
+
+    }
+    @media screen and (max-width: $md3 + px) {
+        margin-top: 125px;
+
+    }
 }
+
 
 @font-face {
     font-family: Barlow Condensed ;

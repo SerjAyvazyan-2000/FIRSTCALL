@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import image from "../../assets/images/Rectangle.png"
-import ellipse from "../../assets/images/Group 8206.png"
+import ellipse from "../../assets/svgIcons/Group 8206 (1).svg"
 import OurServices from "./components/ourServices/OurServices";
 import Partners from "./components/partners/partners";
 import Portfolio from "./components/portfolio/portfolio";
@@ -14,6 +14,7 @@ import rotateLogo from "../../assets/images/rotateLogo.png"
 import {motion, px} from "framer-motion"
 import TelephoneSales from "./components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
+import ScrollTop from "../components/scrollTop/scrollTop";
 
 
 const Home = () => {
@@ -23,8 +24,6 @@ const Home = () => {
     const observer = useRef(null);
     const [scale, setScale] = useState(false)
     const {isVisible} = useIntersection(observer, homeSection)
-
-
     const [scrollLine, setScrollLine] = useState(0)
 
 
@@ -101,6 +100,12 @@ const Home = () => {
                                 <div className={scale ? " telephone_sales_img hover" : "telephone_sales_img"}>
                                     <img src={image} alt=""/>
                                 </div>
+                                <div className="excellence-btn_mobile">
+                                    <button onMouseOut={onMouseOut} onMouseOver={mouseOver} ref={buttonRef}
+                                            >L’ets start
+                                    </button>
+                                </div>
+
                             </div>
 
                             <div className={isVisible ? "home_ellipse_block active" : "home_ellipse_block"}>
@@ -141,6 +146,7 @@ const Home = () => {
         <DistinguishesUs/>
         <CooperationWork/>
         <ConsultationForm/>
+        <ScrollTop/>
     </>
 };
 

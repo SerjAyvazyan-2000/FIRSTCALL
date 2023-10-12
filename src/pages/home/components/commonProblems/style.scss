@@ -2,7 +2,6 @@
 @import "../../../../assets/@mixin";
 
 .common_problems_section {
-  margin-top: 145px;
 
   .G-container {
     position: relative;
@@ -10,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
   }
+  @include adaptive-value("margin-top",145 ,50,1)
 
 }
 
@@ -23,13 +23,22 @@
   border-radius: 4px;
   left: 0;
   bottom: 200px;
+z-index: -1;
 
-
+  @media screen  and (max-width: 1503px){
+   display: none;
+  }
 }
 .common_problems_body {
   max-width: 1450px;
   width: 100%;
   margin: 0 auto;
+
+
+  @media screen  and (max-width: 1503px){
+    overflow-x: scroll;
+  }
+
 }
 .common_problems_title {
   display: flex;
@@ -38,7 +47,7 @@
   flex-direction: column;
 
   h3 {
-    max-width: 523px;
+    max-width: 723px;
     position: relative;
     display: flex;
     align-items: center;
@@ -64,8 +73,9 @@
       }
     }
 
-    @include adaptive_fontSize(20px, 32);
     @include h3_title();
+    @include adaptive-font(52,40);
+    @include adaptive-value("line-height",50,40,1)
 
   }
 
@@ -78,6 +88,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
   }
 }
 
@@ -98,12 +109,24 @@
 }
 .common_problems_list {
   margin-top: 33px;
+
+
+}
+.common_problems_scroll{
+  @media screen  and (max-width: 1503px){
+    min-width: 1500px;
+  }
+}
+.common_problems_scroll_block{
+  margin-top: 30px;
+  @media screen  and (max-width: 1503px){
+     overflow-x: scroll;
+  }
 }
 
 
 .common_problems_red_items {
   display: flex;
-  flex-wrap: wrap;
   gap: .7%;
 }
 .common_problems_red_item {
@@ -150,6 +173,8 @@
     transition: .3s;
 
   }
+
+
 
 }
 
@@ -198,7 +223,8 @@
   p {
     color: $white;
     text-align: center;
-    font-size: $fontSize60;
+    font-size: calc($fontSize22 + 40 * (100vw / 1680));
+
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -221,7 +247,6 @@
 
 .common_problems_black_items {
   display: flex;
-  flex-wrap: wrap;
   gap: .7%;
   margin-top: 40px;
 
@@ -251,6 +276,8 @@
     font-size: 50px;
     color: white;
   }
+
+
 }
 
 .common_problems_black_item_text {
@@ -266,6 +293,9 @@
     line-height: 100%; /* 26px */
     max-width: 166px;
   }
+  @media screen  and (max-width: 1503px){
+    min-width: 120px;
+  }
 }
 
 .common_problems_list_footer {
@@ -278,10 +308,13 @@
     max-width: 1099px;
     text-align: center;
     color: $black;
-    font-size: $fontSize22;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 22px */
+
+    @include adaptive-font(22,18);
+    @include adaptive-value("line-height",28,18,1);
+
   }
 
 }

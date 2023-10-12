@@ -39,24 +39,25 @@ const Testimonials = () => {
                     <h3>Testimonials</h3>
                     <p>See what our clients say about our services and how we helped them achieve their goals.</p>
                 </div>
-                <div className="arrow-right">
-                    <img src={arrowRight} alt=""/>
-                </div>
+
                 <div className="container">
 
                     <div className="testimonials_clients_slider">
+                        <div className="arrow-right">
+                            <img src={arrowRight} alt=""/>
+                        </div>
                         <Swiper
-                            slidesPerView={2}
+                            slidesPerView={1}
                             navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
                             spaceBetween={50}
                             breakpoints={{
-                                500: {
-                                    slidesPerView: 1,
+
+                                1280: {
+                                    slidesPerView: 2,
                                 },
-                                800:{
-                                    slidesPerView:2,
-                                },
+
+
 
 
                             }}
@@ -121,13 +122,27 @@ const Testimonials = () => {
 
                             </SwiperSlide>
                         </Swiper>
+                        <div className="arrow-left">
+                            <img src={arrowLeft} alt=""/>
+                        </div>
+
 
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
 
-                <div className="arrow-left">
-                    <img src={arrowLeft} alt=""/>
-                </div>
 
                 <div className={isVisible ? "testimonials_more_btn active" : "testimonials_more_btn"}>
                     <button>Load MORE</button>

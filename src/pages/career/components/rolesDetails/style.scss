@@ -2,23 +2,41 @@
 @import "src/assets/@mixin";
 
 .roles_details_body {
-  padding: 65px 0 0;
+
+  @media (max-width: $md4 + px) {
+     padding:  10px 0 0 ;
+  }
+  @include adaptive-value("padding-top", 65, 20, 0)
+
 }
 
 .roles_details_top_content {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 1115px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .roles_details_top_text {
+  @media (max-width: 1395px) {
+    max-width: 700px;
 
+  }
+  @media (max-width: 1295px) {
+    max-width: 500px;
+
+  }
+  @media (max-width: 1115px) {
+    max-width: 100%;
+  }
 }
 
 .top_text_title {
   color: $black;
   max-width: 980px;
-
-  font-size: $fontSize54;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -34,55 +52,56 @@
 
   }
 
+  @include adaptive-font(54, 22)
 }
 
 .sub_top_text {
-  margin-top: 53px;
   max-width: 980px;
 
   h3 {
     color: $black;
-    font-size: $fontSize24;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 0 50px;
+    @include adaptive-font(24, 14)
+
   }
 
   p {
     color: $black;
-    font-size: $fontSize24;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 30px 0 0;
+
+    @include adaptive-font(24, 14);
+    @include adaptive-value("margin-top", 30, 10, 0);
 
   }
+
+  @include adaptive-value("margin-top", 50, 10, 0);
+
 }
 
 .sub2_top_text {
   max-width: 980px;
-  margin-top: 32px;
   padding: 0 0 0 15px;
 
   .sub2_top_text_title {
     margin: 0 0 20px;
     color: #8D1038;
-
-    font-size: $fontSize33;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration-line: underline;
+    @include adaptive-font(33,18)
 
   }
 
   p {
-    margin: 10px 0 0;
+    margin: 20px 0 0;
     position: relative;
     display: flex;
     color: $black;
-    font-size: $fontSize22;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -98,68 +117,106 @@
       top: 10px;
 
     }
+ @include adaptive-font(22,14)
+  }
+
+  @media (max-width: 1395px) {
+    max-width: 500px;
 
   }
+  @media (max-width: 1115px) {
+    padding: 0;
+  }
+  @include adaptive-value("margin-top", 32, 20, 0)
+
+
 }
 
+//Mobile
 
-.roles_details_image_text{
-  padding: 20px 40px;
+.roles_details_image_text {
+  padding: 20px 0 ;
   border-radius: 4px;
   background: rgba(25, 25, 35, 0.06);
   margin-top: 25px;
 
-  p{
+  p {
     max-width: 450px;
     color: $black;
     font-size: $fontSize17;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 20px 0 0 ;
+    margin: 20px 0 0;
   }
 
+  @media (max-width: 1115px) {
+    display: none;
+  }
+  @include adaptive-value("padding-left",40,20,1);
+  @include adaptive-value("padding-right",40,20,1);
+
 }
-.roles_share_job{
-   display: flex;
+//Mobile
+
+.roles_details_image {
+  @media (max-width: 1115px) {
+     img{
+        width: 100%;
+     }
+  }
+}
+
+//Mobile
+.roles_share_job {
+  display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  @media (max-width: 1115px) {
+    display: none;
+  }
 }
-.roles_share_job_icons{
-   display: flex;
+//Mobile
+
+
+.roles_share_job_icons {
+  display: flex;
   gap: 15px;
   align-items: center;
 
-  p{
+  p {
     color: $black;
     font-size: $fontSize17;
     font-style: normal;
     font-weight: 400;
     line-height: 25px; /* 24.688px */
   }
+
 }
 
-.roles_share_job_btn{
-   button{
-     padding: 17px 60px;
-     background: $backgroundGradient;
-     color: $white;
-     border-radius: 4px;
-     font-size: $fontSize22;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 33px; /* 33.946px */
-     text-transform: uppercase;
-     &:hover{
-       @include buttonHover()
+.roles_share_job_btn {
+  button {
+    padding: 17px 60px;
+    background: $backgroundGradient;
+    color: $white;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; /* 33.946px */
+    text-transform: uppercase;
 
-     }
+    &:hover {
+      @include buttonHover()
 
-   }
+    }
+    @include adaptive-font(22,18)
+
+
+  }
 }
+
 .roles_bottom_text_content {
   max-width: 980px;
-  margin-top: 75px;
   padding: 0 0 0 40px;
 
   p {
@@ -167,7 +224,6 @@
     position: relative;
     display: flex;
     color: $black;
-    font-size: $fontSize22;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -184,23 +240,51 @@
 
 
     }
+    @include adaptive-font(22,14);
 
   }
+  @media (max-width: 1115px) {
+    padding: 0;
+  }
+  @include adaptive-value("margin-top",75,20, 0)
+
 }
 
 .bottom_text_title {
   margin: 0 0 20px;
   color: #8D1038;
-  font-size: $fontSize33;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+  @include adaptive-font(33,18)
 
 
 }
 
 
-.consultation_block{
-   margin-top: 406px;
+.consultation_block {
+
+  @include adaptive-value("margin-top",400,50,1)
+}
+
+.mobile_roles{
+  display: none;
+  .roles_details_image_text{
+    @media (max-width: 1115px) {
+      display: block;
+    }
+  }
+  .roles_share_job{
+    @media (max-width: 1115px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+
+    }
+  }
+  @media (max-width: 1115px) {
+    display: block;
+  }
 }

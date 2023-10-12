@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import "../src/assets/index.scss"
 import Header from "./pages/header/header";
 import "./assets/icons/style.css"

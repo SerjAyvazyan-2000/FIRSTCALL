@@ -1,7 +1,6 @@
 import React, {useRef} from 'react';
 import "./style.scss"
-import image from "../../../../assets/images/contract 1.png"
-import image1 from "../../../../assets/images/computer 1.png"
+import image1 from "../../../../assets/svgIcons/computer 1.svg"
 import useIntersection from "../../../hooks/useIntersection ";
 
 
@@ -38,7 +37,7 @@ const CooperationWork = () => {
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
-                        <img src={image} alt=""/>
+                        <span className="icon-qualified"></span>
                     </div>
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">2</div>
@@ -89,7 +88,7 @@ const CooperationWork = () => {
                 <div className="cooperation_list_item">
                     <div className="cooperation_list_item_border"></div>
                     <div className="cooperation_item_img">
-                        <img src={image} alt=""/>
+                        <span className="icon-calendar"></span>
                     </div>
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">5</div>

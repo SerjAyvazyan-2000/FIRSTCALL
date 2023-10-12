@@ -34,7 +34,7 @@ const BlogItemDetails = () => {
     return  <>
     {    Object.keys(blogItem).length   ?
         <>
-            <section className="blog_item_details">
+            <section id="blogDetails" className="blog_item_details">
                 <div className="G-container">
                     <div className="blog_item_details_body">
                         <div className="blog_details_header">

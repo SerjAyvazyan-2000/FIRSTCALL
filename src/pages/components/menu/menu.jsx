@@ -2,8 +2,8 @@ import React from 'react';
 import "./style.scss"
 import {NavLink} from "react-router-dom";
 import {ABOUT_ROUTE, BLOG_ROUTE, CAREER_ROUTE, REFERENCE_ROUTE, SERVICES_ROUTE} from "../../../routes/consts";
-const Menu = () => {
-    return <nav className="menu_block">
+const Menu = ({openMenu}) => {
+    return <nav className={openMenu ? "menu_block active" :"menu_block" }>
         <ul>
             <li>
                 <NavLink to={SERVICES_ROUTE} >SERVICE</NavLink>

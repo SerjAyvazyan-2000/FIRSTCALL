@@ -9,49 +9,53 @@ const Footer = () => {
     return <footer ref={lastElement} className={ isVisible ? "footer active" : "footer"}>
           <div className="container">
               <div className="footer_content">
+
+
                   <div className="footer_logo">
                       <img src={logo} alt=""/>
                   </div>
 
-                  <div className="footer_menu_row1">
-                      <ul>
-                          <li>
-                              <a href="">B2B cold calling</a>
-                          </li>
-                          <li>
-                              <a href="">Sales assistance</a>
-                          </li>
-                          <li>
-                              <a href="">Social selling</a>
-                          </li>
-                          <li>
-                              <a href="">Establishment of CRM processes</a>
-                          </li>
-                          <li>
-                              <a href="">Creation of BI dashboards</a>
-                          </li>
+                   <div className="footer_menu_block">
+                       <div className="footer_menu_row1">
+                           <ul>
+                               <li>
+                                   <a href="">B2B cold calling</a>
+                               </li>
+                               <li>
+                                   <a href="">Sales assistance</a>
+                               </li>
+                               <li>
+                                   <a href="">Social selling</a>
+                               </li>
+                               <li>
+                                   <a href="">Establishment of CRM processes</a>
+                               </li>
+                               <li>
+                                   <a href="">Creation of BI dashboards</a>
+                               </li>
 
-                      </ul>
-                  </div>
-                  <div className="footer_menu_row2">
-                      <ul>
-                          <li><a href="">Sales process</a></li>
-                          <li><a href="">Consulting</a></li>
-                          <li><a href="">Training of internal teams</a></li>
-                          <li><a href="">Why us?</a></li>
-                          <li><a href="">Impressum</a></li>
-                          <li><a href="">Datenschutzerklärung</a></li>
-                      </ul>
-                  </div>
-                  <div className="footer_menu_row3">
-                      <ul>
-                          <li><a href="">About us</a></li>
-                          <li><a href="">References</a></li>
-                          <li><a href="">Career</a></li>
-                          <li><a href="">Blog</a></li>
-                          <li><a href="">Contact us</a></li>
-                      </ul>
-                  </div>
+                           </ul>
+                       </div>
+                       <div className="footer_menu_row2">
+                           <ul>
+                               <li><a href="">Sales process</a></li>
+                               <li><a href="">Consulting</a></li>
+                               <li><a href="">Training of internal teams</a></li>
+                               <li><a href="">Why us?</a></li>
+                               <li><a href="">Impressum</a></li>
+                               <li><a href="">Datenschutzerklärung</a></li>
+                           </ul>
+                       </div>
+                       <div className="footer_menu_row3">
+                           <ul>
+                               <li><a href="">About us</a></li>
+                               <li><a href="">References</a></li>
+                               <li><a href="">Career</a></li>
+                               <li><a href="">Blog</a></li>
+                               <li><a href="">Contact us</a></li>
+                           </ul>
+                       </div>
+                   </div>
 
                  <div className="footer_contact">
                     <div className="footer_contact_icons">

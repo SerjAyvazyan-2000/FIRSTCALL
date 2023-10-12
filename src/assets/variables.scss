@@ -5,7 +5,10 @@ $backgroundGradient: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 10
 $white1:#FFF0F0;
 
 //Breakpoints
-$md1:1329;
+$maxWidth:1920;
+$maxWidthContainer:1680;
+$maxWidthMiniContainer:1394;
+$md1:1280;
 $md2:991.98;
 $md3:767.98;
 $md4:479.98;
@@ -29,3 +32,4 @@ $fontSize60:60px;
 $fontSize26:26px;
 $fontSize90:90px;
 $fontSize12:12px;
+$fontSize40:40px

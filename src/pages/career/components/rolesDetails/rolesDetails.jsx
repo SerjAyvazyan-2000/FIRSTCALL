@@ -74,6 +74,7 @@ const RolesDetails = () => {
                                 kern@firstcallagency.de </p>
                             <p>We can't wait to hear from you! Let's make magic together!</p>
                         </div>
+
                         <div className="roles_share_job">
                             <div className="roles_share_job_icons">
                                 <p>Share a job</p>
@@ -132,6 +133,37 @@ const RolesDetails = () => {
 
             </div>
         </div>
+        <div className="mobile_roles">
+            <div className="roles_details_image_text">
+                <p>Immerse yourself in a working world where you can really make a difference.
+                    We can't wait to meet you!
+                    Pull out all the stops and send us your application! We want to see everything: Cover
+                    letter, resume, references - and don't forget to tell us what your salary expectations
+                    are and when you can start.
+                    Don't hesitate, put everything in an email and send it off to
+                    kern@firstcallagency.de </p>
+                <p>We can't wait to hear from you! Let's make magic together!</p>
+            </div>
+
+            <div className="roles_share_job">
+                <div className="roles_share_job_icons">
+                    <p>Share a job</p>
+                    <a href="">
+                        <img src={facebook} alt=""/>
+                    </a>
+                    <a href="">
+                        <img src={telegram} alt=""/>
+                    </a>
+                    <a href="">
+                        <img src={twitter} alt=""/>
+                    </a>
+                </div>
+                <div className="roles_share_job_btn">
+                    <button>APPLY FOR A JOB</button>
+                </div>
+            </div>
+        </div>
+
         <div className='consultation_block'>
             <ConsultationForm/>
 

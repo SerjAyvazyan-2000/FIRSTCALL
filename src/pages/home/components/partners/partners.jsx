@@ -11,14 +11,17 @@ import  partner8 from "../../../../assets/svgIcons/globalfinanz.svg"
 import  partner9 from "../../../../assets/svgIcons/apollon.svg"
 import  partner10 from "../../../../assets/svgIcons/ra-micro.svg"
 import  partner11 from "../../../../assets/svgIcons/webix.svg"
+import useIntersection from "../../../hooks/useIntersection ";
 
 const Partners = () => {
-
-    return <section  className="partners_section">
+    const lastElement = useRef(null);
+    const observer = useRef(null);
+    const {isVisible} = useIntersection(observer, lastElement)
+    return <section ref={lastElement}  className="partners_section">
         <div className="G-container">
 
             <div className={"partners_title"}>
-                <h3>PARTNERS</h3>
+                <h3 className={isVisible ? "partners_title active" : 'partners_title'}>PARTNERS</h3>
                 <p>We offer more than the usual call centre routine. Our rbroad portfolio ranges from B2B cold calling
                     and
                     existing customer care, to sales assistance, creation of CRM workflows, to complex sales consulting

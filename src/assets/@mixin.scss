@@ -1,22 +1,47 @@
 @import "variables";
 
+
 @mixin h3_title() {
   font-style: normal;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
   text-align: center;
-
-
-
 }
-@mixin  adaptive_fontSize($minFontSize:0,$maxFontSize:0){
-   font-size:calc($minFontSize + $maxFontSize * (100vw / 1520)) ;
+
+@mixin adaptive-font($pcSize,$mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 700px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / $maxWidthContainer));
+  }
+  @media (min-width: 700px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / $maxWidthContainer));
+  }
+  //font-size: calc(40px + (60 + 60 * 0.7) * ((100vw - 320px) / 1680));
 }
-@mixin  buttonHover () {
+
+@mixin adaptive-value($property,$startSize,$minSize,$type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+     #{$property}: $startSize + px;
+    @media (max-width: #{$maxWidthContainer + px }) {
+      #{$property} : calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+    }
+  } @else if $type==2 {
+    #{$property}: $startSize + px;
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property} : calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    }
+  }@else {
+    #{$property} : calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+  }
+}
+
+
+@mixin buttonHover() {
   background: var(--hover, linear-gradient(180deg, #91183d 0%, #24242a 700%));
 
-}
-@mixin adaptive_lineHeight($minLineHeight:0,$maxLineHeight:0){
-   line-height: calc($minLineHeight + $maxLineHeight * (100vw / 1520));
 }

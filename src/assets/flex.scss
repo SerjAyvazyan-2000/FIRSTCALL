@@ -1,20 +1,21 @@
-
+@import "variables";
 .G-container{
-  max-width: 1680px;
+  max-width: $maxWidthContainer + px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  //border-left: 2px solid red;
   position: relative;
 }
 .container{
-  max-width: 1394px;
+  max-width: $maxWidthMiniContainer + px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  //border-left: 2px solid green;
-  //border-right: 2px solid green;
 
+  @media screen and (max-width: $md3 + px) {
+    padding: 0 0 0 0 ;
+
+  }
 
 
 }

@@ -1,12 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import logo from "../../../../assets/images/Vector.png"
-import image from "../../../../assets/images/image.png"
-import image1 from "../../../../assets/images/image1.png"
-import image2 from "../../../../assets/images/image2.png"
+import image from "../../../../assets/images/image 230 (1).png"
+import image1 from "../../../../assets/images/image 230 (1).png"
+import image2 from "../../../../assets/images/image 230 (1).png"
 import image3 from "../../../../assets/images/image 230 (1).png"
-import image4 from "../../../../assets/images/image4.png"
-import image5 from "../../../../assets/images/image 228 (2).png"
+import image4 from "../../../../assets/images/image 230 (1).png"
+import image5 from "../../../../assets/images/image 230 (1).png"
 import useIntersection from "../../../hooks/useIntersection ";
 
 const DistinguishesUs = () => {
@@ -29,7 +29,7 @@ const DistinguishesUs = () => {
                 <div className="distinguishes_body">
 
                     <div className="distinguishes_img_block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="490" height="490" viewBox="0 0 500 500">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 500">
                             <rect width="500" height="500" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
                         </svg>
 

@@ -79,7 +79,7 @@ const About = () => {
 
                     <div className="about_distinguishes_img_block_border">
                         <div className="about_distinguishes_red_block">
-                            <div className="distinguishes_white_block">
+                            <div className="about_distinguishes_white_block">
                                 <img src={logo} alt=""/>
                             </div>
                         </div>

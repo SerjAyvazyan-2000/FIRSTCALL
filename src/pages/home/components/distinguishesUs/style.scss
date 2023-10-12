@@ -2,22 +2,27 @@
 @import "../../../../assets/@mixin";
 
 .distinguishes_us_section {
-  margin-top: 153px;
+  margin-top: calc(50px + (150 - 50) * ((100vw - 320px) / (1680 - 320)));
+
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  .G-container{
-     padding: 0 40px;
+  .G-container {
+    padding: 0 40px;
   }
 
-  svg{
-     position: absolute;
-  }
+
 }
 
 .distinguishes_body {
   display: flex;
+
+  @media screen and (max-width: $md1 + px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 
@@ -28,12 +33,27 @@
   align-items: center;
   justify-content: center;
 
-  svg{
+  svg {
+    width: 480px;
+    height: 480px;
+    position: absolute;
 
-    rect{
 
+    @media screen  and (max-width: $md3 + px){
+      width: 400px;
+      height: 400px;
+    }
+    @media screen  and (max-width: $md3 + px){
+      width: 350px;
+      height: 350px;
 
     }
+    @media screen  and (max-width: $md4 + px){
+      width: 280px;
+      height: 280px;
+
+    }
+
   }
 
 }
@@ -46,10 +66,15 @@
   position: relative;
 
 
+  @media screen  and (max-width: $md3 + px){
+       padding: 30px;
+  }
+
 }
+
 //Images start
-.distinguishes_img{
-   position: absolute;
+.distinguishes_img {
+  position: absolute;
   min-width: 70px;
   min-height: 70px;
   border-radius: 4px;
@@ -60,37 +85,83 @@
   align-items: center;
   justify-content: center;
 
+  @media screen  and (max-width: $md3 + px){
+    min-width: 60px;
+    min-height: 60px;
+  }
+  @media screen  and (max-width: $md3 + px){
+    min-width: 60px;
+    min-height: 60px;
+  }
+  @media screen  and (max-width: $md4 + px){
+    min-width: 40px;
+    min-height: 40px;
+
+  }
+  .img_block{
+    @media screen  and (max-width: $md4 + px){
+       width: 60%;
+       height: 60%;
+    }
+  }
+
 }
-.row1{
+
+.row1 {
   left: -35px;
   top: 100px;
+  @media screen  and (max-width: $md4 + px){
+    left: -10px;
 
+  }
 }
-.row2{
+
+.row2 {
   right: -30px;
   bottom: 120px;
+  @media screen  and (max-width: $md4 + px){
+    right: -10px;
 
+  }
 }
-.row3{
+
+.row3 {
   top: -35px;
   left: 120px;
+  @media screen  and (max-width: $md4 + px){
+    top: -20px;
 
+  }
 }
-.row4{
+
+.row4 {
   bottom: -30px;
   left: 10px;
+  @media screen  and (max-width: $md4 + px){
+    bottom: -20px;
 
+  }
 }
-.row5{
+
+.row5 {
   bottom: -30px;
   right: 30px;
+  @media screen  and (max-width: $md4 + px){
+    bottom: -20px;
 
+  }
 }
-.row6{
+
+.row6 {
   top: -35px;
   right: 10px;
+  @media screen  and (max-width: $md4 + px){
+    top: -20px;
+
+  }
 
 }
+
 //Images end
 
 .distinguishes_red_block {
@@ -101,21 +172,48 @@
   align-items: center;
   justify-content: center;
   background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
+  @media screen  and (max-width: $md3 + px){
+    padding: 60px;
+
+  }
+  @media screen  and (max-width: $md4 + px){
+    padding: 40px;
+
+  }
 }
 
 .distinguishes_white_block {
-
-  padding: 73px;
   background-color: white;
+  padding: 73px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
 
+  @media screen  and (max-width: $md3 + px){
+    padding: 50px;
+
+  }
+  @media screen  and (max-width: $md4 + px){
+    padding: 30px;
+
+  }
 }
 
 .distinguishes_text_block {
   margin-left: 100px;
+
+  @media screen and (max-width: $md1 + px) {
+     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    @include adaptive-value("margin-top",50,20,1)
+
+
+  }
 }
 
 .distinguishes_text_title {
@@ -126,16 +224,26 @@
     font-weight: 400;
     color: $black;
     text-transform: uppercase;
+
     &::before {
       position: absolute;
       content: '';
-      width: 20%;
+      width: 30%;
       height: 1px;
       bottom: -10px;
-      left: 0;
+      display: block;
       background-color: $red;
     }
-    @include adaptive_fontSize(20px,32)
+
+    @media screen and (max-width: $md1 + px) {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    @include adaptive-font(52,40);
+    @include adaptive-value("line-height",50,30,1)
   }
 
 }
@@ -145,17 +253,25 @@
 
   p {
     color: $black;
-    font-size: $fontSize26;
+    font-size: calc($fontSize17 + 10 * (100vw / 1680));
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 26px */
     margin: 30px 0 0;
+    @media screen and (max-width: $md1 + px) {
+      text-align: center;
+    }
+    @include adaptive-value("margin-top",30,20,1);
+    @include adaptive-value("line-height",30,20,1)
+
   }
+  @include adaptive-value("margin-top",40,20,1)
 }
-.distinguishes_see_more{
-   margin-top: 39px;
-  button{
-     padding: 14px 111px;
+
+.distinguishes_see_more {
+  margin-top: 39px;
+
+  button {
+    padding: 14px 111px;
     background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
     color: #FFF;
     text-align: center;
@@ -167,19 +283,24 @@
     border-radius: 4px;
 
 
-    &:hover{
+    &:hover {
       @include buttonHover
     }
+    @media screen  and (max-width: $md3 + px){
+      padding: 15px 77px;
+
+    }
   }
+
 }
 
 
-.animation_line{
+.animation_line {
   min-height: 300px;
   position: relative;
 
 
-  span{
+  span {
     position: absolute;
     height: 0;
     width: 1px;
@@ -189,7 +310,8 @@
     transition: 3s;
 
   }
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     height: 1px;
@@ -200,7 +322,8 @@
     transition: 3s;
 
   }
-  &::after{
+
+  &::after {
     content: '';
     position: absolute;
     height: 0;
@@ -209,25 +332,33 @@
     left: 300px;
     transition: 3s;
   }
-  &.active{
 
-    &::after{
+  &.active {
+
+    &::after {
       height: 140px;
     }
-    &::before{
+
+    &::before {
       width: 550px;
 
     }
-    span{
+
+    span {
       height: 140px;
     }
   }
 }
-.animation_section{
-   position: relative;
 
-  svg{
-     position: absolute;
+.animation_section {
+  position: relative;
+
+  svg {
+    position: absolute;
     left: 350px;
+  }
+
+  @media screen and (max-width: $md1 + px) {
+    display: none;
   }
 }
