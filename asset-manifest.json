@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.f17c7a90.css",
-    "main.js": "/FIRSTCALL/static/js/main.38c7dd83.js",
+    "main.css": "/FIRSTCALL/static/css/main.4ce43b5a.css",
+    "main.js": "/FIRSTCALL/static/js/main.40fa567e.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/about us.svg": "/FIRSTCALL/static/media/about us.92657cb78107e45fb65cfe05cd7c0ae1.svg",
     "static/media/blogDetails.png": "/FIRSTCALL/static/media/blogDetails.db50a8a8522b52541a24.png",
@@ -61,19 +61,19 @@
     "static/media/DownloadSimple (3).svg": "/FIRSTCALL/static/media/DownloadSimple (3).76dde04dbd29638aada89f12158f5e73.svg",
     "static/media/TwitterLogo (1).svg": "/FIRSTCALL/static/media/TwitterLogo (1).0d71f585985b70516e10e06ffe5d1304.svg",
     "index.html": "/FIRSTCALL/index.html",
-    "static/media/ArrowDownRight (1).svg": "/FIRSTCALL/static/media/ArrowDownRight (1).151001984a472e04fe98.svg",
+    "static/media/ArrowDownRight (1).svg": "/FIRSTCALL/static/media/ArrowDownRight (1).151001984a472e04fe9832874b15b397.svg",
     "static/media/ArrowDownRight (7).svg": "/FIRSTCALL/static/media/ArrowDownRight (7).b01c4e147174176e0556cc0a024936ad.svg",
     "static/media/ArrowDownRight.svg": "/FIRSTCALL/static/media/ArrowDownRight.3ae960f3949f90eb30e8dde6499169d7.svg",
     "static/media/ArrowLeft (7).svg": "/FIRSTCALL/static/media/ArrowLeft (7).8c5fbec5049e72a864b7fda51a63e7aa.svg",
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
     "static/media/ArrowDownRight (5).svg": "/FIRSTCALL/static/media/ArrowDownRight (5).2e013d1e4e947c82e85a1ab2d96d2b79.svg",
     "static/media/Group 8206 (1).svg": "/FIRSTCALL/static/media/Group 8206 (1).1de5c7cf185b390c3dd1bc3f929b0d83.svg",
-    "main.f17c7a90.css.map": "/FIRSTCALL/static/css/main.f17c7a90.css.map",
-    "main.38c7dd83.js.map": "/FIRSTCALL/static/js/main.38c7dd83.js.map",
+    "main.4ce43b5a.css.map": "/FIRSTCALL/static/css/main.4ce43b5a.css.map",
+    "main.40fa567e.js.map": "/FIRSTCALL/static/js/main.40fa567e.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f17c7a90.css",
-    "static/js/main.38c7dd83.js"
+    "static/css/main.4ce43b5a.css",
+    "static/js/main.40fa567e.js"
   ]
 }
