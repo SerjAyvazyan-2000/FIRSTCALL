@@ -78,7 +78,7 @@
   min-width: 70px;
   min-height: 70px;
   border-radius: 4px;
-  border: 2px solid #8D1038;
+  border: 1px solid ;
   background: #FFF;
   box-shadow: 0px 0px 13px 0px rgba(163, 163, 163, 0.40) inset;
   display: flex;
@@ -239,8 +239,7 @@
       justify-content: center;
 
     }
-    @include adaptive-font(52,40);
-    @include adaptive-value("line-height",50,30,1)
+    @include adaptive-font(52,34);
   }
 
 }

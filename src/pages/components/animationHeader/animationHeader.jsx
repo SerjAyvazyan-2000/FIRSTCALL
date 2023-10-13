@@ -6,6 +6,9 @@ const AnimationHeader = ({title, subTitle, description, image}) => {
 
     return <section className="animate_top_section">
 
+        
+
+
                 <div className="top_section_text_block">
                     <div className="G-container">
                         <div className="animation_text_content">

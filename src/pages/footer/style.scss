@@ -42,6 +42,9 @@
    flex-direction: column;
      align-items: center;
     gap: 30px;
+    img{
+
+    }
   }
 }
 .footer_menu_block{
@@ -52,27 +55,15 @@
   @media screen and (max-width: 1039px){
    width: 100%;
   }
-  @media (max-width: 420px) {
-    flex-direction: column;
-  }
+
 }
 .footer_logo{
    flex:  0 0 25%;
   display: flex;
-  @media (max-width: 587px) {
-    width: 100%;
-    justify-content: flex-start;
 
-  }
 }
 .footer_contact{
-  @media (max-width: 587px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
 
-  }
 }
 
 
@@ -84,7 +75,6 @@
       a {
         margin: 0 0 5px;
         color: $black;
-        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
@@ -94,6 +84,7 @@
         &:hover {
           text-decoration: underline;
         }
+        @include adaptive-font(16,12)
       }
     }
   }
@@ -118,7 +109,6 @@
 
   a {
     color: #191923;
-    font-size: 20px;
 
 
   }
@@ -134,15 +124,26 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    width: 100%;
   }
 }
+.footer_menu_row3{
+  @media (max-width: 587px) {
+   display: flex;
+    justify-content: flex-end;
 
+  }
 
+}
 
 
 .footer_contact_location, .footer_contact_phone, .footer_contact_email {
   display: flex;
   margin: 0 0 5px;
+
+}
+.footer_contact_location_text{
+  width: 100%;
 }
 
 .footer_contact_info > :not(:last-child) {
@@ -153,19 +154,24 @@
 .footer_end {
   border-radius: 4px;
   background: #8D1038;
-  padding: 20px 172px;
   margin-top: 64px;
 
   p {
     text-align: center;
     color: #FFF;
     font-family: Barlow Condensed;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 154.3%; /* 24.688px */
+    line-height: 20px;
     text-transform: uppercase;
+    @include adaptive-font(16,14)
   }
+  @include adaptive-value("margin-top",64,24,1);
+  @include adaptive-value("padding-right",170,40,1);
+  @include adaptive-value("padding-left",170,40,1);
+  @include adaptive-value("padding-top",20,13,1);
+  @include adaptive-value("padding-bottom",20,13,1)
+
 }
 .footer_end_icon{
    margin-top: 10px;

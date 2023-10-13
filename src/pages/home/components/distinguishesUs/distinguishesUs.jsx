@@ -2,11 +2,11 @@ import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import logo from "../../../../assets/images/Vector.png"
 import image from "../../../../assets/images/image 230 (1).png"
-import image1 from "../../../../assets/images/image 230 (1).png"
-import image2 from "../../../../assets/images/image 230 (1).png"
-import image3 from "../../../../assets/images/image 230 (1).png"
-import image4 from "../../../../assets/images/image 230 (1).png"
-import image5 from "../../../../assets/images/image 230 (1).png"
+import image1 from "../../../../assets/images/distingushes4.png"
+import image2 from "../../../../assets/images/distnguishesImage.png"
+import image3 from "../../../../assets/images/distingushes1.png"
+import image4 from "../../../../assets/images/distingushes2.png"
+import image5 from "../../../../assets/images/distingushes3.png"
 import useIntersection from "../../../hooks/useIntersection ";
 
 const DistinguishesUs = () => {
