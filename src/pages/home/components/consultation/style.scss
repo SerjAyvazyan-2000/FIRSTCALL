@@ -165,7 +165,7 @@
     cursor: pointer;
 
     &::before {
-      content: "\2713";
+      content: "";
       display: flex;
       align-items: center;
       justify-content: center;
@@ -180,6 +180,11 @@
 
     }
 
+    &.active::before{
+      content: '\2713';
+
+    }
+
   }
 
   p {
@@ -190,9 +195,9 @@
   }
 
 
-   label input[type="checkbox"]:checked + label::before {
-    content: '\2713';
-  }
+  // label input[type="checkbox"]:checked + label::before {
+  //  content: '\2713';
+  //}
   input[type="checkbox"] {
     display: none;
   }

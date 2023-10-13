@@ -17,64 +17,90 @@ import logo from "../../assets/images/Vector.png";
 import ConsultationForm from "../home/components/consultation/ consultation";
 
 
-
 const About = () => {
     const {aboutUs} = useInformation()
     return <section className="about_section">
-          <AnimationHeader
-              title={"ABOUT US"}
-              description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit HOME"}
-              image={animationSvg}
-          />
 
-         <div className="container">
-             <div className="about_us_list">
-                 {aboutUs.map(item=>(
-                     <AboutItem key={item.id} reverse={item.reverse}  item={item}/>
-                 ))}
-             </div>
-         </div>
-        <div className="container">
-              <div className="about_values">
+        <div className="about_animation_top_block">
+            <div className="G-container">
 
-                  <div className="about_values_title">
-                      <h3 className="G-center">our values</h3>
-                      <p>What drives us and what distinguishes us from other sales agencies</p>
-                  </div>
+                <div className="about_top_section_body">
 
-                  <div className="about_values_list">
-                      <div className="values_list_item G-center">
-                          <img src={aboutValues1} alt=""/>
-                      </div>
-                      <div className="values_list_item G-center">
-                          <img src={aboutValues2} alt=""/>
-                      </div>
-                      <div className="values_list_item G-center">
-                          <img src={aboutValues3} alt=""/>
-                      </div>
-                  </div>
+                    <div className="animation_text_content">
+                        <h3>ABOUT US</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit HOME</p>
+                    </div>
 
-              </div>
+                    <div className="about_animation_top_image">
+                        <img src={animationSvg} alt=""/>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
+        <div className="container">
+            <div className="about_us_list">
+                {aboutUs.map(item => (
+                    <AboutItem key={item.id} reverse={item.reverse} item={item}/>
+                ))}
+            </div>
+        </div>
+        <div className="container">
+            <div className="about_values">
+
+                <div className="about_values_title">
+                    <h3 className="G-center">our values</h3>
+                    <p>What drives us and what distinguishes us from other sales agencies</p>
+                </div>
+
+                <div className="about_values_list">
+                    <div className="values_list_item G-center">
+                        <img src={aboutValues1} alt=""/>
+                    </div>
+                    <div className="values_list_item G-center">
+                        <img src={aboutValues2} alt=""/>
+                    </div>
+                    <div className="values_list_item G-center">
+                        <img src={aboutValues3} alt=""/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <div className="G-container">
             <div className="about_distinguishes_body">
                 <div className="distinguishes_body_text">
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend massa.
-                         Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend massa.Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet aliquam massa. Ultrices ultrices
-                         mattis vestibulum quis dictumst imperdiet orci eleifend massa.Lorem ipsum dolor sit amet consectetur.
-                     </p>
                     <p>
-                        Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend massa.Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit
-                        lorem nec aliquet aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend massa.
+                        Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est.
+                        Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet
+                        aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend massa.
+                        Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum est.
+                        Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec aliquet
+                        aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet orci eleifend
+                        massa.Lorem ipsum dolor sit amet consectetur. Cursus sit aliquam orci in lobortis condimentum
+                        est. Molestie ornare leo viverra diam ut morbi. Pellentesque lectus urna ante sit lorem nec
+                        aliquet aliquam massa. Ultrices ultrices
+                        mattis vestibulum quis dictumst imperdiet orci eleifend massa.Lorem ipsum dolor sit amet
+                        consectetur.
+                    </p>
+                    <p>
+                        Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi.
+                        Pellentesque lectus urna ante sit lorem nec aliquet aliquam massa. Ultrices ultrices mattis
+                        vestibulum quis dictumst imperdiet orci eleifend massa.Lorem ipsum dolor sit amet consectetur.
+                        Cursus sit aliquam orci in lobortis condimentum est. Molestie ornare leo viverra diam ut morbi.
+                        Pellentesque lectus urna ante sit
+                        lorem nec aliquet aliquam massa. Ultrices ultrices mattis vestibulum quis dictumst imperdiet
+                        orci eleifend massa.
                     </p>
                 </div>
 
                 <div className="about_distinguishes_img_block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="490" height="490" viewBox="0 0 500 500">
-                        <rect width="500" height="500" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
+                        <rect width="500" height="500" fill="none" stroke="black" strokeWidth="4"
+                              strokeDasharray="10 15"/>
                     </svg>
 
                     <div className="about_distinguishes_img_block_border">
@@ -87,7 +113,7 @@ const About = () => {
 
 
                     <div className="about_distinguishes_img distinguishes_row1  ">
-                            <img src={aboutValues4} alt=""/>
+                        <img src={aboutValues4} alt=""/>
                     </div>
                     <div className="about_distinguishes_img  distinguishes_row2  ">
                         <div className="img_block">
@@ -117,17 +143,17 @@ const About = () => {
                 </div>
 
                 <div className="about_our_team_people">
-                     <div className="people_item">
-                         <div className="people_item_content">
-                             <div className="people_item_bg"></div>
-                             <img src={about} alt=""/>
-                         </div>
-                         <div className="people_item_name">
-                             <h3>Annette Black</h3>
-                             <p>Specialist</p>
-                         </div>
+                    <div className="people_item">
+                        <div className="people_item_content">
+                            <div className="people_item_bg"></div>
+                            <img src={about} alt=""/>
+                        </div>
+                        <div className="people_item_name">
+                            <h3>Annette Black</h3>
+                            <p>Specialist</p>
+                        </div>
 
-                     </div>
+                    </div>
                     <div className="people_item">
 
                         <div className="people_item_content">

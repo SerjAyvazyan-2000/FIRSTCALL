@@ -54,10 +54,13 @@
   position: relative;
   transition: .3s;
   cursor: pointer;
+  @media (any-hover: hover) {
+     &:hover{
+       transform: scale(1.1);
 
-  &:hover{
-    transform: scale(1.1);
+     }
   }
+
   @media screen and (max-width: $md1 + px){
       min-width: 300px;
   }
@@ -187,7 +190,7 @@
   &::before {
     position: absolute;
     content: '';
-    width: 2px;
+    width: 1px;
     height: 0;
     background-color: black;
     transition: 3s;

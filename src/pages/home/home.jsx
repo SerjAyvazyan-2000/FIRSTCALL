@@ -14,7 +14,6 @@ import rotateLogo from "../../assets/images/rotateLogo.png"
 import {motion, px} from "framer-motion"
 import TelephoneSales from "./components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
-import ScrollTop from "../components/scrollTop/scrollTop";
 
 
 const Home = () => {
@@ -76,12 +75,11 @@ const Home = () => {
                          1783.9L1131.13 1715.15L1131.13 1524.15C1131.13 1521.94 1132.92
                           1520.15 1135.13 1520.15L1350.43 1520.15C1352.63 1520.15 1354.43
                            1518.36 1354.43 1516.15L1354.43 1261.49L1354.43 829.5C1354.43 827.291 1352.6 825.5 1350.39 825.5C848.093 825.511 507.333 827.49 5.03713 827.501C2.82799 827.501 1.0005 825.71 1.0005 823.501L1.00049 1"
-                          stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                          stroke="black" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"
                           style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}}/>
                 </svg>
             </div>
         </div>
-
         <motion.section ref={homeSection} initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
             <div className="G-container">
                 <div className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
@@ -146,7 +144,6 @@ const Home = () => {
         <DistinguishesUs/>
         <CooperationWork/>
         <ConsultationForm/>
-        <ScrollTop/>
     </>
 };
 

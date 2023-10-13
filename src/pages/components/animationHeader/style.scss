@@ -1,19 +1,13 @@
 @import "src/assets/variables";
 @import "src/assets/@mixin";
 
-.animate_top_section {
+
+.animate_top_section{
   background: $backgroundGradient;
-  overflow: hidden;
-  position: relative;
   margin: -30px 0;
-  @media screen and (min-width: $md3+px) {
-    display: flex;
-  }
 }
-
-.top_section_text_block {
-  flex: 0 0 100%;
-
+.top_section_body{
+    position: relative;
 }
 
 .animation_text_content {
@@ -59,15 +53,16 @@
   @include adaptive-value("padding-bottom",150,63,1)
 
 }
-.animation_header_image {
+
+.animation_content-image{
   position: absolute;
-  right: -600px;
-  top: -200px;
-
-
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   img{
-    max-width: none;
-    max-height: none;
+     position: absolute;
+     right: -150px;
     animation: pulse 10s linear infinite;
   }
 
@@ -85,3 +80,34 @@
     transform: scale(1);
   }
 }
+
+
+//.animate_top_section {
+//  background: $backgroundGradient;
+//  overflow: hidden;
+//  position: relative;
+//  margin: -30px 0;
+//  @media screen and (min-width: $md3+px) {
+//    display: flex;
+//  }
+//}
+//
+//.top_section_text_block {
+//  flex: 0 0 100%;
+//
+//}
+//
+//.animation_header_image {
+//  position: absolute;
+//  right: -600px;
+//  top: -200px;
+//
+//
+//  img{
+//    max-width: none;
+//    max-height: none;
+//    animation: pulse 10s linear infinite;
+//  }
+//
+//
+//}

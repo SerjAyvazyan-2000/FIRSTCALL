@@ -30,7 +30,7 @@ const DistinguishesUs = () => {
 
                     <div className="distinguishes_img_block">
                         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 500">
-                            <rect width="500" height="500" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
+                            <rect width="500" height="500" fill="none" stroke="black" strokeWidth="4" strokeDasharray="10 15"/>
                         </svg>
 
                         <div className="distinguishes_img_block_border">
@@ -118,7 +118,7 @@ const DistinguishesUs = () => {
         </section>
         <section className="animation_section G-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 768 568 568" fill="none">
-                <path style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}} d="M1 0L0.99998 318L0.999957 974.5C0.999957 976.709 2.79082 978.5 4.99996 978.5L563 978.5C565.209 978.5 567 980.291 567 982.5L567 1119.5" stroke="#191923" stroke-width="1.5" stroke-linejoin="round"/>
+                <path style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}} d="M1 0L0.99998 318L0.999957 974.5C0.999957 976.709 2.79082 978.5 4.99996 978.5L563 978.5C565.209 978.5 567 980.291 567 982.5L567 1119.5" stroke="#191923" strokeWidth="1.5" strokeLinejoin="round"/>
             </svg>
 
         </section>

@@ -194,21 +194,20 @@
       top: 60px;
 
     }
+    &:hover .common_problems_red_item_text, {
+      opacity: 0;
+      visibility: hidden;
+
+    }
+    &:hover .common_problems_red_item_img {
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+
+    }
   }
 
 
-  &:hover .common_problems_red_item_text, {
-    opacity: 0;
-    visibility: hidden;
-
-  }
-
-  &:hover .common_problems_red_item_img {
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-
-  }
 
   @media screen and (max-width: $md3+px) {
     height: 200px;
@@ -278,7 +277,7 @@
     @media (max-width: $md3 + px) {
       padding: 10px 0;
     }
-    @include adaptive-font(60, 14)
+    @include adaptive-font(55, 12)
 
   }
 
@@ -294,19 +293,24 @@
   width: 100%;
   border-radius: 4px;
 
+  @media (max-width: $md4 + px) {
+    flex: 0 0 90%;
+  }
+
 }
 
 .problems_list_text_icon {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: $md4 + px) {
 
     img {
       width: 50%;
       height: 50%;
-      position: absolute;
-      left: 0;
-      top: 0;
+
     }
   }
 }
@@ -340,6 +344,11 @@
     transform: rotate(180deg);
     @media screen and (max-width: 1503px) {
       top: -30px;
+
+
+    }
+    @media screen and (max-width: $md4 + px) {
+      top: -22px;
 
 
     }

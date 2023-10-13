@@ -18,10 +18,9 @@ const CommonProblems = () => {
         <div className="G-container">
             <div className="common_problems_absolute">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600">
-                    <rect width="1500" height="600" fill="none" stroke="black" stroke-width="4" stroke-dasharray="10 15"/>
+                    <rect width="1500" height="600" fill="none" stroke="black" strokeWidth="4" strokeDasharray="10 15"/>
                 </svg>
             </div>
-
 
             <div className="common_problems_body">
                 <div className="common_problems_title">
