@@ -12,25 +12,40 @@ import  partner9 from "../../../../assets/svgIcons/apollon.svg"
 import  partner10 from "../../../../assets/svgIcons/ra-micro.svg"
 import  partner11 from "../../../../assets/svgIcons/webix.svg"
 import useIntersection from "../../../hooks/useIntersection ";
+import {motion, px} from "framer-motion"
 
 const Partners = () => {
+
     const lastElement = useRef(null);
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
-    return <section ref={lastElement}  className="partners_section">
-        <div className="G-container">
 
-            <div className={"partners_title"}>
-                <h3 className={isVisible ? "partners_title active" : 'partners_title'}>PARTNERS</h3>
+
+
+    const textAnimation  = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: custom =>({
+            y: 0,
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
+    }
+    return <motion.section ref={lastElement} initial={'hidden'} whileInView={'visible'}  className="partners_section">
+        <div className="G-container">
+            <motion.div custom={2} variants={textAnimation} className={"partners_title"}>
+                <h3  className={isVisible ? "partners_title active" : 'partners_title'}>PARTNERS</h3>
                 <p>We offer more than the usual call centre routine. Our rbroad portfolio ranges from B2B cold calling
                     and
                     existing customer care, to sales assistance, creation of CRM workflows, to complex sales consulting
                     and
                     training for your team. Learn more on our detailed service page.</p>
-            </div>
+            </motion.div>
 
 
-            <div className="partners_items">
+            <motion.div custom={2} variants={textAnimation} className="partners_items">
                 <div className="partners_item">
                     <img src={partner1} alt=""/>
 
@@ -83,9 +98,9 @@ const Partners = () => {
 
 
                 </div>
-            </div>
+            </motion.div>
         </div>
-    </section>
+    </motion.section>
 
 };
 

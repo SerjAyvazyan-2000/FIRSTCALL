@@ -4,7 +4,11 @@
 
 .animate_top_section{
   background: $backgroundGradient;
-  margin: -30px 0;
+  margin: -20px 0;
+  @media (max-width: $md4 + px) {
+    margin: -60px 0;
+
+  }
 }
 .top_section_body{
     position: relative;
@@ -81,33 +85,3 @@
   }
 }
 
-
-//.animate_top_section {
-//  background: $backgroundGradient;
-//  overflow: hidden;
-//  position: relative;
-//  margin: -30px 0;
-//  @media screen and (min-width: $md3+px) {
-//    display: flex;
-//  }
-//}
-//
-//.top_section_text_block {
-//  flex: 0 0 100%;
-//
-//}
-//
-//.animation_header_image {
-//  position: absolute;
-//  right: -600px;
-//  top: -200px;
-//
-//
-//  img{
-//    max-width: none;
-//    max-height: none;
-//    animation: pulse 10s linear infinite;
-//  }
-//
-//
-//}

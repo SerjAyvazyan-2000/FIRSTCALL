@@ -3,16 +3,29 @@ import "./style.scss"
 import {NavLink} from "react-router-dom";
 import arrowImg from "../../../../assets/svgIcons/ArrowDownRight.svg"
 import useIntersection from "../../../hooks/useIntersection ";
+import {motion, px} from "framer-motion"
+
 const Portfolio = () => {
     const lastElement = useRef(null);
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
 
-    return <section ref={lastElement} className="services_portfolio">
+
+    const textAnimation  = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: custom =>({
+            y: 0,
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
+    }
+    return <motion.section ref={lastElement} initial={'hidden'} whileInView={'visible'} className="services_portfolio">
         <div className='G-container'>
             <div className="services_portfolio_body">
-
-                <div className="services_portfolio_title">
+                <motion.div custom={2} variants={textAnimation} className="services_portfolio_title">
                     <h3 className={isVisible ? "active" : null}>SERVICES PORTFOLIO</h3>
                     <p>We offer more than the usual call centre routine. Our rbroad portfolio ranges from B2B cold
                         calling
@@ -20,7 +33,7 @@ const Portfolio = () => {
                         existing customer care, to sales assistance, creation of CRM workflows,
                         to complex sales consulting and training for your team. Learn more on our detailed service
                         page.</p>
-                </div>
+                </motion.div>
 
                 <div className="services_portfolio_items">
                     <NavLink className="services_portfolio_item">
@@ -88,7 +101,7 @@ const Portfolio = () => {
 
         </div>
 
-    </section>
+    </motion.section>
 
 };
 

@@ -18,8 +18,8 @@ const Header = () => {
                 <NavLink to={HOME_ROUTE} className="header_logo">
                     <img src={logo} alt=""/>
                 </NavLink>
-                <div className={openMenu ? "header_menu active" : "header_menu"}>
-                    <Menu openMenu={openMenu}/>
+                <div className={"header_menu"}>
+                    <Menu onClose={setOpenMenu} openMenu={openMenu}/>
                 </div>
 
                 <div className="header_download">

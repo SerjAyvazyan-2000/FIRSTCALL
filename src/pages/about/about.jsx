@@ -22,9 +22,9 @@ const About = () => {
     return <section className="about_section">
 
         <div className="about_animation_top_block">
-            <div className="G-container">
 
                 <div className="about_top_section_body">
+                    <div className="G-container">
 
                     <div className="animation_text_content">
                         <h3>ABOUT US</h3>
@@ -98,7 +98,7 @@ const About = () => {
                 </div>
 
                 <div className="about_distinguishes_img_block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="490" height="490" viewBox="0 0 500 500">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 500">
                         <rect width="500" height="500" fill="none" stroke="black" strokeWidth="4"
                               strokeDasharray="10 15"/>
                     </svg>
@@ -109,20 +109,19 @@ const About = () => {
                                 <img src={logo} alt=""/>
                             </div>
                         </div>
-                    </div>
 
-
-                    <div className="about_distinguishes_img distinguishes_row1  ">
-                        <img src={aboutValues4} alt=""/>
-                    </div>
-                    <div className="about_distinguishes_img  distinguishes_row2  ">
-                        <div className="img_block">
-                            <img src={aboutValues5} alt=""/>
+                        <div className="about_distinguishes_img distinguishes_row1  ">
+                            <img src={aboutValues4} alt=""/>
                         </div>
-                    </div>
-                    <div className="about_distinguishes_img distinguishes_row3 ">
-                        <div className="img_block">
-                            <img src={aboutValues6} alt=""/>
+                        <div className="about_distinguishes_img  distinguishes_row2  ">
+                            <div className="img_block">
+                                <img src={aboutValues5} alt=""/>
+                            </div>
+                        </div>
+                        <div className="about_distinguishes_img distinguishes_row3 ">
+                            <div className="img_block">
+                                <img src={aboutValues6} alt=""/>
+                            </div>
                         </div>
                     </div>
 
@@ -138,7 +137,7 @@ const About = () => {
             <div className="about_our_team">
 
                 <div className="our_team_title">
-                    <h3 className="G-center">our values</h3>
+                    <h3 className="G-center">our team</h3>
                     <p>What drives us and what distinguishes us from other sales agencies</p>
                 </div>
 
@@ -170,7 +169,7 @@ const About = () => {
 
                         <div className="people_item_content">
                             <div className="people_item_bg"></div>
-                            <img src={about1} alt=""/>
+                            <img src={about} alt=""/>
                         </div>
                         <div className="people_item_name">
                             <h3>Annette Black</h3>

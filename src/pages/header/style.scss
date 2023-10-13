@@ -47,31 +47,6 @@
 .header_menu {
   flex: 1 1 auto;
 
-  @media screen and (max-width: $md1 + px) {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-    width: 100%;
-
-
-    &.active{
-      right: 0;
-      opacity: 1;
-      visibility: visible;
-
-    }
-    nav{
-      ul{
-        display: flex;
-        flex-direction: column;
-
-      }
-    }
-
-  }
 
 
 }
@@ -80,11 +55,7 @@
   display: flex;
   gap: 43px;
   @media screen and (max-width: $md1 + px) {
-    position: fixed;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
+     display: none;
   }
 }
 
@@ -182,6 +153,7 @@
     height: 30px;
     cursor: pointer;
     display: block;
+    z-index: 10;
 
 
     &::after {
@@ -200,14 +172,15 @@
 
     }
     &.active::after{
-        transform: translateY(12px) rotate(45deg);
+      transform: translateY(18px) rotate(45deg);
+      width: 70%;
     }
 
     span {
       display: block;
       width: 80%;
 
-      height: 1.5px;
+      height: 1px;
       background-color: black;
       position: absolute;
       top: 13px;
@@ -215,7 +188,7 @@
       transition: .3s;
 
       @media screen and (max-width: $md4 + px) {
-         top: 11px;
+        top: 11px;
         width: 60%;
 
       }
@@ -238,8 +211,8 @@
 
     }
     &.active::before{
-      transform: translateY(-12px) rotate(-45deg);
-      width: 90%;
+      transform: translateY(-10px) rotate(-45deg);
+      width: 70%;
     }
     &.active span{
       transform: scaleX(0);
@@ -255,5 +228,6 @@
   }
 
 }
+
 
 
