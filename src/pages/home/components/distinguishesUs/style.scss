@@ -49,8 +49,8 @@
 
     }
     @media screen  and (max-width: $md4 + px){
-      width: 280px;
-      height: 280px;
+      width: 320px;
+      height: 320px;
 
     }
 
@@ -89,13 +89,10 @@
     min-width: 60px;
     min-height: 60px;
   }
-  @media screen  and (max-width: $md3 + px){
-    min-width: 60px;
-    min-height: 60px;
-  }
+
   @media screen  and (max-width: $md4 + px){
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 50px;
+    min-height: 50px;
 
   }
   .img_block{
@@ -111,7 +108,7 @@
   left: -35px;
   top: 100px;
   @media screen  and (max-width: $md4 + px){
-    left: -10px;
+    left: -25px;
 
   }
 }
@@ -120,7 +117,7 @@
   right: -30px;
   bottom: 120px;
   @media screen  and (max-width: $md4 + px){
-    right: -10px;
+    right: -25px;
 
   }
 }
@@ -129,7 +126,7 @@
   top: -35px;
   left: 120px;
   @media screen  and (max-width: $md4 + px){
-    top: -20px;
+    top: -25px;
 
   }
 }
@@ -138,7 +135,7 @@
   bottom: -30px;
   left: 10px;
   @media screen  and (max-width: $md4 + px){
-    bottom: -20px;
+    bottom: -25px;
 
   }
 }
@@ -147,7 +144,7 @@
   bottom: -30px;
   right: 30px;
   @media screen  and (max-width: $md4 + px){
-    bottom: -20px;
+    bottom: -25px;
 
   }
 }
@@ -156,7 +153,7 @@
   top: -35px;
   right: 10px;
   @media screen  and (max-width: $md4 + px){
-    top: -20px;
+    top: -25px;
 
   }
 
@@ -177,7 +174,7 @@
 
   }
   @media screen  and (max-width: $md4 + px){
-    padding: 40px;
+    padding: 45px;
 
   }
 }
@@ -195,7 +192,7 @@
 
   }
   @media screen  and (max-width: $md4 + px){
-    padding: 30px;
+    padding: 35px;
 
   }
 }

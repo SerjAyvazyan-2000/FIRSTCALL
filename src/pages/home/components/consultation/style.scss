@@ -3,7 +3,7 @@
 
 .consultation_section {
   background: var(--hover, linear-gradient(180deg, #8D1038 0%, #191923 100%));
-  @media screen and (max-width: $md1 + px){
+  @media screen and (max-width: $md1 + px) {
     margin-top: 50px;
   }
 }
@@ -14,10 +14,10 @@
   display: flex;
   gap: 40px;
 
-  @media screen  and (max-width: $md2 + px){
-      flex-direction: column;
+  @media screen and (max-width: $md2 + px) {
+    flex-direction: column;
   }
-  @media screen  and (max-width: $md3 + px){
+  @media screen and (max-width: $md3 + px) {
     padding: 30px 0 30px;
   }
 }
@@ -37,8 +37,8 @@
     flex: 1 1 auto;
     font-size: calc($fontSize20 + 60 * (100vw / 1680));
 
-    @include adaptive-font(62,40);
-    @include adaptive-value("line-height",60,40,1)
+    @include adaptive-font(62, 40);
+    @include adaptive-value("line-height", 60, 40, 1)
   }
 
   a {
@@ -50,11 +50,15 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    @include adaptive-font(28,16);
+    @include adaptive-font(28, 16);
 
+    @media (max-width: $md4 + px) {
+
+    }
 
   }
-  @media screen  and (max-width: $md2 + px){
+
+  @media screen and (max-width: $md2 + px) {
     flex: 1 1 198px;
   }
 }
@@ -67,7 +71,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 32px */
-    @include adaptive-font(32,18);
+    @include adaptive-font(32, 18);
 
   }
 }
@@ -75,31 +79,23 @@
 .input_block {
   margin-top: 16px;
 
-  span {
-    color: #FFF;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 154.3%; /* 33.946px */
-    @include adaptive-font(22,12);
-
-  }
 
   input {
     padding: 21px 31px;
     width: 100%;
     border-radius: 4px;
+    margin-top: 5px;
 
     &::placeholder {
       color: #191923;
       font-style: normal;
       font-weight: 400;
       line-height: 154.3%; /* 33.946px */
-      @include adaptive-font(22,12);
+      @include adaptive-font(22, 12);
 
     }
 
   }
-
 
 
   span {
@@ -109,7 +105,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 154.3%; /* 33.946px */
-    @include adaptive-font(22,12);
+    @include adaptive-font(22, 12);
   }
 
 }
@@ -129,22 +125,30 @@
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 30px;
-      padding: 10px;
+      padding: 20px;
 
-      @media screen  and (max-width: $md3 + px){
+
+      @media screen and (max-width: $md3 + px) {
         width: 100%;
-        margin: 0 0  10px;
+        margin: 10px 0 0 ;
 
       }
+      @include adaptive-font(22, 12);
+
     }
-    @media screen  and (max-width: $md3 + px){
-     flex-direction: column;
+
+    @media screen and (max-width: $md3 + px) {
+      flex-direction: column;
     }
 
   }
 }
 
 .remember_me {
+  input[type="checkbox"] {
+    display: none;
+  }
+
   display: flex;
   gap: 10px;
   margin-top: 10px;
@@ -154,30 +158,27 @@
   font-style: normal;
   font-weight: 400;
   line-height: 154.3%;
+
   label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
 
+    &::before {
+      content: "\2713";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      background: none;
+      border: 1px solid white;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   }
-
-
-  label::before {
-
-    content: "";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    background:none;
-    border: 1px solid white;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
 
   input[type="checkbox"]:checked + label::before {
     content: '\2713';
@@ -185,12 +186,11 @@
   }
 
 
-  input[type="checkbox"] {
-    display: none;
-  }
-  p{
-    @include adaptive-font(20,15);
-
+  p {
+    @include adaptive-font(16, 8);
+    color: white;
+    font-style: normal;
+    font-weight: 400;
   }
 }
 
@@ -206,10 +206,10 @@
   font-weight: 400;
   line-height: 154.3%; /* 33.946px */
   text-transform: uppercase;
-  @media screen  and (max-width: $md3 + px){
+  @media screen and (max-width: $md3 + px) {
     padding: 14px 100px;
   }
-  @include adaptive-font(22,15);
+  @include adaptive-font(22, 15);
 
 }
 
@@ -231,7 +231,6 @@
 
 
   }
-
 
 
   &.active {

@@ -113,10 +113,19 @@
     text-transform: capitalize;
     margin: 18px 0 0;
     max-width: 513px;
+    display: flex;
+    align-items: center;
+
+
+
     @media screen  and (max-width: $maxWidthContainer + px){
       @include adaptive-font(50,20);
       @include adaptive-value("line-height",50 ,20, 0)
     }
+    @media (max-width: $md4 + px) {
+      max-width: 200px;
+    }
+
   }
 
   &::before{
@@ -131,8 +140,16 @@
 
     @media screen  and (max-width: $md3 + px){
       display: block;
+      width: 40%;
+      right: -40px;
+      bottom: 10px;
+
+
 
     }
+  }
+  @media (max-width: $md4 + px) {
+     padding: 0;
   }
 
 }
@@ -236,6 +253,10 @@
       background-color: black;
       right: 0;
       top: 0;
+      @media screen and (max-width: $md4 + px) {
+       top: -20px;
+      }
+
     }
   }
 

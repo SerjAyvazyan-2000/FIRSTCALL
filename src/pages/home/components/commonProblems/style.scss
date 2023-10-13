@@ -9,7 +9,8 @@
     flex-direction: column;
     justify-content: center;
   }
-  @include adaptive-value("margin-top",145 ,50,1)
+
+  @include adaptive-value("margin-top", 145, 50, 1)
 
 }
 
@@ -23,23 +24,25 @@
   border-radius: 4px;
   left: 0;
   bottom: 200px;
-z-index: -1;
+  z-index: -1;
 
-  @media screen  and (max-width: 1503px){
-   display: none;
+  @media screen and (max-width: 1503px) {
+    display: none;
   }
 }
+
 .common_problems_body {
   max-width: 1450px;
   width: 100%;
   margin: 0 auto;
 
 
-  @media screen  and (max-width: 1503px){
+  @media screen and (max-width: 1503px) {
     overflow-x: scroll;
   }
 
 }
+
 .common_problems_title {
   display: flex;
   align-items: center;
@@ -60,7 +63,7 @@ z-index: -1;
       background-color: $red;
       position: absolute;
       width: 0;
-      height: 2px;
+      height: 1px;
       bottom: -5px;
       display: block;
       transition: 3s;
@@ -74,8 +77,8 @@ z-index: -1;
     }
 
     @include h3_title();
-    @include adaptive-font(52,40);
-    @include adaptive-value("line-height",50,40,1)
+    @include adaptive-font(52, 40);
+    @include adaptive-value("line-height", 50, 40, 1)
 
   }
 
@@ -93,34 +96,49 @@ z-index: -1;
 }
 
 
-
 //RED ITEMS START
 
-.change_icon_to_image{
+.change_icon_to_image {
   height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  img{
-     width: 100%;
+  img {
+    width: 100%;
     height: 100%;
   }
 }
+
 .common_problems_list {
   margin-top: 33px;
 
 
 }
-.common_problems_scroll{
-  @media screen  and (max-width: 1503px){
-    min-width: 1500px;
+
+.common_problems_scroll {
+  @media screen and (max-width: 1503px) {
+    min-width: 2000px;
+    overflow-x: scroll;
   }
+
+  @media screen and (max-width: 954px) {
+    min-width: 1600px;
+  }
+  @media screen and (max-width: $md3+px) {
+    min-width: 1400px;
+  }
+  @media (max-width: $md4 + px) {
+    min-width: 600px;
+
+  }
+
 }
-.common_problems_scroll_block{
+
+.common_problems_scroll_block {
   margin-top: 30px;
-  @media screen  and (max-width: 1503px){
-     overflow-x: scroll;
+  @media screen and (max-width: 1503px) {
+    overflow-x: scroll;
   }
 }
 
@@ -128,10 +146,15 @@ z-index: -1;
 .common_problems_red_items {
   display: flex;
   gap: .7%;
+  @media (max-width: $md2 + px) {
+    gap: .1%;
+
+  }
 }
+
 .common_problems_red_item {
-  width: 16%;
-  min-height: 255px;
+  width: 17%;
+  max-height: 255px;
   border-right: 0.5px solid #FFF;
   background: var(--HAUPTFARBE, #8D1038);
   display: flex;
@@ -142,29 +165,42 @@ z-index: -1;
   z-index: 1;
   cursor: pointer;
 
+
   span {
     position: absolute;
     bottom: -40px;
     left: 50%;
-    font-size: 40px;
+    @media screen and (max-width: 1503px) {
+      bottom: -33px;
 
+    }
+    @media screen and (max-width: $md4 + px) {
+      bottom: -22px;
+
+    }
+    @include adaptive-font(40,20)
   }
 
   i {
-    font-size: 50px;
     color: white;
-  }
-
-  &:hover .problems_item_sub_text {
-    opacity: 1;
-    visibility: visible;
-    bottom: 60px;
+    @include adaptive-font(50, 20)
 
   }
+
+  @media (any-hover: hover) {
+    &:hover .problems_item_sub_text {
+      opacity: 1;
+      visibility: visible;
+      top: 60px;
+
+    }
+  }
+
 
   &:hover .common_problems_red_item_text, {
     opacity: 0;
     visibility: hidden;
+
   }
 
   &:hover .common_problems_red_item_img {
@@ -174,7 +210,13 @@ z-index: -1;
 
   }
 
+  @media screen and (max-width: $md3+px) {
+    height: 200px;
+  }
+  @media (max-width: $md4 + px) {
+    height: 120px;
 
+  }
 
 }
 
@@ -185,56 +227,66 @@ z-index: -1;
   p {
     color: #FFF;
     text-align: center;
-
-    font-size: $fontSize24;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 26px */
     max-width: 166px;
+    padding: 4px;
+    @include adaptive-font(26, 10)
   }
 }
-
 
 
 //RED ITEMS END
 
 .problems_item_sub_text {
   position: absolute;
+  width: 100%;
+  height: 100%;
   left: 0;
   opacity: 0;
   visibility: hidden;
-  bottom: 0;
+  top: 0;
   transition: .3s;
-  padding: 10px;
 
   p {
     color: white;
     text-align: center;
+    @include adaptive-font(15, 10)
+
   }
 }
+.common_problems_red_item_img{
+   img{
 
+   }
+}
 
 .common_problems_list_text_block {
-  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   p {
     color: $white;
     text-align: center;
-    font-size: calc($fontSize22 + 40 * (100vw / 1680));
-
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding: 22px 0;
+    @media (max-width: $md3 + px) {
+      padding: 10px 0;
+    }
+    @include adaptive-font(60, 14)
 
   }
 
   span {
     font-size: $fontSize50;
   }
+
+  @include adaptive-value("margin-top", 40, 20, 0)
 }
 
 .common_problems_list_text {
@@ -244,17 +296,34 @@ z-index: -1;
 
 }
 
+.problems_list_text_icon {
+  position: relative;
+
+  @media (max-width: $md4 + px) {
+
+    img {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
 
 .common_problems_black_items {
   display: flex;
   gap: .7%;
-  margin-top: 40px;
+  @include adaptive-value("margin-top", 40, 20, 0);
+  @media (max-width: $md2 + px) {
+    gap: .1%;
 
+  }
 }
 
 .common_problems_black_item {
-  width: 16%;
-  min-height: 255px;
+  width: 17%;
+  max-height: 255px;
   border-right: 0.5px solid #FFF;
   background: $black;
   display: flex;
@@ -268,16 +337,30 @@ z-index: -1;
     position: absolute;
     top: -40px;
     left: 50%;
-    font-size: 40px;
     transform: rotate(180deg);
+    @media screen and (max-width: 1503px) {
+      top: -30px;
+
+
+    }
+    @include adaptive-font(40,20)
+
   }
 
   i {
-    font-size: 50px;
     color: white;
+    @include adaptive-font(50, 20)
   }
 
+  @media screen and (max-width: $md3+px) {
+    height: 200px;
+    background-color: black;
 
+  }
+  @media (max-width: $md4 + px) {
+    height: 120px;
+
+  }
 }
 
 .common_problems_black_item_text {
@@ -286,16 +369,15 @@ z-index: -1;
   p {
     color: #FFF;
     text-align: center;
-
-    font-size: $fontSize24;
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 26px */
     max-width: 166px;
+    @include adaptive-font(26, 10)
+
   }
-  @media screen  and (max-width: 1503px){
-    min-width: 120px;
-  }
+
+
 }
 
 .common_problems_list_footer {
@@ -312,8 +394,8 @@ z-index: -1;
     font-weight: 400;
     line-height: 100%; /* 22px */
 
-    @include adaptive-font(22,18);
-    @include adaptive-value("line-height",28,18,1);
+    @include adaptive-font(22, 18);
+    @include adaptive-value("line-height", 28, 18, 1);
 
   }
 

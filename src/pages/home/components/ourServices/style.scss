@@ -61,7 +61,7 @@
     flex-direction: column;
   }
   @include adaptive-value("margin-top",150 ,50 , 1 );
-  @include adaptive-value("gap",90 ,50 , 1 )
+  @include adaptive-value("gap",90 ,40 , 1 )
 
 }
 
@@ -93,11 +93,13 @@
     text-decoration-color: $red;
     @include adaptive-font(75 , 40 );
     @include adaptive-value( "line-height" , 100 , 40 , 1);
-
+    @media screen and (max-width: $md4 + px) {
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
   }
 
   p {
-    //margin-top: calc(10px + (40 - 10) * ((100vw - 320px) / (1680 - 320)));
     color: $black;
     text-align: justify;
     font-size: calc(13px + 15 * (100vw / 1920));
@@ -115,13 +117,12 @@
     margin-top: calc(10px + (50 - 10) * ((100vw - 320px) / (1680 - 320)));
     color: $black;
     text-align: justify;
-    font-size: calc(15px + 15 * (100vw / 1920));
     font-style: italic;
     font-weight: 500;
-    line-height: calc(15px + 17 * (100vw / 1920));
     display: block;
     max-width: 623px;
     background-color: white;
+    @include adaptive-font(22,12)
 
   }
 }

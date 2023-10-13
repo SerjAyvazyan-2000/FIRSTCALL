@@ -17,8 +17,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: calc($fontSize20 + 33 * (100vw / 1680));
-
     @include h3_title();
 
 
@@ -31,6 +29,7 @@
       bottom: -5px;
       display: block;
     }
+    @include adaptive-font(52,40)
   }
 
 }
