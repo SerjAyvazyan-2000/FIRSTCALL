@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.4ce43b5a.css",
-    "main.js": "/FIRSTCALL/static/js/main.40fa567e.js",
+    "main.css": "/FIRSTCALL/static/css/main.1d62a278.css",
+    "main.js": "/FIRSTCALL/static/js/main.6bf8e613.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/about us.svg": "/FIRSTCALL/static/media/about us.92657cb78107e45fb65cfe05cd7c0ae1.svg",
     "static/media/blogDetails.png": "/FIRSTCALL/static/media/blogDetails.db50a8a8522b52541a24.png",
@@ -13,11 +13,8 @@
     "static/media/2.png": "/FIRSTCALL/static/media/2.1bd8570375ba3b7b01c9.png",
     "static/media/image 273.png": "/FIRSTCALL/static/media/image 273.f563779f047c4b913ed3.png",
     "static/media/careersDetails.png": "/FIRSTCALL/static/media/careersDetails.2d84caacea011722ddc6.png",
-    "static/media/servicesDark3.png": "/FIRSTCALL/static/media/servicesDark3.1d606a9558f00bdf09f4.png",
-    "static/media/servisecDark2.png": "/FIRSTCALL/static/media/servisecDark2.d45cde01a07145e1a55e.png",
     "static/media/icomoon.svg?5fc0g1": "/FIRSTCALL/static/media/icomoon.697aa1dcec42cf745059.svg",
     "static/media/philosophy 2.jpg": "/FIRSTCALL/static/media/philosophy 2.d6daf8ece290501e04b1.jpg",
-    "static/media/Rectangle 921 (1).png": "/FIRSTCALL/static/media/Rectangle 921 (1).b59bb1252dc801026b29.png",
     "static/media/blogImg.png": "/FIRSTCALL/static/media/blogImg.4640e1f7a53e8365045f.png",
     "static/media/Commissioner-Bold (1).woff": "/FIRSTCALL/static/media/Commissioner-Bold (1).ccd6283f0d2e0d792f3e.woff",
     "static/media/Commissioner-Medium.woff": "/FIRSTCALL/static/media/Commissioner-Medium.65dace8c21cd8f308aa7.woff",
@@ -68,12 +65,12 @@
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
     "static/media/ArrowDownRight (5).svg": "/FIRSTCALL/static/media/ArrowDownRight (5).2e013d1e4e947c82e85a1ab2d96d2b79.svg",
     "static/media/Group 8206 (1).svg": "/FIRSTCALL/static/media/Group 8206 (1).1de5c7cf185b390c3dd1bc3f929b0d83.svg",
-    "main.4ce43b5a.css.map": "/FIRSTCALL/static/css/main.4ce43b5a.css.map",
-    "main.40fa567e.js.map": "/FIRSTCALL/static/js/main.40fa567e.js.map",
+    "main.1d62a278.css.map": "/FIRSTCALL/static/css/main.1d62a278.css.map",
+    "main.6bf8e613.js.map": "/FIRSTCALL/static/js/main.6bf8e613.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ce43b5a.css",
-    "static/js/main.40fa567e.js"
+    "static/css/main.1d62a278.css",
+    "static/js/main.6bf8e613.js"
   ]
 }
