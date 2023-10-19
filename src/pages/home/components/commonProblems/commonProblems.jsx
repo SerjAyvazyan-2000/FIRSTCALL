@@ -5,6 +5,7 @@ import icon1 from "../../../../assets/svgIcons/carbon_security (1).svg"
 import icon3 from "../../../../assets/svgIcons/satisfaction (1) (1).svg"
 import icon4 from "../../../../assets/svgIcons/call-center-agent (1) (1).svg"
 import useIntersection from "../../../hooks/useIntersection ";
+import {motion, px} from "framer-motion"
 
 
 const CommonProblems = () => {
@@ -12,7 +13,17 @@ const CommonProblems = () => {
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
 
-
+    const textAnimation  = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: custom =>({
+            y: 0,
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
+    }
 
     return <section ref={lastElement} className="common_problems_section">
         <div className="G-container">
@@ -23,16 +34,17 @@ const CommonProblems = () => {
             </div>
 
             <div className="common_problems_body">
-                <div className="common_problems_title">
-                    <h3 className={isVisible ? "active" : null}>Common problems in B2B new customer acquisition</h3>
-                    <p>Maximise your efficiency, visibility and profitability</p>
-                </div>
+                <motion.div  initial={'hidden'} whileInView={'visible'} className="common_problems_title">
+                    <motion.h3 variants={textAnimation} custom={3} className={isVisible ? "active" : null}>Common problems in B2B new customer acquisition</motion.h3>
+                    <motion.p variants={textAnimation} custom={3}>Maximise your efficiency, visibility and profitability</motion.p>
+                </motion.div>
 
 
                     <div className="common_problems_content">
 
-                        <div className="common_problems_scroll_block">
-                            <div className="common_problems_scroll">
+                        <motion.div  initial={'hidden'} whileInView={'visible'} className="common_problems_scroll_block">
+
+                            <motion.div variants={textAnimation} custom={3} className="common_problems_scroll">
                                 <div className="common_problems_red_items">
 
 
@@ -264,13 +276,9 @@ const CommonProblems = () => {
                                     </div>
 
                                 </div>
-                            </div>
+                            </motion.div>
 
-                        </div>
-
-
-
-
+                        </motion.div>
 
                         <div className="common_problems_list_footer">
                             <p>"From appointment qualification to training - Our service portfolio is your competitive

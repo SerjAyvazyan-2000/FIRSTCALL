@@ -23,6 +23,7 @@ import About from "./pages/about/about";
 import Services from "./pages/services/services";
 import BlogItemDetails from "./pages/blog/components/blogItemDetails/blogItemDetails";
 import RolesDetails from "./pages/career/components/rolesDetails/rolesDetails";
+import ScrollTop from "./pages/components/scrollTop/scrollTop";
 
 function App() {
     return (
@@ -49,6 +50,7 @@ function App() {
 
 
             <Footer/>
+            <ScrollTop/>
         </div>
     );
 }

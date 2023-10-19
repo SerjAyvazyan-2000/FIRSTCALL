@@ -1,7 +1,7 @@
 @import "../../../../assets/variables";
 @import "../../../../assets/@mixin";
 .cooperation_work_section {
-  margin-top: calc(50px + (300 - 50) * ((100vw - 320px) / (1680 - 320)));
+  @include adaptive-value("margin-top",290,40,1)
 
 }
 

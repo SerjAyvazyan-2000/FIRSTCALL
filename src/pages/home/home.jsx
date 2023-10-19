@@ -14,6 +14,7 @@ import rotateLogo from "../../assets/images/rotateLogo.png"
 import {motion, px} from "framer-motion"
 import TelephoneSales from "./components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
+import ScrollTop from "../components/scrollTop/scrollTop";
 
 
 const Home = () => {

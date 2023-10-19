@@ -59,7 +59,10 @@ const RolesDetails = () => {
 
                         </div>
                     </div>
+
                     <div className="roles_details_image_content">
+                        <div className="top_text_title_mobil">{rolesItem.title}</div>
+
                         <div className="roles_details_image">
                             <img src={carersImg} alt=""/>
 

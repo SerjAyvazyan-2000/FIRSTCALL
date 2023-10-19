@@ -3,7 +3,7 @@
 
 .blog_section {
   margin-top: 146px;
-  @include adaptive-value("margin-top", 146, 50, 1)
+  @include adaptive-value("margin-top", 146, 90, 1)
 }
 
 .blog_list {

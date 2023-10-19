@@ -20,11 +20,14 @@ const RolesItem = ({item}) => {
         <div className="roles_item_tolls">
             <div className="roles_item_icon">
                 <img src={item.icon} alt=""/>
-
             </div>
             <div className="roles_item_route">
                 <NavLink onClick={handleClick} to={`/${ROLES_ITEM_DETAILS_ROUTES}/${item.id}`}>{item.route}</NavLink>
             </div>
+            <div className="roles_item_icon_mobile">
+                <img src={item.icon} alt=""/>
+            </div>
+
         </div>
 
     </div>

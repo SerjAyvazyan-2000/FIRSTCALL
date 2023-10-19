@@ -129,8 +129,10 @@
     min-width: 1400px;
   }
   @media (max-width: $md4 + px) {
-    min-width: 600px;
+    min-width: 680px;
 
+
+     
   }
 
 }
@@ -170,15 +172,24 @@
     position: absolute;
     bottom: -40px;
     left: 50%;
+    font-size: 40px;
     @media screen and (max-width: 1503px) {
       bottom: -33px;
+      font-size: 35px;
+
+    }
+    @media screen and (max-width: 877px) {
+      bottom: -27px;
+      font-size: 28px;
 
     }
     @media screen and (max-width: $md4 + px) {
       bottom: -22px;
+      font-size: 20px;
+
 
     }
-    @include adaptive-font(40,20)
+    //@include adaptive-font(40,20)
   }
 
   i {
@@ -255,11 +266,7 @@
 
   }
 }
-.common_problems_red_item_img{
-   img{
 
-   }
-}
 
 .common_problems_list_text_block {
   display: flex;
@@ -305,14 +312,21 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $md4 + px) {
-
+  @media screen and (max-width: 758px) {
     img {
-      width: 50%;
-      height: 50%;
+      width: 80%;
+      height: 80%;
 
     }
+    @media screen and (max-width: $md4 + px) {
+      img {
+        width: 100%;
+        height: 100%;
+
+      }
+    }
   }
+
 }
 
 .common_problems_black_items {
@@ -342,17 +356,24 @@
     top: -40px;
     left: 50%;
     transform: rotate(180deg);
+    font-size: 40px;
     @media screen and (max-width: 1503px) {
-      top: -30px;
+      top: -33px;
+      font-size: 35px;
 
+    }
+    @media screen and (max-width: 877px) {
+      top: -27px;
+      font-size: 28px;
 
     }
     @media screen and (max-width: $md4 + px) {
       top: -22px;
+      font-size: 20px;
 
 
     }
-    @include adaptive-font(40,20)
+
 
   }
 
@@ -395,7 +416,6 @@
   justify-content: center;
 
   p {
-    margin-top: 44px;
     max-width: 1099px;
     text-align: center;
     color: $black;
@@ -405,6 +425,7 @@
 
     @include adaptive-font(22, 18);
     @include adaptive-value("line-height", 28, 18, 1);
+    @include adaptive-value("margin-top", 44, 16, 1);
 
   }
 

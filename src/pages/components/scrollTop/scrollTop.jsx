@@ -1,5 +1,6 @@
 import "./style.scss"
 import {useState} from "react";
+import arrow from "../../../assets/svgIcons/ArrowDownRight (1).svg";
 
 
 const ScrollTop = () => {
@@ -16,8 +17,8 @@ const ScrollTop = () => {
     const scrollClick = () => {
         window.scrollTo(0,0)
     }
-    return <div onClick={scrollClick} className={`scroll-top izShowBtn  ${!scroll ? "izShowBtn_hide" : null}`}>
-        <i className="icon-arrow-up"></i>
+    return <div onClick={scrollClick} className={`scroll_top izShowBtn  ${!scroll ? "izShowBtn_hide" : null}`}>
+        <img src={arrow} alt=""/>
     </div>
 }
 export default ScrollTop

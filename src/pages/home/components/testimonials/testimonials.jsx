@@ -15,13 +15,24 @@ import arrowLeft from "../../../../assets/svgIcons/ArrowLeft (6).svg"
 import arrowRight from "../../../../assets/svgIcons/ArrowLeft (7).svg"
 import {A11y, Navigation, Pagination, Scrollbar} from "swiper/modules";
 import useIntersection from "../../../hooks/useIntersection ";
+import {motion, px} from "framer-motion"
 
 const Testimonials = () => {
 
     const lastElement = useRef(null);
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
-
+    const textAnimation  = {
+        hidden: {
+            y: 200,
+            opacity: 0,
+        },
+        visible: custom =>({
+            y: 0,
+            opacity: 1,
+            transition:{delay :custom * 0.1}
+        })
+    }
     return <section ref={lastElement} className="testimonials_section">
 
         <div className="G-container">
@@ -35,14 +46,14 @@ const Testimonials = () => {
                 </div>
             </section>
             <div className={isVisible ? "testimonials_body active" : 'testimonials_body'}>
-                <div className="testimonials_body_title">
-                    <h3>Testimonials</h3>
-                    <p>See what our clients say about our services and how we helped them achieve their goals.</p>
-                </div>
+                <motion.div initial={'hidden'} whileInView={'visible'} className="testimonials_body_title">
+                    <motion.h3  custom={3} variants={textAnimation}>Testimonials</motion.h3>
+                    <motion.p  custom={3} variants={textAnimation} >See what our clients say about our services and how we helped them achieve their goals.</motion.p>
+                </motion.div>
 
-                <div className="container">
+                <motion.div initial={'hidden'} whileInView={'visible'}  className="container">
 
-                    <div className="testimonials_clients_slider">
+                    <motion.div custom={3} variants={textAnimation} className="testimonials_clients_slider">
                         <div className="arrow-right">
                             <img src={arrowRight} alt=""/>
                         </div>
@@ -56,17 +67,10 @@ const Testimonials = () => {
                                 1280: {
                                     slidesPerView: 2,
                                 },
-
-
-
-
                             }}
-
-
                         >
 
                             <SwiperSlide>
-
                                 <div className="testimonials_slider_item">
                                     <div className="testimonials_clients_red_block_img">
                                         <img src={user} alt=""/>
@@ -127,21 +131,10 @@ const Testimonials = () => {
                         </div>
 
 
-                    </div>
+                    </motion.div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-                </div>
+                </motion.div>
 
 
                 <div className={isVisible ? "testimonials_more_btn active" : "testimonials_more_btn"}>

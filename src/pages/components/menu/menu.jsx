@@ -10,28 +10,36 @@ const Menu = ({openMenu, onClose}) => {
     const handleClick  = () => {
         setOpenSub(!openSub)
     }
+    const srollBottom = () => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
     return <>
         <div onClick={()=>onClose(false)} className={openMenu ? "header_menu_bg active" : "header_menu_bg"}></div>
         <nav className={openMenu ? "menu_block active" : "menu_block"}>
             <ul>
                 <li>
-                    <NavLink to={SERVICES_ROUTE}>SERVICE</NavLink>
+                    <NavLink onClick={srollBottom} to={SERVICES_ROUTE}>SERVICE</NavLink>
                 </li>
                 <li>
-                    <NavLink to={CAREER_ROUTE}>CAREER</NavLink>
+                    <NavLink onClick={srollBottom} to={CAREER_ROUTE}>CAREER</NavLink>
                 </li>
                 <li>
-                    <NavLink to={REFERENCE_ROUTE}>References</NavLink>
+                    <NavLink  onClick={srollBottom} to={REFERENCE_ROUTE}>References</NavLink>
                 </li>
                 <li>
-                    <NavLink to={BLOG_ROUTE}>Blog</NavLink>
+                    <NavLink  onClick={srollBottom} to={BLOG_ROUTE}>Blog</NavLink>
                 </li>
                 <li>
-                    <NavLink to={ABOUT_ROUTE}>ABOUT US</NavLink>
+                    <NavLink  onClick={srollBottom} to={ABOUT_ROUTE}>ABOUT US</NavLink>
                 </li>
                 <div className={"mobile_header_download "}>
                     <div className={openSub ? "mobile_header_language active" : "mobile_header_language "}>
-                        <button onClick={handleClick}>White paper
+
+                        <button onClick={handleClick}>LANGUAGES
                             <img src={arrow} alt=""/>
                         </button>
                         <div className="header_language_sub">

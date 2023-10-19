@@ -24,11 +24,11 @@
 
 
     }
-    ul {
+    &.active ul {
       display: flex;
-      align-items: center;
       flex-direction: column;
       margin-top: 101px;
+      align-items: flex-start;
 
 
       li {
@@ -59,7 +59,7 @@
       a {
         font-family: Commissioner;
         color: #191923;
-        font-size: calc($fontSize14 + 4 * (100vw / 1920));
+        font-size:18px;
         font-style: normal;
         font-weight: 500;
         line-height: 28px;
@@ -68,6 +68,8 @@
         &.active {
           color: $red;
         }
+        @include adaptive-font(17,15);
+
 
       }
     }
@@ -124,27 +126,19 @@
     }
 
     .header_download_btn_white {
-
-    }
-
-    button {
-      position: relative;
-      padding: 11px 17px;
-      min-width: 162px;
-      color: black;
-      font-size: $fontSize14;
+      color: #191923;
+      font-family: Barlow Condensed;
       font-style: normal;
       font-weight: 600;
-      line-height: 21px; /* 21.602px */
-      display: flex;
-      align-items: center;
-      background: none;
+      line-height: 154.3%; /* 21.602px */
+      text-transform: uppercase;
+      @include adaptive-font(17,15);
+      border-radius: 4px;
 
-      img {
-        position: absolute;
-        right: 11px;
-      }
+
     }
+
+
 
     .header_language_sub {
       display: flex;
@@ -153,8 +147,8 @@
       height: 0;
       opacity: 0;
       justify-content: center;
-      align-items: center;
       transition: .3s;
+      align-items: flex-start;
 
     }
 
@@ -177,5 +171,33 @@
       transform: rotate(180deg);
 
     }
+  }
+  button {
+    position: relative;
+    padding: 11px 0;
+    min-width: 162px;
+    font-family: Commissioner;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 21.602px */
+    display: flex;
+    align-items: center;
+    background: none;
+    color: #191923;
+
+    text-transform: uppercase;
+    @include adaptive-font(17,15);
+
+    img {
+      position: absolute;
+      right: 0;
+      @media (max-width: $md4 + px) {
+        width: 70%;
+        height: 70%;
+        right: -30px;
+
+      }
+    }
+
   }
 }

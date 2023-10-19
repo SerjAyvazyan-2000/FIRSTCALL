@@ -1,27 +1,30 @@
 @import "src/assets/variables";
+@import "src/assets/@mixin";
 
-.scroll-top {
+.scroll_top {
   position: fixed;
-  padding: 15px;
-  background-color: #565454;
+  padding: 7px;
+  background-color: $red;
   z-index: 10;
   bottom: 0;
   right: 0;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  i {
-    font-size: 30px;
-    color: white;
-    transition: .3s;
-
-    &:hover {
-      color: red;
-    }
+img{
+   transform: rotate(180deg);
+  @media (max-width: $md3 + px) {
+    width: 50%;
+    height: 50%;
   }
+}
+  @media (max-width: $md4 + px) {
+    padding: 5px 1px;
 
-
-
+  }
 }
 
 .izShowBtn {

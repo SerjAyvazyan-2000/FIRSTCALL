@@ -45,6 +45,7 @@
 
     @include adaptive-value("margin-top",35,10 , 1)
   }
+
 }
 .roles_item_tolls{
    display: flex;
@@ -59,6 +60,7 @@
 
 
 }
+
 .roles_item_icon{
   display: flex;
   justify-content: flex-end;
@@ -75,6 +77,32 @@
      }
   }
 }
+.roles_item_icon_mobile{
+  display: none;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer;
+  @media (max-width: 995px) {
+    width: auto;
+  }
+  @media (max-width: $md3 + px) {
+    img{
+      width: 60%;
+      height: 60%;
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  .roles_item_icon{
+     display: none;
+  }
+  .roles_item_icon_mobile{
+    display: flex;
+  }
+}
+
+
 .roles_item_route{
   a{
     padding: 17px 60px;

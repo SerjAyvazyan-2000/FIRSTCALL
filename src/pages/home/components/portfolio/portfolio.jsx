@@ -22,6 +22,17 @@ const Portfolio = () => {
             transition:{delay :custom * 0.1}
         })
     }
+    const featuredAnimation = {
+        hidden: {
+            x: 100,
+            opacity: 0,
+        },
+        visible: custom => ({
+            x: 0,
+            opacity: 1,
+            transition: {delay: custom * 0.1}
+        })
+    }
     return <motion.section ref={lastElement} initial={'hidden'} whileInView={'visible'} className="services_portfolio">
         <div className='G-container'>
             <div className="services_portfolio_body">
@@ -35,57 +46,57 @@ const Portfolio = () => {
                         page.</p>
                 </motion.div>
 
-                <div className="services_portfolio_items">
-                    <NavLink className="services_portfolio_item">
+                <motion.div whileInView={'visible'} initial={'hidden'} className="services_portfolio_items">
+                    <motion.Link custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null} >B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
-                    <NavLink className="services_portfolio_item">
+                    </motion.Link>
+                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
-                    <NavLink className="services_portfolio_item">
+                    </motion.NavLink>
+                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
-                    <NavLink className="services_portfolio_item">
+                    </motion.NavLink>
+                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
-                    <NavLink className="services_portfolio_item">
+                    </motion.NavLink>
+                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
-                    <NavLink className="services_portfolio_item">
+                    </motion.NavLink>
+                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i >With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </NavLink>
+                    </motion.NavLink>
 
-                </div>
+                </motion.div>
 
                 <div className="services_portfolio_tools">
                     <button className="portfolio_tools_red_button">

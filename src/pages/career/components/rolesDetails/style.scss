@@ -52,9 +52,39 @@
 
   }
 
+  @include adaptive-font(54, 22);
+
+  @media (max-width: 1115px) {
+    display: none;
+  }
+}
+.top_text_title_mobil{
+  display: none;
+  color: $black;
+  max-width: 980px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  margin:  0 0  30px  ;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: $red;
+    bottom: -10px;
+
+  }
+  @media (max-width: 1115px) {
+    display: flex;
+  }
   @include adaptive-font(54, 22)
 }
-
 .sub_top_text {
   max-width: 980px;
 
@@ -84,7 +114,7 @@
 
 .sub2_top_text {
   max-width: 980px;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 20px;
 
   .sub2_top_text_title {
     margin: 0 0 20px;
@@ -124,9 +154,7 @@
     max-width: 500px;
 
   }
-  @media (max-width: 1115px) {
-    padding: 0;
-  }
+
   @include adaptive-value("margin-top", 32, 20, 0)
 
 
@@ -217,7 +245,7 @@
 
 .roles_bottom_text_content {
   max-width: 980px;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
 
   p {
     margin: 10px 0 0;
@@ -243,9 +271,7 @@
     @include adaptive-font(22,14);
 
   }
-  @media (max-width: 1115px) {
-    padding: 0;
-  }
+
   @include adaptive-value("margin-top",75,20, 0)
 
 }

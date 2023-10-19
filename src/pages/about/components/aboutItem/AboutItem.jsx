@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import "./style.scss"
+import {motion} from "framer-motion";
 
-const AboutItem = ({item, reverse}) => {
-    return <div className="about_item">
+const AboutItem = forwardRef(({item, reverse},ref) => {
+    return <div  ref={ ref} className="about_item">
         {reverse ? <>
                 <div className="about_item_image">
                     <img src={item.img} alt=""/>
@@ -37,6 +38,6 @@ const AboutItem = ({item, reverse}) => {
 
 
     </div>
-};
-
-export default AboutItem;
+});
+const MAboutItem = motion(AboutItem)
+export default MAboutItem;

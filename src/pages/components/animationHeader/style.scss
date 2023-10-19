@@ -22,11 +22,17 @@
     font-style: normal;
     font-weight: 400;
     position: relative;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
-    text-decoration-color: $white1;
 
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 30%;
+      height: 1px;
+      background-color: $white1;
+    }
     @include adaptive-font(90,40);
     @include adaptive-value("line-height",140,60,1);
 

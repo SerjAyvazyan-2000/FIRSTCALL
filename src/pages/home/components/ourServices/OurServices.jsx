@@ -1,11 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import {motion} from "framer-motion";
-import servicesDarkImg1 from "../../../../assets/images/Rectangle 921 (1).png"
 import servicesImg1 from "../../../../assets/images/Property 1=Default.png"
-import servicesDarkImg2 from "../../../../assets/images/servisecDark2.png"
 import servicesImg2 from "../../../../assets/images/services2.png"
-import servicesDarkImg3 from "../../../../assets/images/servicesDark3.png"
 import servicesImg3 from "../../../../assets/images/Property 1=Default (2).png"
 
 

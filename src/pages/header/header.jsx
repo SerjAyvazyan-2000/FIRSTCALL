@@ -12,10 +12,18 @@ const Header = () => {
     const handleClick = ()=> {
         setOpenMenu(!openMenu)
     }
+
+    const srollBottom = () => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
     return <header className="header">
         <div className="G-container">
             <div className="header_content">
-                <NavLink to={HOME_ROUTE} className="header_logo">
+                <NavLink onClick={srollBottom} to={HOME_ROUTE} className="header_logo">
                     <img src={logo} alt=""/>
                 </NavLink>
                 <div className={"header_menu"}>

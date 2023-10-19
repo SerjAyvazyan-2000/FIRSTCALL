@@ -23,10 +23,8 @@
 .header_logo {
   flex: 1 1 144px;
   padding: 37px 0;
-
   @media screen and (max-width: $md2 + px) {
     padding: 20px 0;
-
   }
 
   @media screen and (max-width: $md3 + px) {
@@ -36,8 +34,8 @@
 
   @media screen and (max-width: $md4 + px) {
     img{
-       width: 25%;
-      height: 25%;
+       width: 45%;
+      height: 45%;
     }
 
   }
@@ -69,9 +67,12 @@
   font-size: $fontSize13;
   font-style: normal;
   font-weight: 700;
-  line-height: 102.8%; /* 12.959px */
+  line-height: 13px; /* 12.959px */
   text-transform: uppercase;
   font-family: Commissioner;
+  color: #191923;
+
+
 
 }
 
@@ -114,7 +115,7 @@
   font-size: $fontSize14;
   font-style: normal;
   font-weight: 600;
-  line-height: 154.3%; /* 21.602px */
+  line-height: 21px; /* 21.602px */
   display: flex;
   align-items: center;
   background: none;
@@ -123,6 +124,7 @@
     position: absolute;
     right: 11px;
   }
+
 }
 
 
@@ -168,12 +170,17 @@
       @media screen and (max-width: $md4 + px) {
         width: 80%;
 
+
       }
 
     }
     &.active::after{
       transform: translateY(18px) rotate(45deg);
       width: 70%;
+
+      @media screen and (max-width: $md4 + px) {
+        transform: translateY(15px) rotate(45deg);
+      }
     }
 
     span {
@@ -213,6 +220,9 @@
     &.active::before{
       transform: translateY(-10px) rotate(-45deg);
       width: 70%;
+      @media screen and (max-width: $md4 + px) {
+
+      }
     }
     &.active span{
       transform: scaleX(0);

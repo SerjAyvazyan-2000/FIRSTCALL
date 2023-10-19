@@ -2,7 +2,7 @@
 @import "src/assets/@mixin";
 
 .careers_open_roles {
-  @include adaptive-value("margin-top",143,50 , 1);
+  @include adaptive-value("margin-top",143,70 , 1);
 
 }
 
@@ -14,9 +14,12 @@
   text-transform: uppercase;
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-decoration-color: $red;
-@include adaptive-font(45,22)
+
+
+
+    @include adaptive-font(45,22);
 
 }
 .open_roles_list{

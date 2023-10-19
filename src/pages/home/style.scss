@@ -33,7 +33,7 @@
     transition: 3s;
 
     @media screen and (max-width: $md1 + px) {
-      top: 80px;
+      top: 60px;
 
     }
     @media screen and (max-width: $md3 + px) {
@@ -80,14 +80,14 @@
     flex-direction: column;
   }
   @media screen and (max-width: $md3 + px) {
-    @include adaptive-value("padding-top",70,30,0)
+    @include adaptive-value("padding-top", 70, 30, 0)
 
   }
   @media screen and (max-width: $md4 + px) {
-    @include adaptive-value("padding-top",40,30,0)
+    @include adaptive-value("padding-top", 40, 30, 0)
 
   }
-  @include adaptive-value("padding-top",100,50,1)
+  @include adaptive-value("padding-top", 100, 50, 1)
 }
 
 .telephone_sales_text {
@@ -100,12 +100,13 @@
     max-width: 624px;
     font-weight: 400;
     text-transform: uppercase;
-    @media screen  and (max-width: $maxWidthContainer + px){
-      @include adaptive-font(100,40);
-      @include adaptive-value("line-height",100 , 40 , 0)
+    @media screen and (max-width: $maxWidthContainer + px) {
+      @include adaptive-font(100, 40);
+      @include adaptive-value("line-height", 100, 40, 0)
     }
 
   }
+
   p {
     color: $black;
     font-style: italic;
@@ -117,18 +118,18 @@
     align-items: center;
 
 
+    @include adaptive-font(50, 22);
+    @include adaptive-value("line-height", 50, 20, 0);
 
-    @media screen  and (max-width: $maxWidthContainer + px){
-      @include adaptive-font(50,20);
-      @include adaptive-value("line-height",50 ,20, 0)
+    @media (max-width: $md3 + px) {
+      max-width: 300px;
     }
     @media (max-width: $md4 + px) {
       max-width: 200px;
     }
-
   }
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     right: -20px;
@@ -138,18 +139,18 @@
     background-color: black;
     display: none;
 
-    @media screen  and (max-width: $md3 + px){
+    @media screen and (max-width: $md3 + px) {
       display: block;
       width: 40%;
       right: -40px;
       bottom: 10px;
 
 
-
     }
   }
+
   @media (max-width: $md4 + px) {
-     padding: 0;
+    padding: 0;
   }
 
 }
@@ -187,7 +188,8 @@
   justify-content: center;
   width: 100%;
   position: relative;
-  button{
+
+  button {
     padding: 16px 70px 16px;
     color: $white;
     text-align: center;
@@ -205,18 +207,22 @@
     }
 
   }
-&::before{
-  content: '';
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 1px;
-  background-color: black;
 
-}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+
+    @media screen and (max-width: $md3 + px) {
+      right: 200px;
+    }
+  }
+
   @media screen and (max-width: $md3 + px) {
-    display:flex;
+    display: flex;
   }
 }
 
@@ -225,9 +231,11 @@
   margin-right: 55px;
   transition: .3s;
   position: relative;
+
   &.hover {
     transform: rotate(20deg) scale(.9);
   }
+
   @media screen and (max-width: $md3 + px) {
     margin-right: 0;
     width: 100%;
@@ -236,8 +244,8 @@
     align-items: center;
     justify-content: center;
 
-    &::before{
-       position: absolute;
+    &::before {
+      position: absolute;
       content: '';
       width: 1px;
       height: 70%;
@@ -245,24 +253,22 @@
       left: 0;
       bottom: 0;
     }
-    &::after{
-       content: '';
+    &::after {
+      content: '';
       position: absolute;
-       width: 1px;
+      width: 1px;
       height: 40%;
       background-color: black;
       right: 0;
       top: 0;
       @media screen and (max-width: $md4 + px) {
-       top: -20px;
+        top: -20px;
       }
 
     }
   }
 
 }
-
-
 
 
 .home_ellipse_img {
@@ -281,7 +287,6 @@
   justify-content: center;
   margin-top: 50px;
   position: relative;
-
 
 
   &::before {
@@ -318,6 +323,7 @@
 
     }
   }
+
   @media screen and (max-width: $md3 + px) {
     display: none;
 
@@ -394,8 +400,8 @@
   }
 }
 
-.section_rotate_logo{
-  @media screen  and (max-width: $md3 + px){
+.section_rotate_logo {
+  @media screen and (max-width: $md3 + px) {
     display: none;
 
   }
