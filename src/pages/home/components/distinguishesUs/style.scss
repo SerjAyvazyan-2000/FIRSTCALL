@@ -108,10 +108,7 @@
        width: 60%;
        height: 60%;
     }
-    @media screen  and (max-width: 376px){
-      width: 40%;
-      height: 40%;
-    }
+
 
   }
 
@@ -249,6 +246,7 @@
 
 
   }
+
 }
 
 .distinguishes_text_title {
@@ -287,15 +285,16 @@
 
   p {
     color: $black;
-    font-size: calc($fontSize17 + 10 * (100vw / 1680));
+
     font-style: normal;
     font-weight: 400;
     margin: 30px 0 0;
     @media screen and (max-width: $md1 + px) {
       text-align: center;
     }
+    @include adaptive-font(22,18);
     @include adaptive-value("margin-top",30,20,1);
-    @include adaptive-value("line-height",30,20,1)
+    @include adaptive-value("line-height",26,18,1)
 
   }
   @include adaptive-value("margin-top",40,20,1)

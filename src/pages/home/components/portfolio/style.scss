@@ -231,7 +231,17 @@
   display: flex;
   align-items: center;
   font-size: $fontSize28;
+  padding: 15px 57px;
+  transition: .3s;
+  border-radius: 4px;
+
+
   @include adaptive-value("line-height",33,20,1);
+
+  &:hover{
+     color: white;
+    background-color: $red;
+  }
 
 }
 

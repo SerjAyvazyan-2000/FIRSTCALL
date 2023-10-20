@@ -117,6 +117,7 @@
   label {
     display: flex;
     gap: 14px;
+    align-items: center;
 
     select {
       width: 30%;
@@ -143,6 +144,10 @@
 
     @media screen and (max-width: $md3 + px) {
       flex-direction: column;
+    }
+    input{
+       margin-top: 0;
+      height: 65px;
     }
 
   }
@@ -216,10 +221,16 @@
   font-weight: 400;
   line-height: 154.3%; /* 33.946px */
   text-transform: uppercase;
+  transition: .3s;
   @media screen and (max-width: $md3 + px) {
     padding: 14px 100px;
   }
   @include adaptive-font(22, 15);
+
+  &:hover{
+    background-color: $red;
+    color: white;
+  }
 
 }
 

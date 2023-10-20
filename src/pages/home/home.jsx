@@ -25,6 +25,7 @@ const Home = () => {
     const [scale, setScale] = useState(false)
     const {isVisible} = useIntersection(observer, homeSection)
     const [scrollLine, setScrollLine] = useState(0)
+    const [rotation, setRotation] = useState(0);
 
 
     const mouseOver = (e) => {
@@ -53,9 +54,16 @@ const Home = () => {
 
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setScrollLine(window.scrollY)
-        })
+        const handleScroll = () =>{
+            const scrollY = window.scrollY;
+            setScrollLine(scrollY)
+            const rotationValue = scrollY * 0.5
+            setRotation(rotationValue);
+        }
+        window.addEventListener("scroll",handleScroll )
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
 
     }, [])
 
@@ -109,13 +117,11 @@ const Home = () => {
 
                             <div className={isVisible ? "home_ellipse_block active" : "home_ellipse_block"}>
                                 <div className="home_ellipse_large">
-                                    <div className="home_ellipse_medium">
-                                        <div className="home_ellipse_small">
                                             <div className="home_ellipse_img">
+                                                <div className="animation_pulse"></div>
+                                                <div className="animation_pulse_2"></div>
                                                 <img src={ellipse} alt=""/>
                                             </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +136,7 @@ const Home = () => {
             <div className="G-container">
                 <div className="rotate_logo_block">
                     <div className={`rotate_logo`}>
-                        <img src={rotateLogo} alt=""/>
+                        <img  style={{ transform: `rotate(${rotation}deg)` }} src={rotateLogo} alt=""/>
                     </div>
                 </div>
             </div>

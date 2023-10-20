@@ -61,9 +61,11 @@ const ConsultationForm = () => {
                             <div  className={"remember_me"}>
                                 <label className={examp ? "active" : ''}>
                                     <input  onClick={handleClick} type="checkbox"/>
+
+                                    <p>I have read the privacy policy and agree to
+                                        the processing of personal data.</p>
                                 </label>
-                                <p>I have read the privacy policy and agree to
-                                    the processing of personal data.</p>
+
                             </div>
                             <button className="form_contact_button">SEND NOW</button>
 

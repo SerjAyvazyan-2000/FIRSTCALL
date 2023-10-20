@@ -26,8 +26,13 @@
   bottom: 200px;
   z-index: -1;
 
+
   @media screen and (max-width: 1503px) {
     display: none;
+  }
+  svg{
+    border-radius: 4px;
+
   }
 }
 
@@ -258,6 +263,7 @@
   visibility: hidden;
   top: 0;
   transition: .3s;
+  padding: 20px;
 
   p {
     color: white;

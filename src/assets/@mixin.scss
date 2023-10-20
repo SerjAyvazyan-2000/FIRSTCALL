@@ -43,5 +43,6 @@
 
 @mixin buttonHover() {
   background: var(--hover, linear-gradient(180deg, #91183d 0%, #24242a 700%));
+  transition: .3s;
 
 }
