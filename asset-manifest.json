@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.1d62a278.css",
-    "main.js": "/FIRSTCALL/static/js/main.6bf8e613.js",
+    "main.css": "/FIRSTCALL/static/css/main.6c3236d7.css",
+    "main.js": "/FIRSTCALL/static/js/main.0f8f4a65.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/about us.svg": "/FIRSTCALL/static/media/about us.92657cb78107e45fb65cfe05cd7c0ae1.svg",
     "static/media/blogDetails.png": "/FIRSTCALL/static/media/blogDetails.db50a8a8522b52541a24.png",
@@ -25,10 +25,16 @@
     "static/media/BarlowCondensed-Medium.woff": "/FIRSTCALL/static/media/BarlowCondensed-Medium.69e507ce4e471b3eb77f.woff",
     "static/media/BarlowCondensed-Regular.woff": "/FIRSTCALL/static/media/BarlowCondensed-Regular.85981b86a0d9329e11bd.woff",
     "static/media/BarlowCondensed-Light.woff": "/FIRSTCALL/static/media/BarlowCondensed-Light.f86426aa4ef00f0bed8e.woff",
+    "static/media/image3.svg": "/FIRSTCALL/static/media/image3.a16399b0c15d6dc176a347350a8699d6.svg",
     "static/media/user.png": "/FIRSTCALL/static/media/user.86924e36e3b46e7f0b89.png",
     "static/media/icomoon.eot?5fc0g1": "/FIRSTCALL/static/media/icomoon.08ab7bb12caf955cd006.eot",
     "static/media/icomoon.woff?5fc0g1": "/FIRSTCALL/static/media/icomoon.b00668c6e73fa8dca7a2.woff",
     "static/media/icomoon.ttf?5fc0g1": "/FIRSTCALL/static/media/icomoon.7eb9a85045e8f945f138.ttf",
+    "static/media/image1.svg": "/FIRSTCALL/static/media/image1.2fcea9bc03a7a3445d27eb5bc810ad2a.svg",
+    "static/media/image5.svg": "/FIRSTCALL/static/media/image5.c291a14ce5c73720635a3a89d05a1f8e.svg",
+    "static/media/image.svg": "/FIRSTCALL/static/media/image.90f3b2f5c8af257aea296773881b3340.svg",
+    "static/media/image4.svg": "/FIRSTCALL/static/media/image4.607a75268d0fe6805c61f94a2cc5bb1e.svg",
+    "static/media/image2.svg": "/FIRSTCALL/static/media/image2.91b2f905a97e172e1b8b2484d2ece6c3.svg",
     "static/media/ra-micro.svg": "/FIRSTCALL/static/media/ra-micro.6d6fb51688f332868ec28218c118a246.svg",
     "static/media/globalfinanz.svg": "/FIRSTCALL/static/media/globalfinanz.5095c6cd211368bbf04dede22875d300.svg",
     "static/media/rotateLogo.png": "/FIRSTCALL/static/media/rotateLogo.f8c884999fc06094dfc1.png",
@@ -65,12 +71,12 @@
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
     "static/media/ArrowDownRight (5).svg": "/FIRSTCALL/static/media/ArrowDownRight (5).2e013d1e4e947c82e85a1ab2d96d2b79.svg",
     "static/media/Group 8206 (1).svg": "/FIRSTCALL/static/media/Group 8206 (1).1de5c7cf185b390c3dd1bc3f929b0d83.svg",
-    "main.1d62a278.css.map": "/FIRSTCALL/static/css/main.1d62a278.css.map",
-    "main.6bf8e613.js.map": "/FIRSTCALL/static/js/main.6bf8e613.js.map",
+    "main.6c3236d7.css.map": "/FIRSTCALL/static/css/main.6c3236d7.css.map",
+    "main.0f8f4a65.js.map": "/FIRSTCALL/static/js/main.0f8f4a65.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d62a278.css",
-    "static/js/main.6bf8e613.js"
+    "static/css/main.6c3236d7.css",
+    "static/js/main.0f8f4a65.js"
   ]
 }
