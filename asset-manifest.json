@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.6c3236d7.css",
-    "main.js": "/FIRSTCALL/static/js/main.0f8f4a65.js",
+    "main.css": "/FIRSTCALL/static/css/main.472a7610.css",
+    "main.js": "/FIRSTCALL/static/js/main.dda65870.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/about us.svg": "/FIRSTCALL/static/media/about us.92657cb78107e45fb65cfe05cd7c0ae1.svg",
     "static/media/blogDetails.png": "/FIRSTCALL/static/media/blogDetails.db50a8a8522b52541a24.png",
@@ -41,6 +41,7 @@
     "static/media/fi_5110900 (1).svg": "/FIRSTCALL/static/media/fi_5110900 (1).985ac4012607f85622ae014a440fc00c.svg",
     "static/media/Frame 5464 (2).svg": "/FIRSTCALL/static/media/Frame 5464 (2).f3178c28abbf0639fb1bfb822dce06f4.svg",
     "static/media/ventori.svg": "/FIRSTCALL/static/media/ventori.0dd16fe61f1094b23fa4d59b090e4f99.svg",
+    "static/media/magnet.svg": "/FIRSTCALL/static/media/magnet.2d84d91237babe2571ea9137d86aaa16.svg",
     "static/media/aboutValues1.svg": "/FIRSTCALL/static/media/aboutValues1.f18f4b407c1e8be43f354bd841d81587.svg",
     "static/media/ad-agents-logo-1 2.svg": "/FIRSTCALL/static/media/ad-agents-logo-1 2.e6b2740d5c08d130b783c3f84c97cb0f.svg",
     "static/media/humaNova.svg": "/FIRSTCALL/static/media/humaNova.198ec6cd2ce9c7e12a999ad2cace4265.svg",
@@ -54,6 +55,7 @@
     "static/media/call-center-agent (1) (1).svg": "/FIRSTCALL/static/media/call-center-agent (1) (1).9c61c2cf6f30563121e31a37e3d50bbf.svg",
     "static/media/meyleMuler.svg": "/FIRSTCALL/static/media/meyleMuler.7ff1239c2f75eddd8d88b1396d2c0ac3.svg",
     "static/media/aboutValues3.svg": "/FIRSTCALL/static/media/aboutValues3.e2b2da5e62e33507234c0365d00063d7.svg",
+    "static/media/Vector (4).svg": "/FIRSTCALL/static/media/Vector (4).1b2d08e0e43631d576b4d288a63d5226.svg",
     "static/media/computer 1.svg": "/FIRSTCALL/static/media/computer 1.eb128b89cb3c2392952ced29268992d5.svg",
     "static/media/aboutValues2.svg": "/FIRSTCALL/static/media/aboutValues2.9aadbd6343c77b9dcab3da170b874235.svg",
     "static/media/icon-park-outline_circular-connection (3).svg": "/FIRSTCALL/static/media/icon-park-outline_circular-connection (3).1ae047b0e6d21b7ec6eb78fe44ccf87e.svg",
@@ -71,12 +73,12 @@
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
     "static/media/ArrowDownRight (5).svg": "/FIRSTCALL/static/media/ArrowDownRight (5).2e013d1e4e947c82e85a1ab2d96d2b79.svg",
     "static/media/Group 8206 (1).svg": "/FIRSTCALL/static/media/Group 8206 (1).1de5c7cf185b390c3dd1bc3f929b0d83.svg",
-    "main.6c3236d7.css.map": "/FIRSTCALL/static/css/main.6c3236d7.css.map",
-    "main.0f8f4a65.js.map": "/FIRSTCALL/static/js/main.0f8f4a65.js.map",
+    "main.472a7610.css.map": "/FIRSTCALL/static/css/main.472a7610.css.map",
+    "main.dda65870.js.map": "/FIRSTCALL/static/js/main.dda65870.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c3236d7.css",
-    "static/js/main.0f8f4a65.js"
+    "static/css/main.472a7610.css",
+    "static/js/main.dda65870.js"
   ]
 }
