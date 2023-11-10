@@ -237,8 +237,18 @@
 
 
   @include adaptive-value("line-height",33,20,1);
+  svg{
+    transition: .3s;
 
+  }
   &:hover{
+    svg path{
+      stroke: white;
+
+    }
+    svg{
+      transform: rotate(-45deg);
+    }
      color: white;
     background-color: $red;
   }

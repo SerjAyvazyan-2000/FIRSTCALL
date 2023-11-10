@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
-import logo from "../../../../assets/images/Vector.png"
+import logo from "../../../../assets/svgIcons/Vector (4).svg"
 import image from "../../../../assets/svgIcons/image.svg"
 import image1 from "../../../../assets/svgIcons/image1.svg"
 import image2 from "../../../../assets/svgIcons/image2.svg"

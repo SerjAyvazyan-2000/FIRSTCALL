@@ -50,10 +50,16 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+
     @include adaptive-font(28, 16);
+    img{
+      transition: .3s;
 
-    @media (max-width: $md4 + px) {
-
+    }
+    &:hover{
+      img{
+        transform: rotate(-45deg);
+      }
     }
 
   }

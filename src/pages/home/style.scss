@@ -337,7 +337,7 @@
   border-radius: 50%;
   position: absolute;
   animation: pulsate infinite 2.5s;
-  border: 1px solid rgba(185, 18, 84, 0.10);
+  background-color: rgba(185, 18, 84, 0.10);
 
 }
 .animation_pulse_2{
@@ -347,8 +347,17 @@
   border-radius: 50%;
   position: absolute;
   animation: pulsate infinite 2.5s;
-  border: 1px solid rgba(185, 18, 84, 0.10);
+  background-color: rgba(185, 18, 84, 0.10);
 
+}
+.animation_pulse_3{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsate infinite 2.5s;
+
+  border: 1px rgba(185, 18, 84, 0.10);
 }
 
 @keyframes pulsate {
@@ -363,36 +372,7 @@
     box-shadow: 0 0 50px rgba(185, 18, 84, 0.10);
     opacity: 0;
   }
-  //0% {
-  //  box-shadow: 0 0 50px rgba(185, 18, 84, 0.10);
-  //  transition: .3s;
-  //
-  //}
-  //20% {
-  //  box-shadow: 0 0 40px rgba(185, 18, 84, 0.10);
-  //  transition: .3s;
-  //
-  //}
-  //40% {
-  //  box-shadow: 0 0 30px rgba(185, 18, 84, 0.10);
-  //  transition: .3s;
-  //
-  //}
-  //
-  //60% {
-  //  box-shadow: 0 0 20px rgba(185, 18, 84, 0.10);
-  //
-  //
-  //}
-  //80% {
-  //  box-shadow: 0 0 10px rgba(185, 18, 84, 0.10);
-  //
-  //
-  //}
-  //100% {
-  //  box-shadow: 0 0 0px rgba(185, 18, 84, 0.10)
-  //
-  //}
+
 }
 
 

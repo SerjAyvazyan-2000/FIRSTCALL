@@ -104,7 +104,17 @@ const Portfolio = () => {
                     </button>
 
                     <button className="portfolio_tools_white_button">CONTACT US
-                        <img src={arrowImg} alt=""/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                            <g clip-path="url(#clip0_1195_16337)">
+                                <path d="M9.25063 9.25061L27.7506 27.7506" stroke="#191923" stroke-width="1.24376" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.7194 27.7506H27.7506V12.7194" stroke="#191923" stroke-width="1.24376" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1195_16337">
+                                    <rect width="37" height="37" rx="2.74074" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </button>
                 </div>
 
