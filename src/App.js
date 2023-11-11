@@ -49,49 +49,8 @@ function App() {
                 </Routes>
             </main>
 
-
             <Footer/>
             <ScrollTop/>
-            <div className="magnet_icons_list">
-                <div className="magnet_icons_item">
-                    <div className="magnet_icons_item_image">
-                        <img src={magnet} alt=""/>
-                    </div>
-                    <div className="magnet_icons_item_text">
-                        <h3> Lorem Ipsum is simply </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div className="magnet_icons_item">
-                    <div className="magnet_icons_item_image">
-                        <img src={magnet} alt=""/>
-                    </div>
-                    <div className="magnet_icons_item_text">
-                        <h3> Lorem Ipsum is simply </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div className="magnet_icons_item">
-                    <div className="magnet_icons_item_image">
-                        <img src={magnet} alt=""/>
-                    </div>
-                    <div className="magnet_icons_item_text">
-                        <h3> Lorem Ipsum is simply </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div className="magnet_icons_item">
-                    <div className="magnet_icons_item_image">
-                        <img src={magnet} alt=""/>
-                    </div>
-                    <div className="magnet_icons_item_text">
-                        <h3> Lorem Ipsum is simply </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-
-            </div>
 
         </div>
     );

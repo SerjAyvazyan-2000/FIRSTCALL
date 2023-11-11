@@ -72,7 +72,7 @@
   cursor: pointer;
   transition: .3s;
 
-  &.active {
+  &:hover {
     &::before {
       content: '';
       position: absolute;
@@ -95,7 +95,29 @@
 
     }
   }
+  &:active {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      background-color: $red;
+      border-radius: 50%;
+      transition: .3s;
+    }
 
+    span {
+      position: relative;
+      z-index: 1;
+      color: #FFF;
+      font-size: $fontSize12;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      transition: .3s;
+
+    }
+  }
 
 }
 .blog_list_sequence_mobil_btn {

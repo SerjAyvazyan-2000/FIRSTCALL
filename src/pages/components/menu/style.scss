@@ -41,6 +41,8 @@
           font-weight: 500;
           line-height: 28px;
           text-transform: uppercase;
+          transition: .3s;
+
 
         }
       }
@@ -64,8 +66,12 @@
         font-weight: 500;
         line-height: 28px;
         text-transform: uppercase;
+        transition: .3s;
 
         &.active {
+          color: $red;
+        }
+        &:hover {
           color: $red;
         }
         @include adaptive-font(17,15);

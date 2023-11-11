@@ -175,6 +175,16 @@
   line-height: 154.3%; /* 24.688px */
   cursor: pointer;
   align-items: center;
+  a{
+    cursor: pointer;
+    transition: .3s;
+  }
+  a:hover{
+
+    svg path{
+      stroke: $red;
+    }
+  }
 }
 .similar_blog{
 

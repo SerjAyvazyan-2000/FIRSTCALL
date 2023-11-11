@@ -12,20 +12,34 @@
   display: flex;
   align-items: center;
   position: relative;
+ cursor: pointer;
+  img{
+    filter: grayscale(100%);
+    transition: .3s;
 
+  }
+  &:hover{
+    img{
+      filter: grayscale(0);
 
+    }
+  }
 }
 .blog_item_text_content{
    max-width: 540px;
 }
 
-.blog_item_title {
+.blog_item_title a {
   color: #000;
   font-style: normal;
   font-weight: 400;
+  transition: .3s;
   @include adaptive-font(45,28);
   @include adaptive-value("margin-top",30,19,0);
-  @include adaptive-value("line-height",45,27,0)
+  @include adaptive-value("line-height",45,27,0);
+  &:hover{
+     color: $red;
+  }
 
 }
 
@@ -42,18 +56,26 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    @include adaptive-font(17,11)
-
+    cursor: pointer;
+    transition: .3s;
+    @include adaptive-font(17,11);
+    &:hover{
+      color: $red;
+    }
   }
 
   .blog_item_name {
-    color: $red;
+    color: black;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    @include adaptive-font(17,11)
-
+    cursor: pointer;
+    transition: .3s;
+    @include adaptive-font(17,11);
+    &:hover{
+      color: $red;
+    }
   }
 
   .blog_item_info {
@@ -62,6 +84,11 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      color: $red;
+    }
     @include adaptive-font(17,11)
 
   }
@@ -86,13 +113,17 @@
 
   a{
     background: none;
-    color: $red;
+    color: $black;
     font-style: normal;
     font-weight: 400;
     line-height: 41px; /* 40.443px */
     text-transform: uppercase;
-    @include adaptive-font(26,11)
+    transition: .3s;
 
+    @include adaptive-font(26,11);
+    &:hover{
+      color: $red;
+    }
   }
   @include adaptive-value("margin-top",30,20,0)
 

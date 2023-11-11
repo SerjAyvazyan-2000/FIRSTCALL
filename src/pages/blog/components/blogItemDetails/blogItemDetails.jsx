@@ -6,6 +6,9 @@ import BlogItem from "../blogItem/blogItem";
 import facebook from "../../../../assets/svgIcons/FacebookLogo (1).svg"
 import twitter from "../../../../assets/svgIcons/TwitterLogo (1).svg"
 import telegram from "../../../../assets/svgIcons/TelegramLogo (1).svg"
+import TelegramSvg from "../../../../assets/SvgIons/TelegramSvg";
+import FasebookSvg from "../../../../assets/SvgIons/FasebookSvg";
+import TwiterSVG from "../../../../assets/SvgIons/TwiterSVG";
 
 const BlogItemDetails = () => {
     const params = useParams()
@@ -75,13 +78,13 @@ const BlogItemDetails = () => {
                             <a href='' className="share_blog_text">Share a blog</a>
                             <div className="share_blog_icons">
                                 <a href="">
-                                    <img src={facebook} alt=""/>
+                                    <TelegramSvg/>
                                 </a>
                                 <a href="">
-                                    <img src={telegram} alt=""/>
+                                    <FasebookSvg/>
                                 </a>
                                 <a href="">
-                                    <img src={twitter} alt=""/>
+                                    <TwiterSVG/>
                                 </a>
                             </div>
                         </div>

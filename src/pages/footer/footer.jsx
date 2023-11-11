@@ -20,7 +20,9 @@ const Footer = () => {
             }
         })
     }, [])
-    return <footer ref={lastElement} className={isVisible ? "footer active" : "footer"}>
+    return <>
+        <div className={isVisible ? "footer_middle_border active" : "footer_middle_border"}></div>
+        <footer ref={lastElement} className={isVisible ? "footer active" : "footer"}>
         <div className="container">
             <div className="footer_content">
 
@@ -121,6 +123,7 @@ const Footer = () => {
             </div>
         </div>
     </footer>
+        </>
 };
 
 export default Footer;

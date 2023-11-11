@@ -1,8 +1,8 @@
-import image from "../../assets/images/blogImg.png"
 import blogDetails from "../../assets/images/blogDetails.png"
 import arrowDown from "../../assets/svgIcons/ArrowDownRight (7).svg"
 import aboutImg from "../../assets/images/Property 1=Default.png"
 import aboutImg1 from "../../assets/images/philosophy 2.jpg"
+import image from "../../assets/images/Property 1=Default.png"
 
 const useInformation = () => {
 
@@ -10,7 +10,7 @@ const useInformation = () => {
     const blogList = [
         {
             img: image,
-            title: '123',
+            title: 'Lorem ipsum dolor sit amet, ctetur adipiscing elit',
             data: 'august 30, 2023',
             name: 'Irma Kern, CEO',
             info: '4min read',
@@ -414,7 +414,25 @@ const useInformation = () => {
         },
 
     ]
-    return {blogList, blogSequence, rolesList,aboutUs}
+
+
+    const servicesList = [
+        {name:'B2B cold calling',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Sales assistance',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Social selling',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Establishment of CRM processes',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Creation of BI dashboards',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Sales process consulting',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+        {name:'Training of internal teams',link:'Qualified appointment of new customers, existing customer care and reactivation.',description:'We take care of the qualified appointment of new customers, existing customer care and reactivation. With us as your partner, you have more time to focus on your core tasks while we open up new business ' +
+                'opportunities for you and strengthen the loyalty of your existing customers.'},
+    ]
+    return {blogList, blogSequence, rolesList,aboutUs,servicesList}
 
 }
 

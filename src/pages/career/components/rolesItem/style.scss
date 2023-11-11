@@ -7,24 +7,50 @@
   gap: 30px;
   border-radius: 2px;
   border: 1px solid #000;
+  transition: .3s;
+  cursor: pointer;
   @include adaptive-value("padding",50,10 , 1);
   @include adaptive-value("margin-top",50,20 , 1);
 
   @media (max-width: 995px) {
       flex-direction: column;
   }
+  @media (any-hover: hover) {
+    &:hover{
+      background-color: $red;
+    }
+    &:hover a{
+      color: white;
+    }
+    &:hover  p{
+      color: white;
+    }
+    &:hover .roles_item_icon svg path{
+      stroke: white;
+    }
+    &:hover .roles_item_icon svg {
+      width: 65%;
+      height: 65%;
+      transform: rotate(100deg);
+      transition: transform 0.3s;
 
+    }
+
+
+
+  }
 
 }
 
 .roles_item_texts{
 
-  h3{
+  a{
     color:$red;
     font-size: $fontSize45;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
     @include adaptive-font(45,14)
 
   }
@@ -66,12 +92,17 @@
   justify-content: flex-end;
   width: 100%;
   cursor: pointer;
+  transition: .3s;
+svg{
+  transition: .3s;
+
+}
   @media (max-width: 995px) {
      justify-content: inherit;
     width: auto;
    }
   @media (max-width: $md3 + px) {
-     img{
+     svg{
         width: 60%;
        height: 60%;
      }

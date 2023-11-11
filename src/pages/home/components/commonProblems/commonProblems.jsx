@@ -212,7 +212,16 @@ const CommonProblems = () => {
 
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="common_problems_black_item">
@@ -223,7 +232,16 @@ const CommonProblems = () => {
                                             <p>Unsteady source of customers</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="common_problems_black_item">
@@ -234,7 +252,16 @@ const CommonProblems = () => {
                                             <p>Time-intensive cold calling</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="common_problems_black_item">
@@ -248,7 +275,16 @@ const CommonProblems = () => {
 
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="common_problems_black_item">
@@ -260,7 +296,16 @@ const CommonProblems = () => {
                                             <p>Unqualified leads</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="common_problems_black_item">
@@ -272,7 +317,16 @@ const CommonProblems = () => {
                                             <p>Difficult to reach decision-makers</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
-
+                                        <div className="problems_item_sub_text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
+                                                itaque magni
+                                                quibusdam quidem. Beatae consequuntur
+                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
+                                                quidem
+                                                quis repellendus!
+                                            </p>
+                                        </div>
                                     </div>
 
                                 </div>

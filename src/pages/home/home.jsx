@@ -22,6 +22,7 @@ const Home = () => {
     const homeSection = useRef(null);
     const buttonRef = useRef()
     const observer = useRef(null);
+
     const [scale, setScale] = useState(false)
     const {isVisible} = useIntersection(observer, homeSection)
     const [scrollLine, setScrollLine] = useState(0)
@@ -44,11 +45,12 @@ const Home = () => {
         hidden: {
             y: 200,
             opacity: 0,
+            transition: { type: 'tween' },
         },
         visible: custom =>({
             y: 0,
             opacity: 1,
-            transition:{delay :custom * 0.1}
+            transition: { delay: custom * 0.1, type: 'tween' },
         })
     }
 
@@ -89,7 +91,7 @@ const Home = () => {
                 </svg>
             </div>
         </div>
-        <motion.section ref={homeSection} initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
+        <motion.section       animate="visible" ref={homeSection} initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
             <div className="G-container">
                 <div className={isVisible ? "section_telephone_sales_content active " : "section_telephone_sales_content"}>
                     <div className="container ">
@@ -115,7 +117,7 @@ const Home = () => {
 
                             </div>
 
-                            <div className={isVisible ? "home_ellipse_block active" : "home_ellipse_block"}>
+                            <a href={'#scrool'} className={isVisible ? "home_ellipse_block active" : "home_ellipse_block"}>
                                 <div className="home_ellipse_large">
                                             <div className="home_ellipse_img">
                                                 <div className="animation_pulse"></div>
@@ -125,7 +127,7 @@ const Home = () => {
                                                 <img src={ellipse} alt=""/>
                                             </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                     </div>
@@ -150,9 +152,10 @@ const Home = () => {
         <Portfolio/>
         <CommonProblems/>
         <Testimonials/>
-        <DistinguishesUs/>
+        <DistinguishesUs lineSlider={true}/>
         <CooperationWork/>
         <ConsultationForm/>
+
     </>
 };
 

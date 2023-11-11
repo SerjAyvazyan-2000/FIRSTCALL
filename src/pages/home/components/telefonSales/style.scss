@@ -25,6 +25,7 @@
     text-transform: uppercase;
     @include adaptive-value("line-height",73 ,20,1);
     @include adaptive-font(54,20);
+    @include adaptive-value("padding-top",30 ,10,1);
 
   }
 
@@ -39,6 +40,7 @@
     display: block;
     @include adaptive-font(30,10);
     @include adaptive-value("line-height",47 ,20,1);
+    @include adaptive-value("padding-bottom",30 ,10,1);
 
 
   }

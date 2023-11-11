@@ -21,12 +21,10 @@ const TelephoneSales = () => {
     }
     return <>
         <motion.section initial={'hidden'} whileInView={'visible'} ref={lastElement} className="our_telephone_sales_section">
-            <div className="container">
                 <motion.div custom={2} variants={textAnimation} className="our_telephone_sales_content">
                     <h3>"We set the standards in B2B telephone sales - Let's take off together".</h3>
                     <span>Irma Kern</span>
                 </motion.div>
-            </div>
         </motion.section>
 
 

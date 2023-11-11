@@ -7,6 +7,9 @@ import ConsultationForm from "../../../home/components/consultation/ consultatio
 import facebook from "../../../../assets/svgIcons/FacebookLogo (1).svg"
 import twitter from "../../../../assets/svgIcons/TwitterLogo (1).svg"
 import telegram from "../../../../assets/svgIcons/TelegramLogo (1).svg"
+import TelegramSvg from "../../../../assets/SvgIons/TelegramSvg";
+import FasebookSvg from "../../../../assets/SvgIons/FasebookSvg";
+import TwiterSVG from "../../../../assets/SvgIons/TwiterSVG";
 
 const RolesDetails = () => {
     const params = useParams()
@@ -82,13 +85,13 @@ const RolesDetails = () => {
                             <div className="roles_share_job_icons">
                                 <p>Share a job</p>
                                 <a href="">
-                                    <img src={facebook} alt=""/>
+                                    <TelegramSvg/>
                                 </a>
                                 <a href="">
-                                    <img src={telegram} alt=""/>
+                                  <FasebookSvg/>
                                 </a>
                                 <a href="">
-                                    <img src={twitter} alt=""/>
+                                    <TwiterSVG/>
                                 </a>
                             </div>
                             <div className="roles_share_job_btn">

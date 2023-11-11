@@ -9,7 +9,7 @@ import image4 from "../../../../assets/svgIcons/image4.svg"
 import image5 from "../../../../assets/svgIcons/image5.svg"
 import useIntersection from "../../../hooks/useIntersection ";
 
-const DistinguishesUs = () => {
+const DistinguishesUs = ({lineSlider}) => {
     const lastElement = useRef(null);
     const observer = useRef(null);
     const {isVisible} = useIntersection(observer, lastElement)
@@ -43,32 +43,32 @@ const DistinguishesUs = () => {
 
                             <div className="distinguishes_img row1">
                                 <div className="img_block">
-                                    <img src={image3} alt=""/>
+                                    <img src={image5} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row2">
                                 <div className="img_block">
-                                    <img src={image5} alt=""/>
+                                    <img src={image2} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row3">
                                 <div className="img_block">
-                                    <img src={image2} alt=""/>
+                                    <img src={image} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row4">
                                 <div className="img_block">
-                                    <img src={image1} alt=""/>
+                                    <img src={image4} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row5">
                                 <div className="img_block">
-                                    <img src={image} alt=""/>
+                                    <img src={image3} alt=""/>
                                 </div>
                             </div>
                             <div className="distinguishes_img row6">
                                 <div className="img_block">
-                                    <img src={image4} alt=""/>
+                                    <img src={image1} alt=""/>
                                 </div>
                             </div>
 
@@ -116,12 +116,16 @@ const DistinguishesUs = () => {
                 </div>
             </div>
         </section>
-        <section className="animation_section G-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 768 568 568" fill="none">
-                <path style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}} d="M1 0L0.99998 318L0.999957 974.5C0.999957 976.709 2.79082 978.5 4.99996 978.5L563 978.5C565.209 978.5 567 980.291 567 982.5L567 1119.5" stroke="#191923" strokeWidth="1.5" strokeLinejoin="round"/>
-            </svg>
+        {lineSlider ?  <>
 
-        </section>
+            <section className="animation_section G-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 768 568 568" fill="none">
+                    <path style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}} d="M1 0L0.99998 318L0.999957 974.5C0.999957 976.709 2.79082 978.5 4.99996 978.5L563 978.5C565.209 978.5 567 980.291 567 982.5L567 1119.5" stroke="#191923" strokeWidth="1.5" strokeLinejoin="round"/>
+                </svg>
+
+            </section>
+        </> : null}
+
     </>
 };
 

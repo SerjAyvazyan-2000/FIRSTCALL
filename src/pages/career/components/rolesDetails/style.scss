@@ -219,6 +219,16 @@
     font-weight: 400;
     line-height: 25px; /* 24.688px */
   }
+a{
+   cursor: pointer;
+   transition: .3s;
+}
+    a:hover{
+
+      svg path{
+        stroke: $red;
+      }
+  }
 
 }
 

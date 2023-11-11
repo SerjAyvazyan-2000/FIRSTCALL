@@ -18,7 +18,7 @@ const BlogItem = ({item}) => {
         </div>
         <div className="blog_item_text_content">
             <div className="blog_item_title">
-                <p>  {item.title}</p>
+                <NavLink onClick={handleClick} to={`/${BLOG_ITEM_DETAILS_ROUTES}/${item.id}`}>  {item.title}</NavLink>
             </div>
             <div className="blog_item_utils">
                 <div className="blog_item_data">

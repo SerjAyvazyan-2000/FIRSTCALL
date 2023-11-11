@@ -35,7 +35,7 @@
   justify-content: center;
 
   .arrow-right {
-    right: -30px;
+    right: 0;
     position: absolute;
     cursor: pointer;
     z-index: 1;
@@ -54,7 +54,7 @@
   }
 
   .arrow-left {
-    left: -30px;
+    left: 0;
     position: absolute;
     font-size: $fontSize33;
     cursor: pointer;
@@ -142,7 +142,6 @@
 }
 
 .testimonials_clients_slider {
-  position: relative;
   margin-top: 62px;
   display: flex;
   align-items: center;
@@ -152,7 +151,7 @@
 
 
 .testimonials_slider_item {
-  max-width: 582px;
+  max-width: 682px;
   min-height: 153.261px;
   border-radius: 4px;
   cursor: pointer;
@@ -206,7 +205,12 @@
   }
 
 
-  @media screen and (max-width: $md1 + px) {
+  @media screen and (max-width: 1539px) {
+    max-width: 582px;
+
+
+  }
+  @media screen and (max-width: 1459px) {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;

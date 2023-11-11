@@ -34,7 +34,7 @@ const OurServices = () => {
     }
 
     return <>
-        <motion.section initial={'hidden'} whileInView={'visible'} viewport={{amount: 0.2}}
+        <motion.section id={'scrool'} initial={'hidden'} whileInView={'visible'} viewport={{amount: 0.2}}
                         className="section_our_services">
             <div className="G-container">
                 <div className="section_our_services_content">
