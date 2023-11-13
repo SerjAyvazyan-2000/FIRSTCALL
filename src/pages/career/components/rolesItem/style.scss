@@ -17,7 +17,7 @@
   }
   @media (any-hover: hover) {
     &:hover{
-      background-color: $red;
+      background: $red;
     }
     &:hover a{
       color: white;

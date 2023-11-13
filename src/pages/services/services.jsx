@@ -1,11 +1,12 @@
 import React from 'react';
-import animationSvg from "../../assets/svgIcons/1 (5).svg";
 import "./style.scss"
 import {motion} from "framer-motion";
 import useInformation from "../hooks/useInformation";
 import {NavLink} from "react-router-dom";
 import DistinguishesUs from "../home/components/distinguishesUs/distinguishesUs";
 import ConsultationForm from "../home/components/consultation/ consultation";
+import IconSvg from "./IconSvg";
+
 
 const Services = () => {
     const {servicesList} = useInformation()
@@ -39,11 +40,13 @@ const Services = () => {
                         </motion.div>
 
                     </motion.div>
-                    <div className="services_animation_content-image">
-                        <img src={animationSvg} alt=""/>
-                    </div>
+
                 </div>
 
+            </div>
+            <div className="services_animation_content-image">
+                {/*<img className="logo_img" src={animationSvg} alt=""/>*/}
+                <IconSvg/>
             </div>
         </div>
         <div className="services_list_body">
@@ -60,13 +63,14 @@ const Services = () => {
 
             </div>
         </div>
-        <div className="G-container">
-            <div className="services_line"></div>
+        <div className="services_line"></div>
+        <div className="services_distinguishes_Us">
             <DistinguishesUs lineSlider={false}/>
-            <div className="services_gap"></div>
 
-            <ConsultationForm/>
         </div>
+        <div className="services_gap"></div>
+
+        <ConsultationForm/>
 
     </section>
 

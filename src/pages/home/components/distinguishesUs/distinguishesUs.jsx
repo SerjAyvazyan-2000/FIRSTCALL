@@ -41,7 +41,7 @@ const DistinguishesUs = ({lineSlider}) => {
                             </div>
 
 
-                            <div className="distinguishes_img row1">
+                            <div className="distinguishes_img row1 row_1_border">
                                 <div className="img_block">
                                     <img src={image5} alt=""/>
                                 </div>
@@ -51,7 +51,7 @@ const DistinguishesUs = ({lineSlider}) => {
                                     <img src={image2} alt=""/>
                                 </div>
                             </div>
-                            <div className="distinguishes_img row3">
+                            <div className="distinguishes_img row3 services_row3">
                                 <div className="img_block">
                                     <img src={image} alt=""/>
                                 </div>

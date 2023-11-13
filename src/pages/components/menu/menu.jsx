@@ -28,7 +28,7 @@ const Menu = ({openMenu, onClose}) => {
                     <NavLink onClick={srollBottom} to={CAREER_ROUTE}>CAREER</NavLink>
                 </li>
                 <li>
-                    <NavLink  onClick={srollBottom} to={REFERENCE_ROUTE}>References</NavLink>
+                    <NavLink  onClick={srollBottom} to={SERVICES_ROUTE}>References</NavLink>
                 </li>
                 <li>
                     <NavLink  onClick={srollBottom} to={BLOG_ROUTE}>Blog</NavLink>

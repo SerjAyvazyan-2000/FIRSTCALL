@@ -122,8 +122,7 @@ const Home = () => {
                                             <div className="home_ellipse_img">
                                                 <div className="animation_pulse"></div>
                                                 <div className="animation_pulse_2"></div>
-                                                <div className="animation_pulse_3"></div>
-
+                                                <div className="animationт_pulse_3"></div>
                                                 <img src={ellipse} alt=""/>
                                             </div>
                                 </div>
