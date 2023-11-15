@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FIRSTCALL/static/css/main.cd28289e.css",
-    "main.js": "/FIRSTCALL/static/js/main.dc223478.js",
+    "main.css": "/FIRSTCALL/static/css/main.c4c41c6e.css",
+    "main.js": "/FIRSTCALL/static/js/main.8a46d999.js",
     "static/js/787.28cb0dcd.chunk.js": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js",
     "static/media/about us.svg": "/FIRSTCALL/static/media/about us.92657cb78107e45fb65cfe05cd7c0ae1.svg",
     "static/media/blogDetails.png": "/FIRSTCALL/static/media/blogDetails.db50a8a8522b52541a24.png",
@@ -31,6 +31,7 @@
     "static/media/icomoon.ttf?5fc0g1": "/FIRSTCALL/static/media/icomoon.7eb9a85045e8f945f138.ttf",
     "static/media/image1.svg": "/FIRSTCALL/static/media/image1.2fcea9bc03a7a3445d27eb5bc810ad2a.svg",
     "static/media/image5.svg": "/FIRSTCALL/static/media/image5.c291a14ce5c73720635a3a89d05a1f8e.svg",
+    "static/media/rotateLogo.svg": "/FIRSTCALL/static/media/rotateLogo.e6d2bef5ca01e4224a5793fa49c8cd5b.svg",
     "static/media/image.svg": "/FIRSTCALL/static/media/image.90f3b2f5c8af257aea296773881b3340.svg",
     "static/media/image4.svg": "/FIRSTCALL/static/media/image4.607a75268d0fe6805c61f94a2cc5bb1e.svg",
     "static/media/image2.svg": "/FIRSTCALL/static/media/image2.91b2f905a97e172e1b8b2484d2ece6c3.svg",
@@ -61,8 +62,11 @@
     "static/media/satisfaction (1) (1).svg": "/FIRSTCALL/static/media/satisfaction (1) (1).8d049e7326a42aab8357e3b9af1ef162.svg",
     "static/media/carbon_security (1).svg": "/FIRSTCALL/static/media/carbon_security (1).1dd4883ba09fb20ba5257999fd8cd970.svg",
     "static/media/TelegramLogo (1).svg": "/FIRSTCALL/static/media/TelegramLogo (1).73528f0674566dc8c39fb8bc3b5ff99d.svg",
+    "static/media/Phone (1).svg": "/FIRSTCALL/static/media/Phone (1).1ac3394028badf55105b3808e43a7a77.svg",
     "static/media/FacebookLogo (1).svg": "/FIRSTCALL/static/media/FacebookLogo (1).d6917792adb85684ff9da228ffc26dea.svg",
     "static/media/DownloadSimple (3).svg": "/FIRSTCALL/static/media/DownloadSimple (3).76dde04dbd29638aada89f12158f5e73.svg",
+    "static/media/Envelope (2).svg": "/FIRSTCALL/static/media/Envelope (2).9f94323dcac804326fe48b12760e8aa8.svg",
+    "static/media/MapPin (1).svg": "/FIRSTCALL/static/media/MapPin (1).a0a76a9c9200bc1b95fbc851bdd0241f.svg",
     "static/media/TwitterLogo (1).svg": "/FIRSTCALL/static/media/TwitterLogo (1).0d71f585985b70516e10e06ffe5d1304.svg",
     "index.html": "/FIRSTCALL/index.html",
     "static/media/ArrowDownRight (1).svg": "/FIRSTCALL/static/media/ArrowDownRight (1).151001984a472e04fe9832874b15b397.svg",
@@ -72,12 +76,12 @@
     "static/media/ArrowLeft (6).svg": "/FIRSTCALL/static/media/ArrowLeft (6).b0dc8f46c6042eb151d7cace3a975a4e.svg",
     "static/media/ArrowDownRight (5).svg": "/FIRSTCALL/static/media/ArrowDownRight (5).2e013d1e4e947c82e85a1ab2d96d2b79.svg",
     "static/media/Group 8206 (1).svg": "/FIRSTCALL/static/media/Group 8206 (1).1de5c7cf185b390c3dd1bc3f929b0d83.svg",
-    "main.cd28289e.css.map": "/FIRSTCALL/static/css/main.cd28289e.css.map",
-    "main.dc223478.js.map": "/FIRSTCALL/static/js/main.dc223478.js.map",
+    "main.c4c41c6e.css.map": "/FIRSTCALL/static/css/main.c4c41c6e.css.map",
+    "main.8a46d999.js.map": "/FIRSTCALL/static/js/main.8a46d999.js.map",
     "787.28cb0dcd.chunk.js.map": "/FIRSTCALL/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd28289e.css",
-    "static/js/main.dc223478.js"
+    "static/css/main.c4c41c6e.css",
+    "static/js/main.8a46d999.js"
   ]
 }
