@@ -295,7 +295,7 @@
     @media screen and (max-width: $md1 + px) {
       text-align: center;
     }
-    @include adaptive-font(22,18);
+    @include adaptive-font(26,18);
     @include adaptive-value("margin-top",30,20,1);
     @include adaptive-value("line-height",26,18,1)
 

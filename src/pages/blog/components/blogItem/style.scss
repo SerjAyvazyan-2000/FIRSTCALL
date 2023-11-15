@@ -50,7 +50,7 @@
   justify-content: space-between;
 
   .blog_item_data {
-    color: $black;
+
     font-size: $fontSize17;
     font-style: normal;
     font-weight: 400;
@@ -59,13 +59,11 @@
     cursor: pointer;
     transition: .3s;
     @include adaptive-font(17,11);
-    &:hover{
-      color: $red;
-    }
+
   }
 
   .blog_item_name {
-    color: black;
+    color: $red;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -73,9 +71,7 @@
     cursor: pointer;
     transition: .3s;
     @include adaptive-font(17,11);
-    &:hover{
-      color: $red;
-    }
+
   }
 
   .blog_item_info {
@@ -86,13 +82,11 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: .3s;
-    &:hover{
-      color: $red;
-    }
+
     @include adaptive-font(17,11)
 
   }
-  @include adaptive-value("margin-top",36,20,0)
+  @include adaptive-value("margin-top",30,20,0)
 
 }
 

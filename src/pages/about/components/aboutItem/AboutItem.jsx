@@ -26,6 +26,7 @@ const AboutItem = forwardRef(({item, reverse},ref) => {
 
                 </div>
 
+
                 <div className="about_item_image">
                     <img src={item.img} alt=""/>
                 </div>

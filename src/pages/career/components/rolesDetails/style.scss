@@ -36,14 +36,13 @@
 
 .top_text_title {
   color: $black;
-  max-width: 980px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   position: relative;
 
   &::before {
-    width: 30%;
+    width: 50%;
     height: 1px;
     position: absolute;
     content: '';

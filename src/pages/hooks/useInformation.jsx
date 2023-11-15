@@ -398,17 +398,14 @@ const useInformation = () => {
                 'vision. With us, you get customised, value-oriented solutions instead of one-size-fits-all solutions',
             subTitle: 'We believe in transparent processes and intensive customer relationships. ' +
                 'This means we always find the ideal time for your offers.',
-            img:aboutImg,
+            img:aboutImg1,
             id:1
         },
         {
             title: "our philosophy",
-            description: '"We are more than just a call centre. We are your partner in success. Learn more about our history, our values and our team."\n' +
-                'FirstCallAgency stands for more than just telephone sales. We are advisors, strategists, supporters and partners. Our employees deepen their knowledge of your products and services and identify completely with your ' +
-                'vision. With us, you get customised, value-oriented solutions instead of one-size-fits-all solutions',
-            subTitle: 'We believe in transparent processes and intensive customer relationships. ' +
-                'This means we always find the ideal time for your offers.',
-            img:aboutImg1,
+            description: '"From the beginning, our agency has specialised in going beyond the standards of a classic call centre. Learn more about our journey." I\'m just writing this out and putting my personal story in.',
+            subTitle: 'Who we are, what we do and how we got started.',
+            img:aboutImg,
             id:2,
             reverse:true,
         },

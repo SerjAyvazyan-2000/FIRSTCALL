@@ -1,11 +1,12 @@
 @import "variables";
 .G-container{
-  max-width: $maxWidthContainer + px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
 }
+
 .container{
   max-width: $maxWidthMiniContainer + px;
   width: 100%;

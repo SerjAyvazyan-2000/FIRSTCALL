@@ -6,7 +6,9 @@ import {NavLink} from "react-router-dom";
 import DistinguishesUs from "../home/components/distinguishesUs/distinguishesUs";
 import ConsultationForm from "../home/components/consultation/ consultation";
 import IconSvg from "./IconSvg";
-
+import animationSvg from "../../assets/svgIcons/about us.svg"
+import AnimationHeader from "../components/animationHeader/animationHeader";
+import animationPng from "../../assets/images/2.png";
 
 const Services = () => {
     const {servicesList} = useInformation()
@@ -24,12 +26,15 @@ const Services = () => {
     }
     return <section className="services_section">
 
-        <div className="services_header_block">
-            <div className="G-container">
-                <div className="services_top_section_body ">
+
+        <div className="services_animation_top_block">
+
+            <div className="services_top_section_body">
+                <div className="G-container">
+
                     <motion.div initial="hidden" whileInView="visible" className="services_animation_text_content">
-                        <motion.h3 variants={textAnimation} custom={3}>SERVICES</motion.h3>
-                        <motion.div className={'animation_text_content_info'} variants={textAnimation} custom={3}>
+                        <motion.h3 variants={textAnimation} custom={2} >SERVICES</motion.h3>
+                        <motion.p variants={textAnimation} custom={2}>
                             <p>From appointment qualification to training - Our service portfolio is your competitive
                                 advantage</p>
                             <p>Benefit from our comprehensive range of services that goes far beyond classic cold
@@ -37,18 +42,20 @@ const Services = () => {
                                 optimising your sales strategy. Our service includes maintaining your CRM systems,
                                 developing new markets via social networks
                                 and training your internal team in cold calling and call centre operations. </p>
-                        </motion.div>
-
+                        </motion.p>
                     </motion.div>
+
+                    <div className="about_animation_top_image">
+                        <img src={animationPng} alt=""/>
+                    </div>
 
                 </div>
 
             </div>
-            <div className="services_animation_content-image">
-                {/*<img className="logo_img" src={animationSvg} alt=""/>*/}
-                <IconSvg/>
-            </div>
         </div>
+
+
+
         <div className="services_list_body">
             <div className="G-container">
                 <div className="services_list">

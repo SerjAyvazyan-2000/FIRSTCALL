@@ -54,12 +54,11 @@
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  max-width: 1044px;
+  max-width: 1104px;
   background-color: white;
   @include adaptive-font(22,18);
   @include adaptive-value("line-height",27,21,1);
   @include adaptive-value("margin-top",40,21,1)
-
 
 }
 
@@ -69,6 +68,7 @@
   align-items: center;
   margin: 35px 0 0;
   gap: 5px;
+  justify-content: center;
 
   @media screen  and (max-width: $md1 + px){
     flex-wrap: wrap;
@@ -104,23 +104,6 @@
      }
   }
 
-  //img {
-  //  position: absolute;
-  //  width: 100%;
-  //  height: 100%;
-  //  padding: 0 30px;
-  //
-  //}
-  //@media (max-width: $md4 + px){
-  //  width: 100px;
-  //
-  //  img {
-  //
-  //    padding: 0 20px;
-  //
-  //  }
-  //
-  //}
 
 }
 
