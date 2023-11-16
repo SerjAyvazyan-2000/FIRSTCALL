@@ -23,7 +23,6 @@
 }
 
 .consultation_text {
-  flex: 1 1 298px;
   display: flex;
   flex-direction: column;
 
@@ -215,7 +214,9 @@
 
 }
 
-
+.consultation_form{
+   margin-left: 298px;
+}
 .form_contact_button {
   margin: 22px 0 0;
   padding: 10px 140px;
@@ -228,6 +229,7 @@
   line-height: 154.3%; /* 33.946px */
   text-transform: uppercase;
   transition: .3s;
+
   @media screen and (max-width: $md3 + px) {
     padding: 14px 100px;
   }

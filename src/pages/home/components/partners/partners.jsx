@@ -1,16 +1,13 @@
 import React, {useRef} from 'react';
 import "./style.scss"
 import  partner1 from "../../../../assets/svgIcons/meyleMuler.svg"
-import  partner2 from "../../../../assets/svgIcons/humaNova.svg"
-import  partner3 from "../../../../assets/svgIcons/compris.svg"
+import  partner2 from "../../../../assets/images/globalfinanz.png"
 import  partner4 from "../../../../assets/svgIcons/ventori.svg"
-import  partner5 from "../../../../assets/svgIcons/_Слой_1 (1).svg"
-import  partner6 from "../../../../assets/svgIcons/_Слой_1.svg"
-import  partner7 from "../../../../assets/svgIcons/ad-agents-logo-1 2.svg"
-import  partner8 from "../../../../assets/svgIcons/globalfinanz.svg"
 import  partner9 from "../../../../assets/svgIcons/apollon.svg"
 import  partner10 from "../../../../assets/svgIcons/ra-micro.svg"
 import  partner11 from "../../../../assets/svgIcons/webix.svg"
+import  partner12 from "../../../../assets/images/AusbildungsAtlas-2.png"
+
 import useIntersection from "../../../hooks/useIntersection ";
 import {motion, px} from "framer-motion"
 
@@ -47,7 +44,7 @@ const Partners = () => {
 
             <motion.div custom={2} variants={textAnimation} className="partners_items">
                 <div className="partners_item">
-                    <img src={partner6} alt=""/>
+                    <img src={partner1} alt=""/>
 
 
                 </div>
@@ -72,12 +69,13 @@ const Partners = () => {
                     </svg>
 
                 </div>
-                <div className="partners_item">
-                    <img src={partner3} alt=""/>
+                <div className="partners_item absolute_img">
+                    <img src={partner4} alt=""/>
 
 
                 </div>
                 <div className="partners_item">
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="123" height="31" viewBox="0 0 123 31" fill="none">
                         <g opacity="0.8" clip-path="url(#clip0_1195_16223)">
                             <path d="M33.2374 20.9964C33.5533 25.1342 37.4682 27.3102 40.8924 25.3202C41.5073 24.9651 42.0488 24.1984 42.2688 23.505C42.5452 22.62 42.9571 22.2535 43.8427 22.293C44.3109 22.3156 44.7791 22.2705 45.253 22.2535C47.7972 22.1521 48.0849 22.541 47.2838 24.9876C46.2458 28.167 42.8273 30.3825 38.7149 30.5347C31.7255 30.794 26.9531 25.3597 27.6808 17.9805C28.1885 12.8112 30.8963 9.29916 35.2118 8.19426C41.6878 6.54255 47.4305 10.6521 47.972 17.3322C48.0228 17.9862 48.0341 18.6457 48.0341 19.3053C48.0341 20.8724 47.5489 21.1712 45.9694 21.1035C42.077 20.9401 38.179 20.8837 34.281 20.8048C33.9651 20.7991 33.6492 20.9232 33.243 21.0021L33.2374 20.9964ZM42.5396 16.3401C42.0827 13.7808 39.8544 12.0614 37.4795 12.2643C35.0764 12.4729 33.4517 14.0626 33.4348 16.3401H42.5396Z" fill="#191923"/>
@@ -119,28 +117,31 @@ const Partners = () => {
 
 
                 </div>
-                <div className="partners_item">
-                    <img src={partner6} alt=""/>
+
+                <div className="partners_item absolute_img">
+                    <img src={partner9} alt=""/>
 
 
                 </div>
-                <div className="partners_item">
-                    {/*<img src={partner7} alt=""/>*/}
+                <div className="partners_item absolute_img">
+                    <img src={partner12} alt=""/>
 
 
                 </div>
-                <div className="partners_item">
-                    {/*<img src={partner8} alt=""/>*/}
+
+                <div className="partners_item absolute_img">
+                    <img src={partner10} alt=""/>
 
 
                 </div>
-                <div className="partners_item">
-                    {/*<img src={partner9} alt=""/>*/}
+
+                <div className="partners_item absolute_img">
+                    <img src={partner2} alt=""/>
 
 
                 </div>
-                <div className="partners_item">
-                    {/*<img src={partner10} alt=""/>*/}
+                <div className="partners_item absolute_img">
+                    <img src={partner11} alt=""/>
 
 
                 </div>

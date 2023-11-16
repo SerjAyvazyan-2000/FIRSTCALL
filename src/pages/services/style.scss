@@ -256,43 +256,4 @@ position: absolute;
 
   @include adaptive-value('margin-top', 30, 10, 1);
 }
-.animation_header_image{
 
-}
-.about_animation_top_image{
-  position: absolute;
-  top: -200px;
-  right: -200px;
-  img{
-    animation: pulse 10s linear infinite;
-
-  }
-  @media (max-width: 1048px) {
-    top: -100px;
-
-  }
-  @media (max-width: 767px) {
-    top: -50px;
-
-  }
-
-  @media (max-width: $md4 + px) {
-    top: 20px;
-    right: -120px;
-
-  }
-
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
