@@ -24,7 +24,6 @@ import Services from "./pages/services/services";
 import BlogItemDetails from "./pages/blog/components/blogItemDetails/blogItemDetails";
 import RolesDetails from "./pages/career/components/rolesDetails/rolesDetails";
 import ScrollTop from "./pages/components/scrollTop/scrollTop";
-import magnet  from '../src/assets/magnet.svg'
 
 function App() {
     return (
