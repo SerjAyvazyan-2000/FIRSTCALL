@@ -28,8 +28,8 @@ const CommonProblems = () => {
     return <section ref={lastElement} className="common_problems_section">
         <div className="G-container">
             <div className="common_problems_absolute">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600">
-                    <rect width="1500" height="600" fill="none" stroke="black" strokeWidth="4" strokeDasharray="10 15"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1650" height="600">
+                    <rect width="1650" height="600" fill="none" stroke="black" strokeWidth="4" strokeDasharray="10 15"/>
                 </svg>
             </div>
 
@@ -59,12 +59,10 @@ const CommonProblems = () => {
 
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Advertising on platforms such as
+                                                Facebook, Instagram and LinkedIn is becoming increasingly
+                                                expensive. This increases the cost of generating suitable leads,
+                                                which reduces profit margins.
                                             </p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
@@ -80,12 +78,10 @@ const CommonProblems = () => {
                                         </div>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Companies often do not know
+                                                where the next customer will come from. Their order book
+                                                depends heavily on referrals and their network, which is not a
+                                                continuous or reliable source of new clients.
                                             </p>
                                         </div>
 
@@ -104,12 +100,10 @@ const CommonProblems = () => {
                                         </div>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Many companies are so involved in
+                                                their day-to-day business and serving their existing customers
+                                                that they hardly have time for cold calling. The time needed for
+                                                telephone canvassing is often lacking.
                                             </p>
                                         </div>
 
@@ -126,12 +120,10 @@ const CommonProblems = () => {
                                         </div>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Despite excellent services and results,
+                                                many companies have difficulties to be perceived by their target
+                                                group. They struggle to increase their visibility in the market so
+                                                that potential clients do not approach them on their own.
                                             </p>
                                         </div>
 
@@ -148,12 +140,10 @@ const CommonProblems = () => {
                                         </div>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Many companies generate enquiries for
+                                                their services, but these leads are often unsuitable or unable to
+                                                afford the company's offer. This leads to inefficient use of
+                                                resources and a missed opportunity for qualified business.
                                             </p>
                                         </div>
 
@@ -173,12 +163,10 @@ const CommonProblems = () => {
                                         </div>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Especially in larger
+                                                companies with many employees, it can be difficult to reach
+                                                managing directors or other decision-makers. This can make
+                                                acquisition difficult and slow down business development.
                                             </p>
                                         </div>
 
@@ -207,19 +195,17 @@ const CommonProblems = () => {
                                             <i className="icon-customer-service"></i>
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>High advertising costs</p>
+                                            <p>Building a continuous source of customers</p>
 
 
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                Through our specialised telephone sales services, we help you
+                                                expand your customer base and constantly generate new leads.
+                                                With us, your customer acquisition will be less about sporadic
+                                                referrals and more about a steady flow of potential customers.
                                             </p>
                                         </div>
                                     </div>
@@ -229,17 +215,15 @@ const CommonProblems = () => {
                                             <i className="icon-bankrupt"></i>
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>Unsteady source of customers</p>
+                                            <p>Reduction of expensive advertisements</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                We use efficient sales strategies that focus on building long-term
+                                                relationships with customers and identifying the ideal time for
+                                                your offer. Our customised services can help you reduce
+                                                advertising costs and increase your profits.
                                             </p>
                                         </div>
                                     </div>
@@ -249,17 +233,14 @@ const CommonProblems = () => {
                                             <img src={icon4} alt=""/>
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>Time-intensive cold calling</p>
+                                            <p>Time-saving cold calling</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                With us, you can spend more time on your core business and less
+                                                on time-consuming cold calling. Our dedicated team takes care of
+                                                the telephone acquisition and ensures that you always receive
                                             </p>
                                         </div>
                                     </div>
@@ -270,19 +251,17 @@ const CommonProblems = () => {
                                             {/*<img src={image3} alt=""/>*/}
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>Lack of market presence</p>
+                                            <p>Increasing visibility in the market</p>
 
 
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                We help you to increase your visibility in the market and to be
+                                                noticed by your target group. With our support, you can
+                                                strengthen your market position and establish yourself as a
+                                                trustworthy provider.
                                             </p>
                                         </div>
                                     </div>
@@ -293,17 +272,14 @@ const CommonProblems = () => {
                                             {/*<img src={image4} alt=""/>*/}
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>Unqualified leads</p>
+                                            <p>Generation of qualified leads</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                By focusing on consultancy-intensive products and IT solutions,
+                                                we ensure that you only receive qualified enquiries. We help you
+                                                get leads who value your offer and can afford it.
                                             </p>
                                         </div>
                                     </div>
@@ -314,17 +290,15 @@ const CommonProblems = () => {
                                             {/*<img src={image5} alt=""/>*/}
                                         </div>
                                         <div className="common_problems_black_item_text">
-                                            <p>Difficult to reach decision-makers</p>
+                                            <p>Access to decision-makers in large companies</p>
                                         </div>
                                         <span className="icon-Arrow-21"></span>
                                         <div className="problems_item_sub_text">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio harum
-                                                itaque magni
-                                                quibusdam quidem. Beatae consequuntur
-                                                culpa dicta dolor explicabo, fugiat iste, nisi numquam odit perferendis quasi
-                                                quidem
-                                                quis repellendus!
+                                                We specialise in reaching CEOs and other decision-makers in
+                                                large companies. Our customised services and extensive
+                                                expertise enable us to make the right contacts even in complex
+                                                corporate structures.
                                             </p>
                                         </div>
                                     </div>

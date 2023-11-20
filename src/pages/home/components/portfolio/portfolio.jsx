@@ -46,57 +46,57 @@ const Portfolio = () => {
                         page.</p>
                 </motion.div>
 
-                <motion.div whileInView={'visible'} initial={'hidden'} className="services_portfolio_items">
-                    <motion.Link custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                <div whileInView={'visible'} initial={'hidden'} className="services_portfolio_items">
+                    <div  className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null} >B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.Link>
-                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                    </div>
+                    <div custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.NavLink>
-                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                    </div>
+                    <div custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.NavLink>
-                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                    </div>
+                    <div custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.NavLink>
-                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                    </div>
+                    <div custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i>With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.NavLink>
-                    <motion.NavLink custom={3} variants={featuredAnimation} className="services_portfolio_item">
+                    </div>
+                    <div custom={3} variants={featuredAnimation} className="services_portfolio_item">
                         <h3 className={isVisible ? "active" : null}>B2B cold calling Sales assistance</h3>
                         <p>Qualified appointment of new customers, existing customer care and reactivation.</p>
                         <span>  We take care of the qualified appointment of new customers, existing customer care and reactivation.</span>
                         <i >With us as your partner, you have more time to focus on your core tasks while
                             we open up new business opportunities for you and strengthen the loyalty of your existing
                             customers.</i>
-                    </motion.NavLink>
+                    </div>
 
-                </motion.div>
+                </div>
 
                 <div className="services_portfolio_tools">
                     <button className="portfolio_tools_red_button">

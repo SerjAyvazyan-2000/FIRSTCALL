@@ -133,6 +133,7 @@
   border-radius: 4px;
   transition: .3s;
   cursor: pointer;
+  min-height: 180px;
 
 
   p{
@@ -151,6 +152,15 @@
   top: -20px;
   font-weight: bold;
   font-size: 40px;
+
+}
+.cooperation_item_text{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cooperation_item_text_title{
+   max-width: 200px;
 
 }
 .cooperation_btn{

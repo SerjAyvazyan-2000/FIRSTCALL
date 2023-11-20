@@ -14,7 +14,7 @@
   display: flex;
   gap: 40px;
 
-  @media screen and (max-width: $md2 + px) {
+  @media screen and (max-width: 1130px) {
     flex-direction: column;
   }
   @media screen and (max-width: $md3 + px) {
@@ -70,7 +70,12 @@
     flex: 1 1 168px;
   }
 }
-
+.consultation_form_block{
+   @include adaptive-value('margin-left',258,10,1);
+  @media screen and (max-width: 1130px) {
+   margin-left: 0;
+  }
+}
 .form_title {
 
   h3 {
@@ -93,16 +98,22 @@
     width: 100%;
     border-radius: 4px;
     margin-top: 5px;
-
     &::placeholder {
-      color: #191923;
+      color: black;
+      font-family:Barlow Condensed;
       font-style: normal;
       font-weight: 400;
       line-height: 154.3%; /* 33.946px */
-      @include adaptive-font(22, 12);
+      @include adaptive-font(15, 12);
 
     }
+    @include adaptive-font(22, 12);
 
+    @media screen and (max-width: $md3 + px) {
+      height: 45px;
+      padding: 15px 10px
+
+    }
   }
 
 
@@ -134,25 +145,33 @@
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 30px;
-      padding: 20px 30px;
+      padding: 23px 30px;
 
       @media screen and (max-width: $md3 + px) {
-        width: 100%;
-        margin: 10px 0 0 ;
-
+        padding: 15px 10px;
+        width: 20%;
+        min-width: 100px;
       }
-      @include adaptive-font(22, 12);
+      @include adaptive-font(15, 12);
      option{
+       color: #191923;
+       font-family:Barlow Condensed;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 154.3%; /* 33.946px */
+       @include adaptive-font(15, 12);
         padding-right: 20px;
      }
+
     }
 
-    @media screen and (max-width: $md3 + px) {
-      flex-direction: column;
-    }
     input{
        margin-top: 0;
       height: 65px;
+
+      @media screen and (max-width: $md3 + px) {
+        height: 45px;
+      }
     }
 
   }
@@ -168,6 +187,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 154.3%;
+  flex-direction: column;
 
   label {
     position: relative;
@@ -211,11 +231,14 @@
   input[type="checkbox"] {
     display: none;
   }
-
+.error-message_check{
+   color: red;
+}
 }
 
-.consultation_form{
-   margin-left: 298px;
+
+.error-message{
+   color: red;
 }
 .form_contact_button {
   margin: 22px 0 0;

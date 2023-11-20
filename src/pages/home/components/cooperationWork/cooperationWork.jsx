@@ -25,11 +25,9 @@ const CooperationWork = () => {
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">1</div>
                         <div className="cooperation_item_text">
-                            <p>
-                                Initial Contact and Introduction
-                                In the first step, we get to know each other and collectively
-                                evaluate whether a collaboration would be mutually beneficial.
-                            </p>
+                             <p>Initial Contact and Introduction</p>
+                           <p> In the first step, we get to know each other and collectively
+                               evaluate whether a collaboration would be mutually beneficial.</p>
                         </div>
                     </div>
 
@@ -42,8 +40,8 @@ const CooperationWork = () => {
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">2</div>
                         <div className="cooperation_item_text">
+                            <p> Contract Signing</p>
                             <p>
-                                Contract Signing
                                 We sign a legally compliant and GDPR-compliant sales
                                 agreement to ensure that all business and data protection aspects are covered.
                             </p>
@@ -60,10 +58,10 @@ const CooperationWork = () => {
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">3</div>
                         <div className="cooperation_item_text">
+                            <p> Onboarding and Data Exchange</p>
                             <p>
-                                Contract Signing
-                                We sign a legally compliant and GDPR-compliant sales
-                                agreement to ensure that all business and data protection aspects are covered.
+                                During the onboarding phase, we gather all relevant information
+                                and either hand over or receive the lead list to ensure a smooth start.
                             </p>
                         </div>
                     </div>
@@ -77,8 +75,8 @@ const CooperationWork = () => {
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">4</div>
                         <div className="cooperation_item_text">
+                            <p>CRM Account Setup</p>
                             <p>
-                                CRM Account Setup
                                 A personal CRM account is set up to efficiently manage all customer data and interactions.
                             </p>
                         </div>
@@ -93,10 +91,12 @@ const CooperationWork = () => {
                     <div className="cooperation_item_text_block">
                         <div className="cooperation_item_text_before">5</div>
                         <div className="cooperation_item_text">
+                            <p className="cooperation_item_text_title">Appointment Scheduling and
+                                New Customer Acquisition</p>
                             <p>
-                                Contract Signing
-                                We sign a legally compliant and GDPR-compliant sales
-                                agreement to ensure that all business and data protection aspects are covered.
+
+                                Now the phone-based sales activity can begin.
+                                The goal is to schedule new customer appointments to successfully drive the business forward.
                             </p>
                         </div>
                     </div>
