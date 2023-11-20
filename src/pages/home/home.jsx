@@ -10,7 +10,7 @@ import Testimonials from "./components/testimonials/testimonials";
 import DistinguishesUs from "./components/distinguishesUs/distinguishesUs";
 import CooperationWork from "./components/cooperationWork/cooperationWork";
 import ConsultationForm from "./components/consultation/ consultation";
-import rotateLogo from "../../assets/images/rotateLogo.png"
+import rotateLogo from "../../assets/SvgIons/rotateLogo.svg"
 import {motion, px} from "framer-motion"
 import TelephoneSales from "./components/telefonSales/telephoneSales";
 import useIntersection from "../hooks/useIntersection ";
@@ -27,7 +27,6 @@ const Home = () => {
     const {isVisible} = useIntersection(observer, homeSection)
     const [scrollLine, setScrollLine] = useState(0)
     const [rotation, setRotation] = useState(0);
-
 
     const mouseOver = (e) => {
         if (!scale) {
@@ -90,6 +89,7 @@ const Home = () => {
                           style={{strokeDasharray: '177, 277', strokeDashoffset: scrollLine}}/>
                 </svg>
             </div>
+
         </div>
         <motion.section       animate="visible" ref={homeSection} initial={'hidden'} whileInView={'visible'} className="section_telephone_sales">
             <div className="G-container">
@@ -139,7 +139,8 @@ const Home = () => {
             <div className="G-container">
                 <div className="rotate_logo_block">
                     <div className={`rotate_logo`}>
-                        <img  style={{ transform: `rotate(${rotation}deg)` }} src={rotateLogo} alt=""/>
+
+                            <img  style={{ transform: `rotate(${rotation}deg)` }} src={rotateLogo} alt=""/>
                     </div>
                 </div>
             </div>

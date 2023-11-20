@@ -69,7 +69,6 @@
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   @include adaptive-value("margin-top", 80, 20, 0);
 
@@ -97,7 +96,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration-line: underline;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
 
     @include adaptive-font(45,18);
 
@@ -125,8 +126,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration-line: underline;
-    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
 
     @include adaptive-font(33,18);
 

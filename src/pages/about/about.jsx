@@ -82,13 +82,13 @@ const About = () => {
                 </motion.div>
                 <motion.div whileInView={'visible'} initial={'hidden'}  className="about_values_list">
                     <motion.div variants={textAnimation} custom={2} className="values_list_item G-center">
-                        <img src={aboutValues1} alt=""/>
+                        <img src={aboutValues3} alt=""/>
                     </motion.div>
                     <motion.div variants={textAnimation} custom={2} className="values_list_item G-center">
                         <img src={aboutValues2} alt=""/>
                     </motion.div>
                     <motion.div variants={textAnimation} custom={2} className="values_list_item G-center">
-                        <img src={aboutValues3} alt=""/>
+                        <img src={aboutValues1} alt=""/>
                     </motion.div>
                 </motion.div>
 

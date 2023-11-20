@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react';
 import "./style.scss"
 import {motion} from "framer-motion";
 
-const AnimationHeader = ({title, subTitle, description, image}) => {
+const AnimationHeader = ({title, subTitle, description,description1, image}) => {
     const textAnimation  = {
         hidden: {
             y: 200,
@@ -22,6 +22,8 @@ const AnimationHeader = ({title, subTitle, description, image}) => {
                 <motion.div initial="hidden" whileInView="visible" className="animation_text_content">
                     <motion.h3 variants={textAnimation} custom={3}>{title}</motion.h3>
                     <motion.p variants={textAnimation} custom={3}>{description}</motion.p>
+                    {   description1  &&     <motion.p variants={textAnimation} custom={3}>{description}</motion.p>}
+
                 </motion.div>
                 <div className="animation_content-image">
                     <img src={image} alt=""/>

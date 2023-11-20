@@ -199,10 +199,7 @@
   width: 100%;
 }
 
-.footer_contact_info > :not(:last-child) {
-  margin: 0 0 5px;
 
-}
 
 .footer_end {
   border-radius: 4px;
@@ -250,19 +247,19 @@
     }
   }
 
-  span {
-    margin-right: 20px;
-    font-size: 20px;
+  img {
+    margin-left: 10px;
+
 
     &:hover {
-      color: gray;
+      fill: gray;
     }
   }
 }
 
 .footer_contact_phone {
-  span {
-    margin-right: 20px;
+  img {
+    margin-left: 10px;
     font-size: 20px;
   }
 

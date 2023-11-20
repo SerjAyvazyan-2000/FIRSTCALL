@@ -47,7 +47,6 @@ function App() {
                     {/*))}*/}
                 </Routes>
             </main>
-
             <Footer/>
             <ScrollTop/>
 

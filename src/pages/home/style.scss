@@ -294,7 +294,7 @@
     width: 1px;
     height: 0;
     background-color: $black;
-    top: 0;
+
     right: 560px;
     transition: 3s;
 
@@ -390,7 +390,7 @@
 
 .rotate_logo {
   position: absolute;
-  right: -150px;
+  right: -200px;
   top: 0;
   background-color: white;
 
@@ -402,5 +402,32 @@
 
 }
 
+.footer_middle_border {
+  position: relative;
+  min-height: 110px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 0;
+    background-color: black;
+    transition: 3s;
+    left: 50.4%;
+
+  }
+
+  &.active {
+    &::before{
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: $md1 + px) {
+    display: none;
+  }
+  @include adaptive-value("min-height", 200, 50, 0);
+
+}
 
 

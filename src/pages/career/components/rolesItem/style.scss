@@ -16,18 +16,18 @@
       flex-direction: column;
   }
   @media (any-hover: hover) {
-    &:hover{
-      background: $red;
-    }
-    &:hover a{
-      color: white;
-    }
-    &:hover  p{
-      color: white;
-    }
-    &:hover .roles_item_icon svg path{
-      stroke: white;
-    }
+    //&:hover{
+    //  background: $red;
+    //}
+    //&:hover a{
+    //  color: white;
+    //}
+    //&:hover  p{
+    //  color: white;
+    //}
+    //&:hover .roles_item_icon svg path{
+    //  stroke: white;
+    //}
     &:hover .roles_item_icon svg {
       width: 65%;
       height: 65%;

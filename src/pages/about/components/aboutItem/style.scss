@@ -23,9 +23,20 @@
   color: $black;
   font-style: normal;
   font-weight: 400;
+  position: relative;
   text-transform: uppercase;
   @include adaptive-font(74, 35);
   @include adaptive-value("line-height", 120, 60, 1);
+
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: 1px;
+    width: 30%;
+    background-color: $red;
+  }
 }
 
 .about_item_description {

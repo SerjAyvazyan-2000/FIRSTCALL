@@ -2,7 +2,7 @@
 @import "src/assets/@mixin";
 
 
-.about_animation_top_block{
+.about_animation_top_block {
   background: $backgroundGradient;
   margin: -30px 0;
   @media (max-width: $md4 + px) {
@@ -11,39 +11,46 @@
   }
 }
 
-.about_top_section_body{
+.about_top_section_body {
   display: flex;
   position: relative;
   overflow: hidden;
 
 }
-.animation_text_content{
-   flex:  0 0  100%;
+
+.animation_text_content {
+  flex: 0 0 100%;
 }
-.animation_header_image{
+
+.animation_header_image {
 
 }
-.about_animation_top_image{
+
+.about_animation_top_image {
   position: absolute;
   top: -200px;
-  right: -200px;
-  img{
+  right: -600px;
+
+  img {
     animation: pulse 10s linear infinite;
 
   }
-  @media (max-width: 1048px) {
-    top: -100px;
 
+  @media (max-width: 1204px) {
+    right: -400px;
+}
+  @media (max-width: 1048px) {
+    top: -80px;
+    right: -300px;
   }
   @media (max-width: 767px) {
-   top: -50px;
-
+    top: -50px;
+    right: -300px;
   }
 
   @media (max-width: $md4 + px) {
-    top: 20px;
     right: -120px;
-
+    top: -10px;
   }
 
 }
@@ -62,13 +69,15 @@
 }
 
 
-
 .about_us_list {
   padding: 0 10px;
-  @include adaptive-value("margin-top",115,40,1);
+  @include adaptive-value("margin-top", 115, 40, 1);
 }
 
 .about_values_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   h3 {
     color: $black;
@@ -76,11 +85,21 @@
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 1px;
-    text-decoration-color: $red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    &::after{
+      content: '';
+      display: block;
+      left: 0;
+      margin-top: 10px;
+      height: 1px;
+      width: 40%;
+      background-color: $red;
+    }
     @include adaptive-font(100, 40);
     @include adaptive-value("line-height", 100, 40, 1);
   }
@@ -90,12 +109,12 @@
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 20px;
     max-width: 400px;
     padding: 0 10px;
 
     @include adaptive-font(22, 18);
-    @include adaptive-value("margin-top",40,20,1);
+    @include adaptive-value("margin-top", 40, 20, 1);
 
 
   }
@@ -144,8 +163,8 @@
     min-width: 150px;
     min-height: 150px;
 
-    img{
-       width: 40%;
+    img {
+      width: 40%;
       height: 40%;
     }
   }
@@ -162,9 +181,9 @@
   display: flex;
   justify-content: space-between;
   gap: 100px;
-  @include adaptive-value("margin-top",170,50,1);
+  @include adaptive-value("margin-top", 170, 50, 1);
   @media (max-width: $md1 + px) {
-      flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -196,8 +215,8 @@
   justify-content: center;
   position: relative;
 
-  svg{
-     width: 490px;
+  svg {
+    width: 490px;
     height: 490px;
 
     @media (max-width: 655px) {
@@ -219,6 +238,7 @@
 
     }
   }
+
   @media (max-width: 450px) {
     margin-left: 40px;
 
@@ -296,20 +316,20 @@
     min-width: 80px;
     min-height: 80px;
 
-    img{
-       width: 70%;
+    img {
+      width: 70%;
       height: 70%;
     }
-    .img_block{
+    .img_block {
       display: flex;
       align-items: center;
       justify-content: center;
     }
   }
   @media (max-width: 396px) {
-    min-width:50px;
+    min-width: 50px;
     min-height: 50px;
-    img{
+    img {
       width: 50%;
       height: 50%;
     }
@@ -348,7 +368,7 @@
 
 .about_our_team {
 
-  @include adaptive-value("margin-top",360,50,1);
+  @include adaptive-value("margin-top", 360, 50, 1);
 
 }
 
@@ -392,19 +412,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  @include adaptive-value("margin-top",220,30,1);
+  @include adaptive-value("margin-top", 220, 30, 1);
   @media (max-width: 1003px) {
     overflow-x: scroll;
   }
 
 }
 
-.people_item{
-   @media (max-width: 1003px) {
-       min-width: 300px;
-     padding: 0  0 20px 0;
-   }
+.people_item {
+  @media (max-width: 1003px) {
+    min-width: 300px;
+    padding: 0 0 20px 0;
+  }
 }
+
 .people_item_content {
   position: relative;
   display: flex;
@@ -415,8 +436,9 @@
     filter: grayscale(100%);
     transition: .3s;
     cursor: pointer;
+
     &:hover {
-        filter: grayscale(0);
+      filter: grayscale(0);
     }
   }
 
@@ -457,7 +479,8 @@
 
   }
 }
-.about_consultation_block{
-  @include adaptive-value("margin-top",200,50,1);
+
+.about_consultation_block {
+  @include adaptive-value("margin-top", 200, 50, 1);
 
 }

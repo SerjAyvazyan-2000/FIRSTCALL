@@ -2,6 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import "./style.scss"
 import logo from "../../assets/images/Vector (1).png"
 import logo1 from "../../assets/svgIcons/Frame 5464 (2).svg"
+import mail from "../../assets/SvgIons/Envelope (2).svg"
+import phone from "../../assets/SvgIons/Phone (1).svg"
+import map from "../../assets/SvgIons/MapPin (1).svg"
 
 import useIntersection from "../hooks/useIntersection ";
 
@@ -21,7 +24,7 @@ const Footer = () => {
         })
     }, [])
     return <>
-        <div className={isVisible ? "footer_middle_border active" : "footer_middle_border"}></div>
+    <div className={isVisible ? "footer_middle_border active" : "footer_middle_border"}></div>
         <footer ref={lastElement} className={isVisible ? "footer active" : "footer"}>
         <div className="container">
             <div className="footer_content">
@@ -89,7 +92,8 @@ const Footer = () => {
                         <div className="footer_contact_location_phone">
 
                             <div className="footer_contact_location">
-                                <span className="icon-location"></span>
+                                <img src={map} alt=""/>
+
                                 <div className="footer_contact_location_text">
                                     <p>Hochstraße23 </p>
                                     <p> 76530 Baden-Baden</p>
@@ -98,14 +102,15 @@ const Footer = () => {
                             </div>
 
                             <div className="footer_contact_phone">
-                                <span className="icon-phone"></span>
+                                <img src={phone} alt=""/>
+
                                 <a href="tel:123-456-7890">+49 176 8 2325 122</a>
                             </div>
                         </div>
 
 
                         <div className="footer_contact_email">
-                            <span className="icon-envelop"></span>
+                            <img src={mail} alt=""/>
                             <a href="mailto: kern@firstcallagency.de">kern@firstcallagency.de</a>
                         </div>
 
